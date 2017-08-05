@@ -48,10 +48,6 @@ if (process.env.NODE_ENV == 'production') {
     new webpack.LoaderOptionsPlugin({
       minimize: true,
       debug: false
-    }),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
     })
   ]
 } else {
@@ -73,10 +69,6 @@ if (process.env.NODE_ENV == 'production') {
   module.exports.plugins= [
     new ExtractTextPlugin({
       filename: './css/main.css'
-    }),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
     })
   ]
 
