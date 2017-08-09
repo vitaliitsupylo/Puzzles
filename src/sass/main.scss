@@ -6,6 +6,8 @@
 
 @import "сomponents-sass/functions.scss";
 
+@import "common.scss";
+
 /*header*/
     @import "modules/header/logo.scss";
     @import "modules/header/contact-set.scss";
