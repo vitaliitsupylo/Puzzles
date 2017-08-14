@@ -64,9 +64,24 @@ body {
   max-width: 100rem;
   margin: auto; }
 
+.btn_red {
+  display: block;
+  padding: 0.6875rem 1.4375rem;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-shadow: 0 1px 1px rgba(40, 40, 40, 0.56);
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  border-radius: 3px;
+  color: #fdfdfd;
+  background: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%); }
+
 /*header*/
 .header_main {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 2.6875rem; }
   .header_main .container {
     display: flex;
     justify-content: space-between;
@@ -81,9 +96,23 @@ body {
     .header_main .container .header_right {
       width: 100%;
       padding-top: 1.25rem;
-      max-width: 17.5rem; }
+      max-width: 17.5rem;
+      display: flex;
+      justify-content: flex-end; }
 
 /*end header*/
+/*top line*/
+.search_line .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%; }
+  .search_line .container .search_line_left {
+    width: 30%; }
+  .search_line .container .search_line_right {
+    width: 30%; }
+
+/*end top line*/
 /*header*/
 .logo {
   display: block;
@@ -211,5 +240,42 @@ body {
     color: #fc303d; }
 
 /*end header*/
+/*search line*/
+.age_category {
+  display: flex;
+  margin-right: 10%; }
+  .age_category .age_btn {
+    display: block;
+    cursor: pointer;
+    height: 2.1875rem;
+    padding: 0 0.75rem;
+    border: dotted 0.0625rem #eb1b35;
+    line-height: 2rem;
+    border-radius: 0.5625rem 0.625rem 0.625rem 0.5625rem;
+    margin: 0 0.75rem;
+    color: #282828;
+    transition: color .3s; }
+    .age_category .age_btn i {
+      font-size: 1.1875rem;
+      margin-right: 0.75rem; }
+    .age_category .age_btn:hover {
+      color: #eb1b35; }
+
+.search {
+  width: 100%;
+  display: flex;
+  max-width: 35rem;
+  height: 2.3125rem;
+  border: 1px solid #cdcdcd;
+  justify-content: space-between; }
+  .search .search_input {
+    width: 60%;
+    border: none;
+    background: none;
+    padding-left: 1.375rem;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5); }
+
+/*end search line*/
 
 /*# sourceMappingURL=main.css.map*/

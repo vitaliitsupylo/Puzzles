@@ -32,18 +32,6 @@
   font-weight: 900;
   font-style: normal;
 }
-/*Roboto*/
-@font-face {
-  font-family: 'Roboto';
-  src: url_css('fonts/Roboto/Roboto Medium/Roboto-Medium.eot');
-  src: url_css('fonts/Roboto/Roboto Medium/Roboto-Medium.eot') format('embedded-opentype'),
-       url_css('fonts/Roboto/Roboto Medium/Roboto-Medium.woff') format('woff'),
-       url_css('fonts/Roboto/Roboto Medium/Roboto-Medium.woff2') format('woff2'),
-       url_css('fonts/Roboto/Roboto Medium/Roboto-Medium.ttf') format('truetype'),
-       url_css('fonts/Roboto/Roboto Medium/Roboto-Medium.svg') format('svg');
-  font-weight: 500;
-  font-style: normal;
-}
 /*UniSansHeavyCaps*/
 @font-face {
   font-family: 'Uni Sans';

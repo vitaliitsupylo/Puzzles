@@ -6,10 +6,24 @@ body{
   max-width: rem(1600px);
   margin: auto;
 }
-
+.btn_red{
+  display: block;
+  padding: rem(11px) rem(23px);
+  font-size: rem(18px);
+  text-transform: uppercase;
+  font-weight: 500;
+  text-shadow: 0 1px 1px rgba(40, 40, 40, 0.56);
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  border-radius: 3px;
+  color: #fdfdfd;
+  background: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%);
+}
 /*header*/
 .header_main{
   width: 100%;
+  margin-bottom: rem(43px);
   .container{
     display: flex;
     justify-content: space-between;
@@ -27,7 +41,25 @@ body{
       width: 100%;
       padding-top: rem(20px);
       max-width: rem(280px);
+      display: flex;
+      justify-content: flex-end;
     }
   }
 }
 /*end header*/
+/*top line*/
+.search_line{
+  .container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    .search_line_left{
+      width: 30%;
+    }
+    .search_line_right{
+      width: 30%;
+    }
+  }
+}
+/*end top line*/

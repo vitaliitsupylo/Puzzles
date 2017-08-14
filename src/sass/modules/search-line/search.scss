@@ -1,0 +1,16 @@
+.search{
+  width: 100%;
+  display: flex;
+  max-width: rem(560px);
+  height: rem(37px);
+  border: 1px solid #cdcdcd;
+  justify-content: space-between;
+  .search_input{
+    width: 60%;
+    border: none;
+    background:none;
+    padding-left: rem(22px);
+    font-size: rem(16px);
+    color: rgba(0,0,0,.5);
+  }
+}
