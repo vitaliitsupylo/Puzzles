@@ -64,7 +64,9 @@
         left: rem(1px);
         top: rem(99px);
         z-index: 3;
-        white-space: nowrap;
+        display: flex;
+        justify-content: space-between;
+        // white-space: nowrap;
         .pattern_bg_1 {
             box-shadow: 3px 0 3px rgba(0, 0, 0, 0.29);
             background-color: #f0f0f0;
@@ -91,32 +93,34 @@
             opacity: 0;
         }
         .category_name_text {
+            max-width: 152px;
             font-family: $Arial;
             font-size: rem(14px);
             font-weight: 400;
             line-height: rem(14px);
             text-transform: uppercase;
             display: inline-block;
-            padding: rem(8px) rem(10px) rem(8px) rem(15px);
+            padding: rem(6px) rem(10px) rem(7px) rem(15px);
             vertical-align: top;
             position: relative;            
             span {
                 color: #000000;
-                position: relative;
-                display: block;
+                position: relative;                
                 z-index: 3;
                 transition: color .4s ease;
-                &:before {
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    bottom: rem(-4px);
-                    border: 1px dashed #000000;
-                    opacity: 0.22;
-                    width: 100%;
-                    height: rem(1px);
-                    transition: color .4s ease;
-                } 
+                border-bottom: 1px dashed #000000;
+                line-height: rem(18px);
+                // &:before {
+                //     content: '';
+                //     position: absolute;
+                //     left: 0;
+                //     bottom: rem(-4px);
+                //     border: 1px dashed #000000;
+                //     opacity: 0.22;
+                //     width: 100%;
+                //     height: rem(1px);
+                //     transition: color .4s ease;
+                // } 
                 span {
                     display: block;
                 }               
@@ -124,7 +128,7 @@
         }
         .category_arrow {
             width: rem(30px);
-            height: rem(30px);            
+            height: rem(31px);            
             display: inline-block;
             margin-left: 3px;
             position: relative;
