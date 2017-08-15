@@ -1,12 +1,40 @@
-.banner_left {
-    width: 300px;
-    height: 300px;
-    background: #000000;
-    display: block;
-}
-.banner_right {
-    width: 300px;
-    height: 300px;
-    background: #000000;
-    display: block;
+.main_banner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(44px);
+    .banner_right {
+        margin-left: rem(33px);       
+        display: flex;
+        width: 100%; 
+        position: relative;
+        iframe {
+            width: 100%;
+            height: 100%;            
+        }       
+        a {
+            display: block;
+            width: 100%;            
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .banner_left {       
+        display: flex;
+        width: 100%;
+        position: relative;
+        iframe {
+            width: 100%;
+            height: 100%;            
+        }
+        a {
+            display: block;
+            width: 100%;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
 }

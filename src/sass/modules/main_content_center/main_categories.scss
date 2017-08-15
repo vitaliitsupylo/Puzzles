@@ -1,0 +1,148 @@
+.main_categories_wrap {
+    margin-top: rem(-5px);
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: rem(-28px);
+}
+
+.category_block {
+    display: flex;
+    width: rem(182px);
+    height: rem(181px);
+    background-color: #f7f7f7;
+    margin-left: rem(28px);
+    margin-top: rem(33px);
+    position: relative;
+    &:hover .category_name {
+        .category_name_text {
+            span {
+                color: #ffffff;
+                transition: color .4s ease;
+                &:before {
+                    border-color: #ffffff;
+                }
+            }
+            .pattern_bg_2 {
+                transition: opacity .4s ease;
+                opacity: 1;
+            }
+        }
+        .category_arrow {
+            .pattern_bg_2 {
+                transition: opacity .4s ease;
+                opacity: 1;
+            }
+            &:before {
+                color: #ffffff;
+                transition: opacity .4s ease;
+            }
+        }
+    }
+    a {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        display: block;
+        z-index: 4;
+    }
+    .category_img_block {
+        width: rem(164px);
+        height: rem(163px);
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+    .category_name {
+        position: absolute;
+        left: rem(1px);
+        top: rem(99px);
+        z-index: 3;
+        white-space: nowrap;
+        .pattern_bg_1 {
+            box-shadow: 3px 0 3px rgba(0, 0, 0, 0.29);
+            background-color: #f0f0f0;
+            position: absolute;
+            left: 0;
+            background-size: cover;
+            transition: all .4s ease;
+            z-index: 1;
+            width: 100%;
+            top: 0;
+            height: 100%;
+        }
+        .pattern_bg_2 {
+            background-color: #ff2f34;
+            background-image: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%);
+            position: absolute;
+            left: 0;
+            background-size: cover;
+            transition: all .4s ease;
+            z-index: -1;
+            width: 100%;
+            top: 0;
+            height: 100%;
+            opacity: 0;
+        }
+        .category_name_text {
+            font-family: $Arial;
+            font-size: rem(14px);
+            font-weight: 400;
+            line-height: rem(14px);
+            text-transform: uppercase;
+            display: inline-block;
+            padding: rem(8px) rem(10px) rem(8px) rem(15px);
+            vertical-align: top;
+            position: relative;            
+            span {
+                color: #000000;
+                position: relative;
+                display: block;
+                z-index: 3;
+                transition: color .4s ease;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: rem(-4px);
+                    border: 1px dashed #000000;
+                    opacity: 0.22;
+                    width: 100%;
+                    height: rem(1px);
+                    transition: color .4s ease;
+                } 
+                span {
+                    display: block;
+                }               
+            }
+        }
+        .category_arrow {
+            width: rem(30px);
+            height: rem(30px);            
+            display: inline-block;
+            margin-left: 3px;
+            position: relative;
+            &:before {
+                content: ">";
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                width: rem(5px);
+                height: rem(12px);
+                color: #000000;
+                font-size: rem(12px);
+                font-weight: bold;
+                z-index: 3;
+            }
+        }
+    }
+}
