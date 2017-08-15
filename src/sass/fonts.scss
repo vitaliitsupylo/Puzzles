@@ -1,0 +1,46 @@
+/*Arial*/
+@font-face {
+  font-family: 'Arial';
+  src: url_css('fonts/Arial/Regular/Arial-Regular.eot');
+  src: url_css('fonts/Arial/Regular/Arial-Regular.eot') format('embedded-opentype'),
+       url_css('fonts/Arial/Regular/Arial-Regular.woff') format('woff'),
+       url_css('fonts/Arial/Regular/Arial-Regular.woff2') format('woff2'),
+       url_css('fonts/Arial/Regular/Arial-Regular.ttf') format('truetype'),
+       url_css('fonts/Arial/Regular/Arial-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Arial';
+  src: url_css('fonts/Arial/Bold/Arial-Bold.eot');
+  src: url_css('fonts/Arial/Bold/Arial-Bold.eot') format('embedded-opentype'),
+       url_css('fonts/Arial/Bold/Arial-Bold.woff') format('woff'),
+       url_css('fonts/Arial/Bold/Arial-Bold.woff2') format('woff2'),
+       url_css('fonts/Arial/Bold/Arial-Bold.ttf') format('truetype'),
+       url_css('fonts/Arial/Bold/Arial-Bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Arial';
+  src: url_css('fonts/Arial/ExtraBold/Arial-ExtraBold.eot');
+  src: url_css('fonts/Arial/ExtraBold/Arial-ExtraBold.eot') format('embedded-opentype'),
+       url_css('fonts/Arial/ExtraBold/Arial-ExtraBold.woff') format('woff'),
+       url_css('fonts/Arial/ExtraBold/Arial-ExtraBold.woff2') format('woff2'),
+       url_css('fonts/Arial/ExtraBold/Arial-ExtraBold.ttf') format('truetype'),
+       url_css('fonts/Arial/ExtraBold/Arial-ExtraBold.svg') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+/*UniSansHeavyCaps*/
+@font-face {
+  font-family: 'Uni Sans';
+  src: url_css('fonts/UniSansHeavyCaps/UniSansHeavyCaps.eot');
+  src: url_css('fonts/UniSansHeavyCaps/UniSansHeavyCaps.eot') format('embedded-opentype'),
+       url_css('fonts/UniSansHeavyCaps/UniSansHeavyCaps.woff') format('woff'),
+       url_css('fonts/UniSansHeavyCaps/UniSansHeavyCaps.woff2') format('woff2'),
+       url_css('fonts/UniSansHeavyCaps/UniSansHeavyCaps.ttf') format('truetype'),
+       url_css('fonts/UniSansHeavyCaps/UniSansHeavyCaps.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}

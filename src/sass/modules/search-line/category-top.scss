@@ -1,0 +1,23 @@
+.age_category{
+  display: flex;
+  margin-right: 10%;
+  .age_btn{
+    display: block;
+    cursor: pointer;
+    height: rem(35px);
+    padding: 0  rem(12px);
+    border: dotted rem(1px) $red-color;
+    line-height: rem(32px);
+    border-radius: rem(9px) rem(10px) rem(10px) rem(9px);
+    margin: 0 rem(12px);
+    color: #282828;
+    transition: color .3s;
+    i{
+      font-size: rem(19px);
+      margin-right: rem(12px);
+    }
+    &:hover{
+      color:$red-color;
+    }
+  }
+}

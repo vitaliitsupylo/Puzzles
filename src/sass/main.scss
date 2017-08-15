@@ -1,7 +1,20 @@
 @import "reset.scss";
 
-@import "modules-sass/variables.scss";
+@import "сomponents-sass/variables.scss";
 
-@import "modules-sass/mixin.scss";
+@import "сomponents-sass/mixin.scss";
 
-@import "modules-sass/functions.scss";
+@import "сomponents-sass/functions.scss";
+
+@import "common.scss";
+
+/*header*/
+    @import "modules/header/logo.scss";
+    @import "modules/header/contact-set.scss";
+    @import "modules/header/personal-area.scss";
+/*end header*/
+
+/*search line*/
+    @import "modules/search-line/category-top.scss";
+    @import "modules/search-line/search.scss";
+/*end search line*/
