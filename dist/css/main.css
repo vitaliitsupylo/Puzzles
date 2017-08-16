@@ -113,6 +113,20 @@ body {
     width: 35%; }
 
 /*end top line*/
+.main_content {
+  margin-top: 1.875rem; }
+  .main_content .container {
+    display: flex;
+    justify-content: space-between; }
+    .main_content .container .main_content_left {
+      width: 100%;
+      max-width: 16.25rem;
+      margin-right: 1.875rem; }
+    .main_content .container .main_content_right {
+      width: 100%;
+      margin-left: 1.25rem;
+      max-width: 17.5rem; }
+
 /*header*/
 .logo {
   display: block;
@@ -548,5 +562,64 @@ body {
         z-index: 3; }
 
 /*main categories*/
+/*filter*/
+.filter {
+  width: 100%;
+  border: solid 0.0625rem #e9e9e9;
+  background-color: #fdfdfd; }
+  .filter .filter_title {
+    width: 100%;
+    display: block;
+    padding: 1.25rem;
+    font-size: 1rem;
+    border-bottom: solid 0.0625rem #e9e9e9; }
+
+.filter_select {
+  padding: 1.25rem;
+  border-bottom: solid 0.0625rem #e9e9e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .filter_select select {
+    width: 100%;
+    max-width: 8.75rem;
+    background-color: #fff;
+    height: 1.625rem;
+    border: 0.0625rem solid #e9e9e9; }
+
+.filter_track {
+  padding: 1.25rem;
+  border-bottom: solid 0.0625rem #e9e9e9; }
+  .filter_track .track {
+    height: 0.875rem;
+    width: 100%;
+    margin-top: 0.9375rem;
+    border: 1px solid #d1d1d1;
+    border-radius: 0.4375rem;
+    background-color: #ffffff;
+    position: relative;
+    box-shadow: 0.0625rem 0 0 #ffffff, inset 0.0625rem 0 0.3125rem rgba(0, 0, 0, 0.45); }
+    .filter_track .track .track_circle {
+      width: 1.5rem;
+      height: 1.5rem;
+      box-shadow: inset -0.1875rem -0.1875rem 0.625rem rgba(45, 8, 13, 0.3);
+      background-color: #fdfdfd;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      cursor: pointer;
+      top: -0.40625rem; }
+    .filter_track .track.color {
+      background-image: linear-gradient(to right, #00601b 0%, #f0f243 54%, #e10019 100%);
+      margin-bottom: 2.5rem; }
+
+.filter_button {
+  padding: 1.5rem;
+  display: flex; }
+  .filter_button .btn_red {
+    margin: auto;
+    background-image: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%); }
+
+/*end filter*/
 
 /*# sourceMappingURL=main.css.map*/

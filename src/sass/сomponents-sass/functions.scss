@@ -5,10 +5,3 @@
 @function url_css($url) {
    @return url($url-path+$url);
 }
-
-// @function yellow($p) {
-//   @return rgba(255, 204, 1, $p);
-// }
-// @function gray($p) {
-//   @return rgba(31, 31, 31, $p);
-// }

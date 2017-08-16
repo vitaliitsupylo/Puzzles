@@ -114,7 +114,13 @@
   <!-- END TOP SEARCH LINE -->
 
   <!-- BEGIN MAIN CONTENT -->
-  <div class="main_content_center">
+  <div class="main_content">
+    <div class="container">
+    <div class="main_content_left">
+      <!-- begin categories -->
+
+      <!-- end categories -->
+    </div>
     <main class="main">
       <!-- begin main banner -->
       <div class="main_banner">
@@ -127,8 +133,6 @@
         </div>
       </div>
       <!-- end main banner -->
-
-      <!-- begin categories -->
 
       <!-- start pagination -->
       <div class="pagination_block">
@@ -336,14 +340,53 @@
             </div>
         </div>
       </div>
-
-      <!-- end categories -->
-
     </main>
     <div class="main_content_right">
       <!-- bagin filter -->
-
+        <div class="filter">
+          <h5 class="filter_title">Быстрый подбор пазла</h5>
+          <div class="filter_select">
+            <label for="whom">Для кого:</label>
+            <select class="filter_whom" name="whom">
+              <option value="Мальчики">Мальчики</option>
+            </select>
+          </div>
+          <div class="filter_select">
+            <label for="age">Возраст:</label>
+            <select class="filter_age" name="age">
+              <option value="Мальчики">6 лет.</option>
+            </select>
+          </div>
+          <div class="filter_select">
+            <label for="category">Категория:</label>
+            <select class="filter_category" name="category">
+              <option value="Мальчики">Динозавры</option>
+            </select>
+          </div>
+          <div class="filter_track">
+            <p class="track_title">Бюджет: от 100 до 900 грн</p>
+            <div class="track">
+              <div class="track_circle"></div>
+            </div>
+          </div>
+          <div class="filter_track">
+            <p class="track_title">Элементов: от 100 до 900 грн</p>
+            <div class="track">
+              <div class="track_circle"></div>
+            </div>
+          </div>
+          <div class="filter_track">
+            <p class="track_title">Уровень сложности: </p>
+            <div class="track color">
+              <div class="track_circle"></div>
+            </div>
+          </div>
+          <div class="filter_button">
+            <button class="btn_red">Подобрать</button>
+          </div>
+        </div>
       <!-- end filter -->
+    </div>
     </div>
   </div>
   <script src="dist/js/main.js"></script>
