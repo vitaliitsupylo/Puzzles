@@ -547,7 +547,7 @@ body {
   width: 11.375rem;
   height: 11.3125rem;
   background-color: #f7f7f7;
-  margin-left: 1.75rem;
+  margin-left: 1.5625rem;
   margin-top: 2.0625rem;
   position: relative; }
   .category_block:hover .category_name .category_name_text span {
@@ -635,7 +635,7 @@ body {
     .category_block .category_name .category_arrow {
       width: 1.875rem;
       display: inline-block;
-      margin-left: 3px;
+      margin-left: 0.1875rem;
       position: relative; }
       .category_block .category_name .category_arrow:before {
         content: ">";
