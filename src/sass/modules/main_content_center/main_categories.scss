@@ -11,7 +11,7 @@
     width: rem(182px);
     height: rem(181px);
     background-color: #f7f7f7;
-    margin-left: rem(28px);
+    margin-left: rem(25px);
     margin-top: rem(33px);
     position: relative;
     &:hover .category_name {
@@ -129,7 +129,7 @@
         .category_arrow {
             width: rem(30px);                
             display: inline-block;
-            margin-left: 3px;
+            margin-left: rem(3px);
             position: relative;
             &:before {
                 content: ">";
