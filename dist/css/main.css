@@ -712,5 +712,132 @@ body {
     background-image: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%); }
 
 /*end filter*/
+/*footer*/
+footer {
+  padding-top: 2.1875rem;
+  padding-bottom: 2.5rem;
+  background: #f7f7f7; }
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+  footer .left_block_footer {
+    flex: 1 1 18.75rem; }
+    footer .left_block_footer .left_footer_title {
+      color: #000000;
+      font-family: Arial;
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.875rem;
+      text-transform: uppercase;
+      margin-bottom: 3rem; }
+    footer .left_block_footer .payment_block {
+      display: flex;
+      justify-content: flex-start; }
+      footer .left_block_footer .payment_block .payment_text {
+        margin-top: 0.875rem;
+        color: #333333;
+        font-family: Arial;
+        font-size: 1.125rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        flex: 0 1 15.625rem; }
+      footer .left_block_footer .payment_block .payment_logo {
+        display: flex;
+        justify-content: space-around;
+        flex: 1 1 18.75rem; }
+        footer .left_block_footer .payment_block .payment_logo a {
+          margin: 0 0.625rem; }
+        footer .left_block_footer .payment_block .payment_logo img {
+          width: 100%;
+          height: auto;
+          vertical-align: middle; }
+    footer .left_block_footer .footer_info_block {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 4.1875rem;
+      max-width: 62.625rem;
+      width: 100%; }
+      footer .left_block_footer .footer_info_block .footer_info_left {
+        color: #333333;
+        font-family: Arial;
+        font-size: 0.75rem;
+        font-weight: 400; }
+        footer .left_block_footer .footer_info_block .footer_info_left .grafik {
+          margin-top: 0.8125rem; }
+          footer .left_block_footer .footer_info_block .footer_info_left .grafik span {
+            display: inline-block;
+            vertical-align: top; }
+            footer .left_block_footer .footer_info_block .footer_info_left .grafik span span {
+              display: block;
+              margin-top: 1.1875rem; }
+      footer .left_block_footer .footer_info_block .footer_links {
+        color: #5198d9;
+        font-family: Arial;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 0.875rem;
+        margin-top: -0.625rem; }
+        footer .left_block_footer .footer_info_block .footer_links a {
+          display: block;
+          margin-top: 0.5rem; }
+          footer .left_block_footer .footer_info_block .footer_links a:hover {
+            text-decoration: underline; }
+  footer .right_block_footer {
+    flex: 0 1 18.75rem; }
+    footer .right_block_footer .right_footer_title {
+      color: #333333;
+      font-family: Arial;
+      font-size: 1.25rem;
+      font-weight: 400;
+      font-variant: small-caps;
+      margin-bottom: 2.3125rem; }
+      footer .right_block_footer .right_footer_title span {
+        font-size: 1.3125rem;
+        font-weight: 700;
+        text-transform: uppercase; }
+    footer .right_block_footer .soc_block {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1.0625rem 0 0.375rem; }
+      footer .right_block_footer .soc_block a {
+        max-width: 4rem;
+        width: 100%;
+        max-height: 4rem; }
+    footer .right_block_footer .podpiska_form {
+      margin-top: 4.6875rem; }
+      footer .right_block_footer .podpiska_form input {
+        box-shadow: inset 2px 0 9px rgba(0, 0, 0, 0.2);
+        border-radius: 3px 4px 4px 3px;
+        border: 1px solid #c4c4c4;
+        background-color: #ffffff;
+        width: 100%;
+        height: 2.375rem;
+        padding-left: 0.625rem; }
+        footer .right_block_footer .podpiska_form input::-webkit-input-placeholder {
+          opacity: 0.5;
+          color: black;
+          font-family: Arial;
+          font-size: 0.875rem;
+          font-weight: 400;
+          text-transform: uppercase; }
+      footer .right_block_footer .podpiska_form button {
+        width: 100%;
+        height: 2.25rem;
+        margin-top: 0.6875rem;
+        border-radius: 0.25rem;
+        background-image: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%);
+        border: 1px solid #ac0f29;
+        color: #fdfdfd;
+        font-family: Arial;
+        font-size: 0.875rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        cursor: pointer; }
+        footer .right_block_footer .podpiska_form button:hover {
+          background-image: linear-gradient(to top, #EAD0D5 0%, #ED181D 50%);
+          transition: all .3s linear; }
+
+/*end footer*/
 
 /*# sourceMappingURL=main.css.map*/
