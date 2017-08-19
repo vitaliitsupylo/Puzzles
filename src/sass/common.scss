@@ -189,20 +189,43 @@ footer {
     .left_block_footer {
         flex: 1 1 rem(300px);
         .payment_block {
-          display: flex;
-          justify-content: flex-start;
+            display: flex;
+            justify-content: flex-start;            
         }
+        .left_footer_title {
+          color: #000000;
+          font-family: Arial;
+          font-size: rem(20px);
+          font-weight: 400;
+          line-height: rem(30px);
+          text-transform: uppercase;
+          margin-bottom: rem(48px);
+      }
         .footer_info_block {
-          display: flex;
-          justify-content: space-between;
-          margin-top: rem(67px);
-          max-width: rem(1002px);
-          width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: rem(67px);
+            max-width: rem(1002px);
+            width: 100%;
         }
     }
     .right_block_footer {
         flex: 0 1 rem(300px);
+        .right_footer_title {
+            color: #333333;
+            font-family: Arial;
+            font-size: rem(20px);
+            font-weight: 400;
+            font-variant: small-caps;
+            margin-bottom: rem(37px);
+            span {
+                font-size: rem(21px);
+                font-weight: 700;
+                text-transform: uppercase;
+            }            
+        }
         .podpiska_form {
           margin-top: rem(75px);
+      }
     }
 }

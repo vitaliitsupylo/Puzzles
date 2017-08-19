@@ -1,0 +1,32 @@
+.footer_info_left {
+    color: #333333;
+    font-family: Arial;
+    font-size: rem(12px);
+    font-weight: 400;
+    .grafik {
+        margin-top: rem(13px);
+        span {
+            display: inline-block;
+            vertical-align: top;
+            span {
+                display: block;
+                margin-top: rem(19px);
+            }
+        }
+    }
+}
+.footer_links {
+    color: #5198d9;
+    font-family: Arial;
+    font-size: rem(14px);
+    font-weight: 400;
+    line-height: rem(14px);
+    margin-top: rem(-10px);
+    a {
+        display: block;
+        margin-top: rem(8px);
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
