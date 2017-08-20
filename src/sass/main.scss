@@ -20,28 +20,30 @@
 /*end search line*/
 
 /*categories list*/
-@import "modules/main-content-left/categories-list.scss";
+@import "modules/page-one/main-content-left/categories-list.scss";
 /*end categories list*/
 
 /*main banner*/
-@import "modules/main_content_center/main_banner.scss";
-@import "modules/main_content_center/main_content.scss";
+@import "modules/page-one/main_content_center/main_banner.scss";
+@import "modules/page-one/main_content_center/main_content.scss";
 /*main banner*/
 
 /*pagination*/
-@import "modules/pagination/pagination.scss";
+@import "modules/page-one/main_content_center/pagination.scss";
 /*pagination*/
 
 /*main categories*/
-@import "modules/main_content_center/main_categories.scss";
+@import "modules/page-one/main_content_center/main_categories.scss";
 /*main categories*/
 
 /*filter*/
-@import "modules/main-content-right/filter.scss";
+@import "modules/page-one/main-content-right/filter.scss";
 /*end filter*/
 
 /*information section*/
-@import "modules/information/news-min.scss";
+@import "modules/page-one/information/news-min.scss";
+@import "modules/page-one/information/comment.scss";
+@import "modules/page-one/information/about.scss";
 /*end information section*/
 
 

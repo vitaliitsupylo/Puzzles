@@ -1,0 +1,33 @@
+.comment{
+  display: flex;
+  width: 100%;
+  margin-bottom: rem(30px);
+  .comment_img{
+    width: 100%;
+    max-width: rem(100px);
+    height: rem(100px);
+    margin-right: rem(20px);
+    img{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      top:0;
+      left:0;
+      object-fit:cover;
+    }
+  }
+  .comment_content{
+    .comment_info{
+      display: flex;
+      margin-bottom: rem(10px);
+      font-size: rem(16px);
+      .comment_name{
+        margin-right: rem(25px);
+      }
+      .comment_time{
+        opacity: .5;
+        margin-right: rem(25px);
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.about{
+  .container{
+    display: flex;
+    flex-direction: column;
+    .about_title{
+      color: $black-color;
+      font-size: rem(20px);
+      margin-bottom: rem(30px);
+    }
+    .about_text{
+      font-size: rem(16px);
+      color: $black-color;
+      opacity: .6;
+      margin-bottom: rem(15px);
+    }
+    .link_page{
+      align-self: flex-end;
+      color: $black-color;
+      opacity: .6;
+    }
+  }
+}
