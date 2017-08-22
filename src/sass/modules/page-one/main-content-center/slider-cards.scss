@@ -1,9 +1,12 @@
 .card_min{
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 100%;
   max-width: rem(250px);
-  padding: rem(10px);
+  padding: rem(10px) rem(10px) rem(65px) rem(10px);
+  border: rem(1px) dashed transparent;
+  transition: border .3s;
   .card_min_img{
     width: 100%;
     height: rem(175px);
@@ -27,8 +30,12 @@
     margin-bottom: rem(10px);
     align-self: flex-end;
   }
+  .rating{
+    width: rem(80px);
+  }
   .card_min_price{
     display: flex;
+    align-items: center;
     justify-content: space-between;
           font-size: rem(22px);
     .new{
@@ -51,8 +58,47 @@
       text-decoration: line-through;
     }
   }
+  .card_buy_set{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    opacity: 0;
+    transition: opacity .3s;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 rem(10px) rem(10px);
+    .сompare{
+      color: #000;
+      opacity: .5;
+      font-size: rem(40px);
+      cursor: pointer;
+    }
+    .like_position{
+      color: $orange-color;
+      font-size: rem(40px);
+      cursor: pointer;
+    }
+  }
+  &:hover{
+    border: rem(1px) dashed #888;
+    .card_buy_set{
+      opacity: 1;
+    }
+  }
 }
-.slider_cards_wrap{
+.slider_cards{
   width: 100%;
-  display: flex;
+  margin-bottom: rem(10px);
+  .slider_cards_wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .pagination_nav{
+    .pagination_buttons{
+      border: solid rem(1px) #d2d2d2;
+    }
+  }
 }
