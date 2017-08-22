@@ -124,6 +124,17 @@ body {
   .link_page:hover {
     opacity: 1; }
 
+.add_comment {
+  font-size: 0.75rem;
+  color: #000;
+  opacity: .8; }
+  .add_comment span {
+    text-decoration: underline; }
+  .add_comment i {
+    margin-right: 0.25rem; }
+  .add_comment:hover {
+    opacity: 1; }
+
 .rating {
   width: 100%;
   max-width: 6.25rem;
@@ -188,17 +199,30 @@ body {
   margin-top: 1.875rem; }
   .main_content .container {
     display: flex;
-    justify-content: space-between; }
-    .main_content .container .main_content_left {
-      width: 100%;
-      max-width: 16.25rem;
-      margin-right: 1.875rem;
-      position: relative;
-      margin-top: -4.0625rem; }
-    .main_content .container .main_content_right {
-      width: 100%;
-      margin-left: 1.25rem;
-      max-width: 17.5rem; }
+    justify-content: space-between;
+    align-items: flex-start; }
+    .main_content .container .main {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%; }
+      .main_content .container .main .main_content_left {
+        width: 100%;
+        max-width: 16.25rem;
+        position: relative;
+        margin-top: -4.0625rem;
+        flex: 1 1 40%; }
+      .main_content .container .main .main_content_right {
+        width: 100%;
+        flex: 1 1 40%;
+        margin-left: 1.25rem; }
+      .main_content .container .main .slider_cards {
+        width: 100%; }
+
+.aside_main {
+  width: 100%;
+  max-width: 17.5rem;
+  margin-left: 1.25rem; }
 
 /*end main content*/
 .information {
@@ -235,6 +259,7 @@ body {
 /* main categories */
 .main_categories_wrap {
   margin-top: -0.3125rem;
+  margin-bottom: 2.8125rem;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -591,7 +616,7 @@ footer {
         margin-right: 1.5625rem; }
 
 /*end categories list*/
-/*main banner*/
+/*main content center*/
 .banner_right {
   margin-left: 2.0625rem;
   display: flex;
@@ -624,8 +649,6 @@ footer {
 .main_content_center {
   margin-top: 1.875rem; }
 
-/*main banner*/
-/*pagination*/
 .pagination_block {
   display: flex;
   justify-content: space-between; }
@@ -687,8 +710,6 @@ footer {
       line-height: 14px;
       text-decoration: underline; }
 
-/*pagination*/
-/*main categories*/
 .category_block {
   display: flex;
   width: 11.375rem;
@@ -799,7 +820,57 @@ footer {
         font-weight: bold;
         z-index: 3; }
 
-/*main categories*/
+.card_min {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 15.625rem;
+  padding: 0.625rem; }
+  .card_min .card_min_img {
+    width: 100%;
+    height: 10.9375rem;
+    margin-bottom: 0.9375rem; }
+    .card_min .card_min_img img {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .card_min .card_min_title {
+    font-size: 0.875rem;
+    color: #5198d9;
+    line-height: 1.5;
+    margin-bottom: 0.5rem; }
+  .card_min .add_comment {
+    margin-bottom: 0.625rem;
+    align-self: flex-end; }
+  .card_min .card_min_price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.375rem; }
+    .card_min .card_min_price .new {
+      display: block;
+      border-radius: 0.1875rem;
+      text-align: center;
+      height: 2.1875rem;
+      width: 100%;
+      max-width: 5.9375rem;
+      line-height: 2.0625rem;
+      border: 0.0625rem solid #ffe6bf;
+      background-color: #fff5e5; }
+      .card_min .card_min_price .new span {
+        font-size: 0.875rem; }
+    .card_min .card_min_price .old {
+      color: #000;
+      opacity: .5;
+      text-decoration: line-through; }
+
+.slider_cards_wrap {
+  width: 100%;
+  display: flex; }
+
+/*end main content center*/
 /*filter*/
 .filter {
   width: 100%;

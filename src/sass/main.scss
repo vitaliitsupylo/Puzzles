@@ -9,35 +9,33 @@
 @import "common.scss";
 
 /*header*/
-    @import "modules/header/logo.scss";
-    @import "modules/header/contact-set.scss";
-    @import "modules/header/personal-area.scss";
+@import "modules/header/logo.scss";
+@import "modules/header/contact-set.scss";
+@import "modules/header/personal-area.scss";
 /*end header*/
 
 /*search line*/
-    @import "modules/search-line/category-top.scss";
-    @import "modules/search-line/search.scss";
+@import "modules/search-line/category-top.scss";
+@import "modules/search-line/search.scss";
 /*end search line*/
 
 /*categories list*/
 @import "modules/page-one/main-content-left/categories-list.scss";
 /*end categories list*/
 
-/*main banner*/
-@import "modules/page-one/main_content_center/main_banner.scss";
-@import "modules/page-one/main_content_center/main_content.scss";
-/*main banner*/
+/*main content center*/
+@import "modules/page-one/main-content-center/main-banner.scss";
+@import "modules/page-one/main-content-center/main-content.scss";
 
-/*pagination*/
-@import "modules/page-one/main_content_center/pagination.scss";
-/*pagination*/
+@import "modules/page-one/main-content-center/pagination.scss";
 
-/*main categories*/
-@import "modules/page-one/main_content_center/main_categories.scss";
-/*main categories*/
+@import "modules/page-one/main-content-center/main-categories.scss";
+
+@import "modules/page-one/main-content-center/slider-cards.scss";
+/*end main content center*/
 
 /*filter*/
-@import "modules/page-one/main-content-right/filter.scss";
+@import "modules/page-one/aside/filter.scss";
 /*end filter*/
 
 /*information section*/
