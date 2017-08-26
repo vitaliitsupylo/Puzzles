@@ -825,14 +825,32 @@ footer {
         z-index: 3; }
 
 .card_min {
-  display: flex;
-  flex-direction: column;
   position: relative;
   width: 100%;
-  max-width: 15.625rem;
+  max-width: 16.25rem;
+  z-index: 5;
+  background-color: #fff;
+  overflow: hidden;
+  height: 19.375rem;
   padding: 0.625rem 0.625rem 4.0625rem 0.625rem;
-  border: 0.0625rem dashed transparent;
   transition: border .3s; }
+  .card_min .card_min_wrap {
+    width: calc(100% + 170px);
+    min-height: 100%;
+    display: flex;
+    padding: 1.5625rem 2.8125rem 1.5625rem 0;
+    position: absolute;
+    background-color: #fff;
+    top: -1.5625rem;
+    right: -2.8125rem;
+    display: flex;
+    justify-content: flex-end;
+    border: 0.0625rem dashed #000; }
+    .card_min .card_min_wrap .card_min_content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      max-width: 15rem; }
   .card_min .card_min_img {
     width: 100%;
     height: 10.9375rem;
@@ -877,18 +895,14 @@ footer {
       opacity: .5;
       text-decoration: line-through; }
   .card_min .card_buy_set {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    opacity: 0;
+    opacity: 1;
     transition: opacity .3s;
     align-items: center;
-    width: calc(100% + 100px);
     justify-content: space-between;
-    padding: 0 0.625rem 0.625rem; }
+    margin: 0.625rem 0; }
     .card_min .card_buy_set .сompare {
       color: #000;
       opacity: .5;
@@ -898,10 +912,28 @@ footer {
       color: #ff9c00;
       font-size: 2.5rem;
       cursor: pointer; }
-  .card_min:hover {
-    border: 0.0625rem dashed #888; }
-    .card_min:hover .card_buy_set {
-      opacity: 1; }
+  .card_min .check_delivery {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 0.9375rem;
+    font-size: 0.75rem; }
+    .card_min .check_delivery input {
+      margin-right: 1.875rem;
+      width: 1.75rem;
+      height: 1.75rem; }
+    .card_min .check_delivery span {
+      margin: 0 0.1875rem; }
+  .card_min .card_min_age {
+    margin-bottom: 0.9375rem;
+    font-size: 0.75rem; }
+  .card_min .card_min_detail {
+    margin-bottom: 0.9375rem;
+    font-size: 0.75rem;
+    color: #929292; }
+    .card_min .card_min_detail span {
+      color: #000; }
+  .card_min:hover .card_buy_set {
+    opacity: 1; }
 
 .slider_cards {
   width: 100%;
