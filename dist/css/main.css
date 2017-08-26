@@ -139,6 +139,7 @@ body {
 .rating {
   width: 100%;
   max-width: 6.25rem;
+  height: 1.125rem;
   position: relative; }
   .rating .star {
     width: 100%;
@@ -149,7 +150,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
-    width: 100%;
+    width: 70%;
     height: 100%;
     background-color: red; }
 
@@ -852,7 +853,8 @@ footer {
     margin-bottom: 0.625rem;
     align-self: flex-end; }
   .card_min .rating {
-    width: 5rem; }
+    width: 5rem;
+    height: 0.875rem; }
   .card_min .card_min_price {
     display: flex;
     align-items: center;
@@ -879,10 +881,12 @@ footer {
     bottom: 0;
     left: 0;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     opacity: 0;
     transition: opacity .3s;
     align-items: center;
-    width: 100%;
+    width: calc(100% + 100px);
     justify-content: space-between;
     padding: 0 0.625rem 0.625rem; }
     .card_min .card_buy_set .сompare {
