@@ -19,34 +19,58 @@
 @import "modules/search-line/search.scss";
 /*end search line*/
 
-/*categories list*/
-@import "modules/page-one/main-content-left/categories-list.scss";
-/*end categories list*/
-
-/*main content center*/
-@import "modules/page-one/main-content-center/main-banner.scss";
-@import "modules/page-one/main-content-center/main-content.scss";
-
-@import "modules/page-one/main-content-center/pagination.scss";
-
-@import "modules/page-one/main-content-center/main-categories.scss";
-
-@import "modules/page-one/main-content-center/slider-cards.scss";
-/*end main content center*/
-
-/*filter*/
-@import "modules/page-one/aside/filter.scss";
-/*end filter*/
-
-/*information section*/
-@import "modules/page-one/information/news-min.scss";
-@import "modules/page-one/information/comment.scss";
-@import "modules/page-one/information/about.scss";
-/*end information section*/
-
-
 /*footer*/
 @import "modules/footer/left-info-block.scss";
 @import "modules/footer/payment-block.scss";
 @import "modules/footer/soc-block-form.scss";
 /*end footer*/
+
+/*aside*/
+@import "modules/page-one/aside/filter.scss";
+/*end aside*/
+
+
+/*BEGIN PAGE ONE*/
+
+  /*categories list*/
+  @import "modules/page-one/main-content-left/categories-list.scss";
+  /*end categories list*/
+
+  /*main content center*/
+  @import "modules/page-one/main-content-center/main-banner.scss";
+
+  @import "modules/page-one/main-content-center/pagination.scss";
+
+  @import "modules/page-one/main-content-center/main-categories.scss";
+
+  @import "modules/page-one/main-content-center/slider-cards.scss";
+
+  @import "modules/page-one/main-content-center/card-min.scss";
+
+
+  /*end main content center*/
+
+  /*information section*/
+  @import "modules/page-one/information/news-min.scss";
+  @import "modules/page-one/information/comment.scss";
+  @import "modules/page-one/information/about.scss";
+  /*end information section*/
+
+/*END PAGE ONE*/
+
+
+
+/*BEGIN PAGE TWO*/
+
+  /*main content center*/
+  @import "modules/page-two/main-content-center/filter-settings.scss";
+
+  @import "modules/page-two/main-content-center/filter-result.scss";
+
+  @import "modules/page-two/main-content-center/card-min.scss";
+  /*end main content center*/
+
+
+
+
+/*NED PAGE TWO*/
