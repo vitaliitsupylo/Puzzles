@@ -30,6 +30,11 @@ body {
     display: inline-block;
     margin-bottom: rem(20px);
 }
+.title_block{
+  color: $black-color;
+  font-size: rem(35px);
+  margin-bottom: rem(25px);
+}
 
 .banner_aside {
     display: block;
@@ -192,7 +197,7 @@ body {
             margin-top: rem(-65px);
             flex: 1 1 40%;
           }
-          .main_content_right{
+          .main_content_center{
             width: 100%;
             flex: 1 1 40%;
             margin-left: rem(20px);

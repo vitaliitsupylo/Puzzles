@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .card_min{
   display: flex;
   flex-direction: column;
@@ -92,15 +93,18 @@
   }
 }
 .slider_cards{
+=======
+.slider_cards {
+>>>>>>> pb/master
   width: 100%;
   margin-bottom: rem(10px);
-  .slider_cards_wrap{
+  .slider_cards_wrap {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
-  .pagination_nav{
-    .pagination_buttons{
+  .pagination_nav {
+    .pagination_buttons {
       border: solid rem(1px) #d2d2d2;
     }
   }

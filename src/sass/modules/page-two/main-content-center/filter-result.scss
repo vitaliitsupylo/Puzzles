@@ -1,0 +1,10 @@
+.result_list_filter{
+  display: flex;
+  flex-wrap: wrap;
+  .card_min{
+    margin-right: rem(15px);
+    &:nth-child(5n+5){
+      margin-right: 0;
+    }
+  }
+}
