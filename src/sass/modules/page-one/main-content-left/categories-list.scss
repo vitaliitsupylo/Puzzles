@@ -1,4 +1,9 @@
 .categories_list {
+    &.active {
+        .p_two_absolute {
+            display: block;
+        }        
+    }
     span {
         width: rem(259px);
         height: rem(40px);
@@ -54,7 +59,7 @@
             }
         }
     }
-    ul {
+    ul {        
         position: relative;
         top: rem(4px);
         li {
@@ -108,5 +113,12 @@
                 }
             }
         }
-    }
+        &.p_two_absolute{
+            display: none;
+            position: absolute;
+            left: 0;
+            top: rem(40px);
+            width: 100%;            
+        }         
+    } 
 }

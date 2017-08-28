@@ -23,39 +23,40 @@
     }
 }
 
-input {
-    box-shadow: inset 2px 0 9px rgba(0, 0, 0, 0.2);
-    border-radius: 3px 4px 4px 3px;
-    border: 1px solid #c4c4c4;
-    background-color: #ffffff;
-    width: 100%;
-    height: rem(38px);
-    padding-left: rem(10px);
-    &::-webkit-input-placeholder {
-        opacity: 0.5;
-        color: black;
+.podpiska_form {
+    input {
+        box-shadow: inset 2px 0 9px rgba(0, 0, 0, 0.2);
+        border-radius: 3px 4px 4px 3px;
+        border: 1px solid #c4c4c4;
+        background-color: #ffffff;
+        width: 100%;
+        height: rem(38px);
+        padding-left: rem(10px);
+        &::-webkit-input-placeholder {
+            opacity: 0.5;
+            color: black;
+            font-family: Arial;
+            font-size: rem(14px);
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    }
+    button {
+        width: 100%;
+        height: rem(36px);
+        margin-top: rem(11px);
+        border-radius: rem(4px);
+        background-image: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%);
+        border: 1px solid #ac0f29;
+        color: #fdfdfd;
         font-family: Arial;
         font-size: rem(14px);
         font-weight: 400;
         text-transform: uppercase;
-    }
-}
-
-button {
-    width: 100%;
-    height: rem(36px);
-    margin-top: rem(11px);
-    border-radius: rem(4px);
-    background-image: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%);
-    border: 1px solid #ac0f29;
-    color: #fdfdfd;
-    font-family: Arial;
-    font-size: rem(14px);
-    font-weight: 400;
-    text-transform: uppercase;
-    cursor: pointer;
-    &:hover {
-        background-image: linear-gradient(to top, #EAD0D5 0%, #ED181D 50%);
-        transition: all .3s linear;
+        cursor: pointer;
+        &:hover {
+            background-image: linear-gradient(to top, #EAD0D5 0%, #ED181D 50%);
+            transition: all .3s linear;
+        }
     }
 }
