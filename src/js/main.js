@@ -6,7 +6,7 @@
 let btnListSearch = document.querySelector('.category_search');
 let activeCatSearch = document.querySelector('.active_category_search');
 let listCatSearch = document.querySelector('.list_category_search');
-
+let btnCategoryList = document.querySelector('.categories_list');
 
 
 
@@ -21,5 +21,9 @@ listCatSearch.addEventListener('click',(el)=>{
   }
 })
 
+/*activecategory list */
+btnCategoryList.addEventListener('click',()=>{
+  btnCategoryList.classList.toggle('active');
+});
 
 })();
