@@ -26,4 +26,6 @@ btnCategoryList.addEventListener('click',()=>{
   btnCategoryList.classList.toggle('active');
 });
 
+console.log('Work hard!');
+
 })();
