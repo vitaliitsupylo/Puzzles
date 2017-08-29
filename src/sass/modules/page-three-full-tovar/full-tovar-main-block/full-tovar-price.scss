@@ -1,0 +1,29 @@
+.full_tovar_price {
+    flex: 0 1 rem(303px);
+    background-color: white;
+    border: rem(1px) dashed #cccccc;
+    padding: rem(15px) rem(30px);
+    .big_price {
+        color: #282828;
+        font-family: Arial;
+        font-weight: 400;
+        line-height: rem(47px);
+        font-size: rem(24px);
+        margin-bottom: rem(10px);
+        span {
+            font-size: rem(47px);
+        }
+    }
+    .deliver_check {
+        i {
+
+        }
+        span {
+            color: #282828;
+            font-family: Arial;
+            font-size: rem(14px);
+            font-weight: 400;
+            line-height: rem(14px);
+        }
+    }
+}

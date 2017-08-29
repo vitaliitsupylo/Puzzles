@@ -220,11 +220,14 @@ body {
         max-width: 16.25rem;
         position: relative;
         margin-top: -4.0625rem;
-        flex: 1 1 40%; }
+        flex: 1 1 40%;
+        margin-right: 1.25rem; }
+        .main_content .container .main .main_content_left.full_tovar {
+          position: absolute;
+          z-index: 10; }
       .main_content .container .main .main_content_center {
         width: 100%;
-        flex: 1 1 40%;
-        margin-left: 1.25rem; }
+        flex: 1 1 40%; }
         .main_content .container .main .main_content_center .pagination_block {
           padding-left: 2.8125rem; }
       .main_content .container .main .slider_cards {
@@ -276,6 +279,26 @@ body {
   flex-wrap: wrap;
   margin-left: -1.75rem; }
 
+/* breadcrumbs */
+.breadcrumb {
+  width: 100%;
+  overflow: hidden;
+  color: #9a9a9a;
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin-bottom: 1.875rem; }
+
+/* end breadcrumbs */
+/* full_tovar_main_block */
+.full_tovar_main_block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  flex-flow: row wrap;
+  position: relative; }
+
+/* end  full_tovar_main_block */
 /* footer */
 footer {
   padding-top: 2.1875rem;
@@ -1445,6 +1468,60 @@ footer {
     z-index: 10; }
 
 /*end main content center*/
-/*NED PAGE TWO*/
+/*END PAGE TWO*/
+/* PAGE 3 full tovar*/
+/* breadcrums */
+.breadcrumb > li {
+  display: inline-block; }
+  .breadcrumb > li + li:before {
+    padding: 0 0.3125rem;
+    color: #9a9a9a;
+    content: ">";
+    font-size: 0.9375rem;
+    position: relative;
+    top: 0.1875rem; }
+  .breadcrumb > li span {
+    opacity: 0.7;
+    color: #282828;
+    font-family: Arial;
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 0.875rem; }
+  .breadcrumb > li a {
+    opacity: 0.7;
+    color: #282828;
+    font-family: Arial;
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 0.875rem;
+    text-decoration: underline; }
+  .breadcrumb > li:hover a {
+    opacity: 1; }
+
+/* end breadcrums*/
+/* full tovar price */
+.full_tovar_price {
+  flex: 0 1 18.9375rem;
+  background-color: white;
+  border: 0.0625rem dashed #cccccc;
+  padding: 0.9375rem 1.875rem; }
+  .full_tovar_price .big_price {
+    color: #282828;
+    font-family: Arial;
+    font-weight: 400;
+    line-height: 2.9375rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem; }
+    .full_tovar_price .big_price span {
+      font-size: 2.9375rem; }
+  .full_tovar_price .deliver_check span {
+    color: #282828;
+    font-family: Arial;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 0.875rem; }
+
+/* full tovar price */
+/* END PAGE 3 full tovar*/
 
 /*# sourceMappingURL=main.css.map*/
