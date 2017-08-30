@@ -1468,6 +1468,66 @@ footer {
     z-index: 10; }
 
 /*end main content center*/
+/*main content left*/
+.filter_category {
+  width: 100%;
+  margin-top: 1.875rem;
+  border-right: 0.0625rem solid #e3e3e3; }
+  .filter_category .fil_cat_section {
+    border-bottom: 0.0625rem solid #e3e3e3;
+    padding-top: 0.9375rem; }
+    .filter_category .fil_cat_section:first-child {
+      padding-top: 0;
+      padding-bottom: 1.25rem; }
+  .filter_category .fil_cat_title {
+    color: #282828;
+    font-size: 1rem; }
+  .filter_category .section_content {
+    margin-top: 1.125rem;
+    display: flex;
+    padding: 0 0.9375rem; }
+    .filter_category .section_content label {
+      margin-bottom: 1.125rem; }
+    .filter_category .section_content .checkbox {
+      display: none; }
+    .filter_category .section_content .checkbox-custom {
+      width: 0.9375rem;
+      cursor: pointer;
+      height: 0.9375rem;
+      margin-right: 0.125rem;
+      position: relative;
+      box-shadow: inset -0.0625rem 0.0625rem 0.3125rem rgba(0, 0, 0, 0.38);
+      border-radius: 0.1875rem 0.25rem 0.25rem 0.1875rem;
+      border: 0.0625rem solid #dadada;
+      background-color: #ffffff; }
+    .filter_category .section_content .checkbox-custom,
+    .filter_category .section_content .label {
+      display: inline-block;
+      vertical-align: middle; }
+    .filter_category .section_content .checkbox:checked + .checkbox-custom::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      bottom: 2px;
+      left: 2px;
+      background: #413548;
+      border-radius: 2px; }
+    .filter_category .section_content .more_filter {
+      display: inline-block;
+      margin: auto;
+      color: #5198d9;
+      margin-bottom: 0.9375rem; }
+    .filter_category .section_content.list {
+      flex-direction: column; }
+    .filter_category .section_content.book {
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      .filter_category .section_content.book label {
+        width: 50%; }
+
+/*end main content left*/
 /*END PAGE TWO*/
 /* PAGE 3 full tovar*/
 /* breadcrums */
