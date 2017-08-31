@@ -14,9 +14,9 @@
   .fil_cat_title {
     color: $black-color;
     font-size: rem(16px);
+    margin-bottom: rem(18px);
   }
   .section_content {
-    margin-top: rem(18px);
     display: flex;
     padding: 0 rem(15px);
     label{
@@ -53,12 +53,6 @@
       background: #413548;
       border-radius: 2px;
     }
-    .more_filter{
-      display: inline-block;
-      margin: auto;
-      color: $sky-color;
-      margin-bottom: rem(15px);
-    }
     &.list{
       flex-direction: column;
     }
@@ -70,4 +64,16 @@
       }
     }
   }
+  .filter_track_wrap{
+    padding-bottom: rem(20px);
+    .filter_track{
+      border-left: rem(1px) solid #e3e3e3;
+    }
+  }
+}
+.more_filter{
+  display: inline-block;
+  margin: auto;
+  color: $sky-color;
+  margin-bottom: rem(15px);
 }

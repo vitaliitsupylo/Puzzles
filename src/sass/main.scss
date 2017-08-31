@@ -27,6 +27,7 @@
 
 /*aside*/
 @import "modules/page-one/aside/filter.scss";
+@import "modules/page-one/aside/filter-track.scss";
 /*end aside*/
 
 
@@ -58,8 +59,6 @@
 
 /*END PAGE ONE*/
 
-
-
 /*BEGIN PAGE TWO*/
 
   /*main content center*/
@@ -72,9 +71,9 @@
 
   /*main content left*/
   @import "modules/page-two/main-content-left/filter-category.scss";
-
+  @import "modules/page-two/main-content-left/filter-track.scss";
+  @import "modules/page-two/main-content-left/filter-list-category.scss";
   /*end main content left*/
-
 
 
 /*END PAGE TWO*/

@@ -1,0 +1,30 @@
+.filter_list_category{
+  padding-top: rem(30px);
+  display: flex;
+  flex-direction: column;
+  .fil_cat_elements{
+    margin-bottom: rem(20px);
+    display: flex;
+    flex-direction: column;
+    padding-left: rem(16px);
+    .cat_elem{
+      position: relative;
+      color: $black-color;
+      font-size: rem(14px);
+      margin-bottom: rem(10px);
+      padding-left: rem(5px);
+      &:before{
+        content: '>';
+        position: relative;
+        color: #cdcdcd;
+        margin-right: rem(18px);
+      }
+    }
+  }
+  .fil_cat_title{
+    padding-left: rem(16px);  
+  }
+  .more_filter{
+    align-self: center;
+  }
+}
