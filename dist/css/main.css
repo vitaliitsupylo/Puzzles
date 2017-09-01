@@ -620,6 +620,9 @@ footer {
     max-width: 4rem;
     width: 100%;
     max-height: 4rem; }
+    .soc_block a img {
+      width: 100%;
+      height: auto; }
 
 .podpiska_form input {
   box-shadow: inset 2px 0 9px rgba(0, 0, 0, 0.2);
@@ -1633,7 +1636,7 @@ footer {
   flex: 0 1 18.9375rem;
   background-color: white;
   border: 0.0625rem dashed #cccccc;
-  padding: 0.9375rem 1.875rem; }
+  padding: 0.9375rem 0.3125rem 2.8125rem 1.875rem; }
   .full_tovar_price .big_price {
     color: #282828;
     font-family: Arial;
@@ -1643,14 +1646,154 @@ footer {
     margin-bottom: 0.625rem; }
     .full_tovar_price .big_price span {
       font-size: 2.9375rem; }
-  .full_tovar_price .deliver_check span {
-    color: #282828;
-    font-family: Arial;
-    font-size: 0.875rem;
+  .full_tovar_price .deliver_check {
+    margin-bottom: 0.625rem; }
+    .full_tovar_price .deliver_check span {
+      color: #282828;
+      font-family: Arial;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 0.875rem; }
+  .full_tovar_price .buy_button {
+    width: 12.75rem;
+    height: 3.9375rem;
+    background-color: #ff2f34;
+    background-image: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Arial';
+    font-size: 1.5rem;
     font-weight: 400;
-    line-height: 0.875rem; }
+    line-height: 3.9375rem;
+    text-align: center;
+    margin-bottom: 0.9375rem; }
+  .full_tovar_price .cheaper_block {
+    margin-bottom: 1.5625rem; }
+    .full_tovar_price .cheaper_block a {
+      color: #5198d9;
+      font-family: Arial;
+      font-size: 0.75rem;
+      font-weight: 400;
+      line-height: 0.875rem;
+      text-decoration: underline; }
+      .full_tovar_price .cheaper_block a:hover {
+        color: #2E75B7;
+        transition: color .3s linear; }
+  .full_tovar_price .characteristics_list {
+    margin-bottom: 1.5625rem; }
+    .full_tovar_price .characteristics_list li {
+      margin-bottom: 0.3125rem;
+      display: flex;
+      justify-content: flex-start;
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px; }
+      .full_tovar_price .characteristics_list li .characteristics_list_title {
+        margin-right: 0.3125rem;
+        color: #878787; }
+      .full_tovar_price .characteristics_list li .characteristics_list_info {
+        color: #282828; }
+        .full_tovar_price .characteristics_list li .characteristics_list_info a {
+          color: #5198d9;
+          text-decoration: underline; }
+  .full_tovar_price .all_characteristics {
+    position: relative; }
+    .full_tovar_price .all_characteristics .show_all_characteristics {
+      text-decoration: underline;
+      cursor: pointer; }
+      .full_tovar_price .all_characteristics .show_all_characteristics:hover {
+        text-decoration: none; }
+      .full_tovar_price .all_characteristics .show_all_characteristics i {
+        margin-left: 15px;
+        width: 15px;
+        height: 10px;
+        position: relative; }
+        .full_tovar_price .all_characteristics .show_all_characteristics i::before {
+          content: ">";
+          position: absolute;
+          display: block;
+          top: -1px;
+          right: 0;
+          color: #282828;
+          font-size: 15px;
+          z-index: 3;
+          transform: rotate(90deg); }
 
 /* full tovar price */
+/* full rating */
+.full_tovar_rating {
+  flex: 1 1 18.75rem;
+  padding: 0.3125rem;
+  padding-left: 2.8125rem; }
+  .full_tovar_rating .rating_star_block {
+    display: flex;
+    margin-bottom: 1.25rem; }
+    .full_tovar_rating .rating_star_block .rating {
+      margin-right: 1.25rem; }
+    .full_tovar_rating .rating_star_block .reviews {
+      color: #606060;
+      font-family: Arial;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1rem;
+      text-decoration: underline; }
+      .full_tovar_rating .rating_star_block .reviews a {
+        display: block; }
+  .full_tovar_rating .detail_tools a {
+    display: block;
+    position: relative;
+    margin-bottom: 1.25rem; }
+    .full_tovar_rating .detail_tools a:hover span {
+      color: #000; }
+    .full_tovar_rating .detail_tools a i {
+      width: 23px; }
+    .full_tovar_rating .detail_tools a span {
+      color: #606060;
+      font-family: Arial;
+      font-size: 0.6875rem;
+      font-weight: 400;
+      line-height: 0.875rem;
+      margin-left: 0.625rem; }
+  .full_tovar_rating .one_click_but {
+    width: 11.375rem;
+    height: 1.9375rem;
+    background-color: #fff;
+    border: 0.0625rem solid #ff2f34;
+    border-radius: 0.25rem;
+    text-align: center;
+    line-height: 1.9375rem;
+    margin-bottom: 5.625rem; }
+    .full_tovar_rating .one_click_but a {
+      color: #606060;
+      font-family: Arial;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 14px;
+      text-transform: uppercase; }
+  .full_tovar_rating .soc_block {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0; }
+    .full_tovar_rating .soc_block a {
+      max-width: 2.1875rem;
+      margin-right: 0.625rem; }
+      .full_tovar_rating .soc_block a img {
+        width: 100%;
+        height: auto; }
+
+/* full rating */
+/* full tovar delivery */
+.full_tovar_delivery {
+  flex: 0 1 12.125rem; }
+  .full_tovar_delivery .delyvery_block {
+    border: 0.0625rem solid #7f7f7f;
+    padding: 2.5rem 0.3125rem 1.125rem 0.9375rem; }
+
+/* full tovar delivery */
+/* full slider */
+/* full slider */
 /* END PAGE 3 full tovar*/
 
 /*# sourceMappingURL=main.css.map*/
