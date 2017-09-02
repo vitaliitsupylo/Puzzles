@@ -75,7 +75,7 @@ body {
   border: none;
   cursor: pointer;
   line-height: 1;
-  border-radius: 3px;
+  border-radius: 4px;
   color: #fdfdfd;
   background: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%); }
 
@@ -1362,7 +1362,6 @@ footer {
   .card_min .card_min_wrap {
     min-width: 100%;
     min-height: 100%;
-    display: flex;
     padding: 1.5625rem 2.8125rem 1.5625rem 0;
     position: absolute;
     background-color: #fff;
@@ -1413,7 +1412,8 @@ footer {
     align-self: flex-end; }
   .card_min .rating {
     width: 5rem;
-    height: 0.875rem; }
+    height: 0.875rem;
+    margin-bottom: 0.625rem; }
   .card_min .card_min_price {
     display: flex;
     align-items: center;
@@ -1476,6 +1476,53 @@ footer {
   .card_min:hover {
     overflow: visible;
     z-index: 10; }
+
+.pagination {
+  margin: 1.25rem 0 3.125rem;
+  display: flex;
+  align-items: center; }
+  .pagination .pagination_more {
+    display: block;
+    width: 100%;
+    max-width: 20.9375rem;
+    border: solid 0.0625rem #dadada;
+    background-color: transparent;
+    height: 3.1875rem;
+    line-height: 3rem;
+    color: #5198d9;
+    font-weight: 400;
+    position: relative;
+    padding-left: 1.875rem;
+    cursor: pointer;
+    font-size: 1.4375rem;
+    margin-right: 1.0625rem;
+    border-radius: 0.25rem; }
+    .pagination .pagination_more i {
+      position: absolute;
+      left: 0.9375rem;
+      top: 0; }
+    .pagination .pagination_more.active i {
+      animation: load_more 2s infinite linear; }
+  .pagination .pagination_page [class^="btn"] {
+    display: inline-block;
+    height: 3.1875rem;
+    margin-right: 0.75rem;
+    font-size: 1.875rem;
+    line-height: 2.9375rem;
+    cursor: pointer;
+    color: #5b5b5b;
+    width: 3.1875rem;
+    text-align: center; }
+    .pagination .pagination_page [class^="btn"].active, .pagination .pagination_page [class^="btn"]:hover {
+      color: #fff;
+      border-radius: 0.25rem;
+      background-image: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%); }
+
+@keyframes load_more {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 /*end main content center*/
 /*main content left*/

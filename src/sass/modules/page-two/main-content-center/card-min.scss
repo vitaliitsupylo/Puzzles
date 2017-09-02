@@ -12,7 +12,6 @@
   .card_min_wrap {
     min-width: 100%;
     min-height: 100%;
-    display: flex;
     padding: rem(25px) rem(45px) rem(25px) 0;
     position: absolute;
     background-color: #fff;
@@ -74,6 +73,7 @@
   .rating {
     width: rem(80px);
     height: rem(14px);
+    margin-bottom: rem(10px);
   }
   .card_min_price {
     display: flex;
