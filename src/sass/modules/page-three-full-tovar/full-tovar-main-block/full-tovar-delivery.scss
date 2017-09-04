@@ -1,7 +1,95 @@
 .full_tovar_delivery {
     flex: 0 1 rem(194px);
+    margin-top: rem(6px);
     .delyvery_block {
         border: rem(1px) solid #7f7f7f;
-        padding: rem(40px) rem(5px) rem(18px) rem(15px);
+        padding: rem(38px) rem(5px) rem(18px) rem(15px);
+        position: relative;
+        margin-bottom: rem(42px);
+        .delivery_title {
+            background: #ffffff;
+            padding: 0 rem(16px) 0 rem(13px);
+            position: absolute;
+            left: rem(30px);
+            top: rem(-10px);
+            color: #282828;
+            font-family: Arial;
+            font-size: rem(14px);
+            font-weight: 400;
+            line-height: rem(14px);
+        }
+        .delivery_info {
+            margin-bottom: rem(25px);
+            p{
+                font-family: Arial;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 14px;
+                color: #000000;
+                margin-bottom: rem(5px);
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+                span {
+                    color: #878787;
+                    margin-right: rem(5px);
+                }
+            }
+        }
+        .delivery_info_links {
+            a {
+                color: #282828;
+                font-family: Arial;
+                font-size: rem(14px);
+                font-weight: 400;
+                line-height: rem(14px);
+                text-decoration: underline;
+                display: block;
+                margin-bottom: rem(15px);
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
+    .pay_info {
+        color: #282828;
+        font-family: Arial;
+        font-size: rem(12px);
+        font-weight: 400;
+        line-height: rem(14px);
+    }
+}
+
+
+
+
+.kurs_tabs ul li p {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 45px);
+    color: #333333;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.kurs_tabs ul li span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 45px;
+    color: #5996b3;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: right;
+}
+
+.kurs_tabs label:hover {
+    color: #ff654c;
+    transition: color .3s linear;
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
 }
