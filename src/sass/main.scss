@@ -1,60 +1,52 @@
-@import "reset.scss";
-
-@import "сomponents-sass/variables.scss";
-
-@import "сomponents-sass/mixin.scss";
-
-@import "сomponents-sass/functions.scss";
-
-@import "common.scss";
+/*default*/
+  @import "default/reset.scss";
+  @import "default/variables.scss";
+  @import "default/mixin.scss";
+  @import "default/functions.scss";
+  @import "default/common.scss";
+/*default end*/
 
 /*header*/
-@import "modules/header/logo.scss";
-@import "modules/header/contact-set.scss";
-@import "modules/header/personal-area.scss";
+  @import "сomponents/header/logo.scss";
+  @import "сomponents/header/contact-set.scss";
+  @import "сomponents/header/personal-area.scss";
 /*end header*/
 
 /*search line*/
-@import "modules/search-line/category-top.scss";
-@import "modules/search-line/search.scss";
+  @import "сomponents/search-line/category-top.scss";
+  @import "сomponents/search-line/search.scss";
 /*end search line*/
 
 /*footer*/
-@import "modules/footer/left-info-block.scss";
-@import "modules/footer/payment-block.scss";
-@import "modules/footer/soc-block-form.scss";
+  @import "сomponents/footer/left-info-block.scss";
+  @import "сomponents/footer/payment-block.scss";
+  @import "сomponents/footer/soc-block-form.scss";
 /*end footer*/
 
 /*aside*/
-@import "modules/page-one/aside/filter.scss";
-@import "modules/page-one/aside/filter-track.scss";
+  @import "сomponents/page-one/aside/filter.scss";
+  @import "сomponents/page-one/aside/filter-track.scss";
 /*end aside*/
 
 
 /*BEGIN PAGE ONE*/
 
   /*categories list*/
-  @import "modules/page-one/main-content-left/categories-list.scss";
+    @import "сomponents/page-one/main-content-left/categories-list.scss";
   /*end categories list*/
 
   /*main content center*/
-  @import "modules/page-one/main-content-center/main-banner.scss";
-
-  @import "modules/page-one/main-content-center/pagination.scss";
-
-  @import "modules/page-one/main-content-center/main-categories.scss";
-
-  @import "modules/page-one/main-content-center/slider-cards.scss";
-
-  @import "modules/page-one/main-content-center/card-min.scss";
-
-
+    @import "сomponents/page-one/main-content-center/main-banner.scss";
+    @import "сomponents/page-one/main-content-center/pagination.scss";
+    @import "сomponents/page-one/main-content-center/main-categories.scss";
+    @import "сomponents/page-one/main-content-center/slider-cards.scss";
+    @import "сomponents/page-one/main-content-center/card-min.scss";
   /*end main content center*/
 
   /*information section*/
-  @import "modules/page-one/information/news-min.scss";
-  @import "modules/page-one/information/comment.scss";
-  @import "modules/page-one/information/about.scss";
+    @import "сomponents/page-one/information/news-min.scss";
+    @import "сomponents/page-one/information/comment.scss";
+    @import "сomponents/page-one/information/about.scss";
   /*end information section*/
 
 /*END PAGE ONE*/
@@ -62,43 +54,44 @@
 /*BEGIN PAGE TWO*/
 
   /*main content center*/
-  @import "modules/page-two/main-content-center/filter-settings.scss";
-  @import "modules/page-two/main-content-center/filter-result.scss";
-  @import "modules/page-two/main-content-center/card-min.scss";
-  @import "modules/page-two/main-content-center/pagination.scss";
+    @import "сomponents/page-two/main-content-center/filter-settings.scss";
+    @import "сomponents/page-two/main-content-center/filter-result.scss";
+    @import "сomponents/page-two/main-content-center/card-min.scss";
+    @import "сomponents/page-two/main-content-center/pagination.scss";
   /*end main content center*/
 
   /*main content left*/
-  @import "modules/page-two/main-content-left/filter-category.scss";
-  @import "modules/page-two/main-content-left/filter-track.scss";
-  @import "modules/page-two/main-content-left/filter-list-category.scss";
+    @import "сomponents/page-two/main-content-left/filter-category.scss";
+    @import "сomponents/page-two/main-content-left/filter-track.scss";
+    @import "сomponents/page-two/main-content-left/filter-list-category.scss";
   /*end main content left*/
-
 
 /*END PAGE TWO*/
 
-
 /* PAGE 3 full tovar*/
 
-/* breadcrums */
-@import "modules/page-three-full-tovar/breadcrumbs/breadcrums.scss";
-/* end breadcrums*/
+  /* breadcrums */
+     @import "сomponents/page-three-full-tovar/breadcrumbs/breadcrums.scss";
+  /* end breadcrums*/
 
-/* full tovar price */
-@import "modules/page-three-full-tovar/full-tovar-main-block/full-tovar-price.scss";
-/* full tovar price */
-/* full rating */
-@import "modules/page-three-full-tovar/full-tovar-main-block/full-rating-block.scss";
-/* full rating */
-/* full tovar delivery */
-@import "modules/page-three-full-tovar/full-tovar-main-block/full-tovar-delivery.scss";
-/* full tovar delivery */
-/* full slider */
-@import "modules/page-three-full-tovar/full-tovar-main-block/slider-block.scss";
-/* full slider */
+  /* full tovar price */
+    @import "сomponents/page-three-full-tovar/full-tovar-main-block/full-tovar-price.scss";
+  /* full tovar price */
 
-/* full slider */
-@import "modules/page-three-full-tovar/full-tovar-main-block/slider-block.scss";
-/* full slider */
+  /* full rating */
+    @import "сomponents/page-three-full-tovar/full-tovar-main-block/full-rating-block.scss";
+  /* full rating */
+
+  /* full tovar delivery */
+    @import "сomponents/page-three-full-tovar/full-tovar-main-block/full-tovar-delivery.scss";
+  /* full tovar delivery */
+
+  /* full slider */
+    @import "сomponents/page-three-full-tovar/full-tovar-main-block/slider-block.scss";
+  /* full slider */
+
+  /* full slider */
+    @import "сomponents/page-three-full-tovar/full-tovar-main-block/slider-block.scss";
+  /* full slider */
 
 /* END PAGE 3 full tovar*/

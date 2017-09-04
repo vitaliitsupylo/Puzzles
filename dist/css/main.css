@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*default*/
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -62,7 +63,8 @@ body {
 
 .container {
   width: 100%;
-  max-width: 100rem;
+  max-width: 100.625rem;
+  padding: 0 0.3125rem;
   margin: auto; }
 
 .btn_red {
@@ -176,19 +178,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    min-height: 6.5625rem; }
-    .header_main .container .header_left {
-      width: 100%;
-      max-width: 16.25rem; }
-    .header_main .container .header_center {
-      width: 100%;
-      padding-top: 1.25rem; }
-    .header_main .container .header_right {
-      width: 100%;
-      padding-top: 1.25rem;
-      max-width: 17.5rem;
-      display: flex;
-      justify-content: flex-end; }
+    flex-wrap: wrap;
+    min-height: 6.5625rem;
+    padding-top: 1.25rem; }
 
 /*end header*/
 /*top line*/
@@ -196,11 +188,8 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 100%; }
-  .search_line .container .search_line_left {
-    width: 35%; }
-  .search_line .container .search_line_right {
-    width: 35%; }
+  width: 100%;
+  padding-left: 16.25rem; }
 
 /*end top line*/
 /*main content*/
@@ -430,10 +419,12 @@ footer {
     footer .right_block_footer .podpiska_form {
       margin-top: 4.6875rem; }
 
+/*default end*/
 /*header*/
 .logo {
   display: block;
   width: 100%;
+  flex: 1 1 25%;
   max-width: 16.25rem;
   height: 6.5625rem;
   font: 700 2rem/6.25rem "Uni Sans", sans-serif;
@@ -445,16 +436,21 @@ footer {
 .contact_set {
   display: flex;
   flex-direction: column;
-  padding-left: 20%;
-  width: 100%; }
+  padding-left: 15%;
+  width: 100%;
+  flex: 1 1 50%; }
   .contact_set .contact_inform {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 0.9375rem; }
     .contact_set .contact_inform a {
       color: #5198d9;
       margin: 0 0.3125rem; }
       .contact_set .contact_inform a:hover {
         text-decoration: underline; }
+  @media only screen and (max-width: 1280px) {
+    .contact_set {
+      padding-left: 5%; } }
 
 .select_set {
   margin-right: 1.5625rem; }
@@ -491,7 +487,9 @@ footer {
     margin-right: 1.125rem;
     font-size: 2.75rem; }
   .contact_numbers .arr_numbers {
-    margin-bottom: 0.3125rem; }
+    margin-bottom: 0.3125rem;
+    display: flex;
+    flex-wrap: wrap; }
     .contact_numbers .arr_numbers a {
       font-size: 1.375rem;
       color: #282828;
@@ -505,56 +503,62 @@ footer {
     .contact_numbers .working_firm .select_set {
       margin-left: 2.375rem; }
 
-.cashbox_set .user_enter_btn {
-  color: #5198d9;
-  transition: color .3s;
-  display: inline-block;
-  margin-bottom: 0.9375rem; }
-  .cashbox_set .user_enter_btn i {
-    color: #282828;
-    text-decoration: none;
-    margin-right: 0.625rem; }
-  .cashbox_set .user_enter_btn:hover {
-    color: #282828; }
-
-.cashbox_set .cashbox_info {
-  display: flex; }
-  .cashbox_set .cashbox_info .compare, .cashbox_set .cashbox_info .desires, .cashbox_set .cashbox_info .basket {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 3.75rem;
-    font-size: 0.625rem;
+.cashbox_set {
+  width: 100%;
+  max-width: 17.5rem;
+  flex: 1 1 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  .cashbox_set .user_enter_btn {
     color: #5198d9;
-    border-left: solid 0.0625rem #e6e6e6; }
-    .cashbox_set .cashbox_info .compare .counts, .cashbox_set .cashbox_info .desires .counts, .cashbox_set .cashbox_info .basket .counts {
-      position: absolute;
-      display: block;
-      width: 1rem;
-      height: 1rem;
-      text-align: center;
-      background-color: #fff;
-      border-radius: 50%;
-      top: 0.625rem;
-      line-height: 0.9375rem;
-      border: 1px solid;
-      font-size: 0.75rem;
-      color: #000; }
-    .cashbox_set .cashbox_info .compare i, .cashbox_set .cashbox_info .desires i, .cashbox_set .cashbox_info .basket i {
-      font-size: 2rem; }
-  .cashbox_set .cashbox_info .compare .counts {
-    border-color: #9a9a9a; }
-  .cashbox_set .cashbox_info .compare i {
-    color: #9a9a9a; }
-  .cashbox_set .cashbox_info .desires .counts {
-    border-color: #ffac5c; }
-  .cashbox_set .cashbox_info .desires i {
-    color: #ffac5c; }
-  .cashbox_set .cashbox_info .basket .counts {
-    border-color: #fc303d; }
-  .cashbox_set .cashbox_info .basket i {
-    color: #fc303d; }
+    transition: color .3s;
+    display: inline-block;
+    margin-bottom: 0.9375rem; }
+    .cashbox_set .user_enter_btn i {
+      color: #282828;
+      text-decoration: none;
+      margin-right: 0.625rem; }
+    .cashbox_set .user_enter_btn:hover {
+      color: #282828; }
+  .cashbox_set .cashbox_info {
+    display: flex; }
+    .cashbox_set .cashbox_info .compare, .cashbox_set .cashbox_info .desires, .cashbox_set .cashbox_info .basket {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 3.75rem;
+      font-size: 0.625rem;
+      color: #5198d9;
+      border-left: solid 0.0625rem #e6e6e6; }
+      .cashbox_set .cashbox_info .compare .counts, .cashbox_set .cashbox_info .desires .counts, .cashbox_set .cashbox_info .basket .counts {
+        position: absolute;
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 50%;
+        top: 0.625rem;
+        line-height: 0.9375rem;
+        border: 1px solid;
+        font-size: 0.75rem;
+        color: #000; }
+      .cashbox_set .cashbox_info .compare i, .cashbox_set .cashbox_info .desires i, .cashbox_set .cashbox_info .basket i {
+        font-size: 2rem; }
+    .cashbox_set .cashbox_info .compare .counts {
+      border-color: #9a9a9a; }
+    .cashbox_set .cashbox_info .compare i {
+      color: #9a9a9a; }
+    .cashbox_set .cashbox_info .desires .counts {
+      border-color: #ffac5c; }
+    .cashbox_set .cashbox_info .desires i {
+      color: #ffac5c; }
+    .cashbox_set .cashbox_info .basket .counts {
+      border-color: #fc303d; }
+    .cashbox_set .cashbox_info .basket i {
+      color: #fc303d; }
 
 /*end header*/
 /*search line*/
@@ -579,7 +583,7 @@ footer {
       color: #eb1b35; }
 
 .search {
-  width: 100%;
+  width: 45%;
   display: flex;
   max-width: 35rem;
   height: 2.3125rem;

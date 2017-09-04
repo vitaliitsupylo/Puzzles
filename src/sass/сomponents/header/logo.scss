@@ -1,6 +1,7 @@
 .logo{
   display: block;
   width: 100%;
+  flex: 1 1 25%;
   max-width: rem(260px);
   height: rem(105px);
   font: 700 rem(32px)/rem(100px) $Uni-Sans;

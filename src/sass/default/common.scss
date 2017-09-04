@@ -4,7 +4,8 @@ body {
 
 .container {
     width: 100%;
-    max-width: rem(1600px);
+    max-width: rem(1610px);
+    padding: 0 rem(5px);
     margin: auto;
 }
 
@@ -138,22 +139,9 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        flex-wrap: wrap;
         min-height: rem(105px);
-        .header_left {
-            width: 100%;
-            max-width: rem(260px);
-        }
-        .header_center {
-            width: 100%;
-            padding-top: rem(20px);
-        }
-        .header_right {
-            width: 100%;
-            padding-top: rem(20px);
-            max-width: rem(280px);
-            display: flex;
-            justify-content: flex-end;
-        }
+        padding-top: rem(20px);
     }
 }
 
@@ -169,12 +157,7 @@ body {
         justify-content: flex-end;
         align-items: center;
         width: 100%;
-        .search_line_left {
-            width: 35%;
-        }
-        .search_line_right {
-            width: 35%;
-        }
+        padding-left: rem(260px);
     }
 }
 

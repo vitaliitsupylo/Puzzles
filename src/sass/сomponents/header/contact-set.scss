@@ -1,27 +1,32 @@
-.contact_set{
+.contact_set {
   display: flex;
   flex-direction: column;
-  padding-left: 20%;
+  padding-left: 15%;
   width: 100%;
-  .contact_inform{
+  flex: 1 1 50%;
+  .contact_inform {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: rem(15px);
-    a{
+    a {
       color: $sky-color;
       margin: 0 rem(5px);
-      &:hover{
+      &:hover {
         text-decoration: underline;
       }
     }
   }
+  @include respond-to(desktop) {
+    padding-left: 5%;
+  }
 }
-.select_set{
-  .select_active{
+.select_set {
+  .select_active {
     cursor: pointer;
     position: relative;
     color: $sky-color;
     transition: color .3s;
-    &::before{
+    &::before {
       content: "";
       display: block;
       width: 0;
@@ -29,51 +34,53 @@
       right: rem(-15px);
       height: 0;
       transform: rotate(0);
-      transition:  transform .3s;
+      transition: transform .3s;
       position: absolute;
       border-left: rem(4px) solid transparent;
       border-right: rem(4px) solid transparent;
       border-top: rem(7px) solid #000;
     }
   }
-  &:hover{
-    .select_active{
+  &:hover {
+    .select_active {
       color: #000;
-      &::before{
+      &::before {
         transform: rotate(90deg);
       }
     }
   }
   margin-right: rem(25px);
-  .select_list{
+  .select_list {
     display: none;
   }
 }
-.contact_numbers{
+.contact_numbers {
   display: flex;
   align-items: center;
-  .icon_all_number{
+  .icon_all_number {
     color: #000;
     margin-right: rem(18px);
     font-size: rem(44px);
   }
-  .arr_numbers{
+  .arr_numbers {
     margin-bottom: rem(5px);
-    a{
+    display: flex;
+    flex-wrap: wrap;
+    a {
       font-size: rem(22px);
       color: $black-color;
       margin-right: rem(34px);
     }
   }
-  .working_firm{
+  .working_firm {
     display: flex;
-    a{
+    a {
       color: $sky-color;
-      &:hover{
+      &:hover {
         text-decoration: underline;
       }
     }
-    .select_set{
+    .select_set {
       margin-left: rem(38px);
     }
   }
