@@ -90,8 +90,26 @@
     @import "сomponents/page-three-full-tovar/full-tovar-main-block/slider-block.scss";
   /* full slider */
 
-  /* full slider */
-    @import "сomponents/page-three-full-tovar/full-tovar-main-block/slider-block.scss";
-  /* full slider */
+  
+
+  /* buy together */
+    @import "сomponents/page-three-full-tovar/tovar-more-info/buy-together.scss";
+  /* end buy together */
+
+  /* more-delivery-info */
+  @import "сomponents/page-three-full-tovar/tovar-more-info/more-delivery-info.scss";
+  /* end more-delivery-info */
+
+ /* full-characteristic.scss */
+ @import "сomponents/page-three-full-tovar/tovar-more-info/full-characteristic.scss";
+ /* end full-characteristic.scss */
+
+ /* tovar-foto */
+ @import "сomponents/page-three-full-tovar/tovar-more-info/tovar-foto.scss";
+ /* end tovar-foto */
+ 
+  /* view-video */
+  @import "сomponents/page-three-full-tovar/tovar-more-info/view-video.scss";
+  /* end view-video */
 
 /* END PAGE 3 full tovar*/

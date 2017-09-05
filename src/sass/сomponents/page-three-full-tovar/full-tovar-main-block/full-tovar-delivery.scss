@@ -64,32 +64,3 @@
 
 
 
-.kurs_tabs ul li p {
-    display: inline-block;
-    vertical-align: middle;
-    width: calc(100% - 45px);
-    color: #333333;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px;
-}
-
-.kurs_tabs ul li span {
-    display: inline-block;
-    vertical-align: middle;
-    width: 45px;
-    color: #5996b3;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 30px;
-    text-align: right;
-}
-
-.kurs_tabs label:hover {
-    color: #ff654c;
-    transition: color .3s linear;
-    -webkit-transition: color .3s linear;
-    -moz-transition: color .3s linear;
-    -ms-transition: color .3s linear;
-    -o-transition: color .3s linear;
-}
