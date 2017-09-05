@@ -23,6 +23,15 @@ body {
     color: #fdfdfd;
     background: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%);
 }
+.buy_button {
+    background-color: #ff2f34;
+    background-image: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%);
+    border-radius: rem(4px);
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Arial';    
+    text-align: center;    
+}
 
 .title_link {
     color: #000;
