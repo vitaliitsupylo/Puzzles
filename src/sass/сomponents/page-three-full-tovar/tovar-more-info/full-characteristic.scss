@@ -1,34 +1,4 @@
-.kurs_tabs ul li p {
-    display: inline-block;
-    vertical-align: middle;
-    width: calc(100% - 45px);
-    color: #333333;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px;
-}
 
-.kurs_tabs ul li span {
-    display: inline-block;
-    vertical-align: middle;
-    width: 45px;
-    color: #5996b3;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 30px;
-    text-align: right;
-}
-
-.kurs_tabs label:hover {
-    color: #ff654c;
-    transition: color .3s linear;
-    -webkit-transition: color .3s linear;
-    -moz-transition: color .3s linear;
-    -ms-transition: color .3s linear;
-    -o-transition: color .3s linear;
-}
-
-// ---------------------------------------------------------------------------
 .more_info_wrap {
     display: flex;
     justify-content: space-between;
@@ -38,32 +8,31 @@
         .full_characteristics_title {
             color: #000;
             font-family: Arial;
-            font-size: 20px;
+            font-size: rem(20px);
             font-weight: 400;
-            line-height: 44px;
+            line-height: rem(44px);
         }
         .full_characteriscs_info {
-            margin-top: 35px;
-            display: block !important ;
+            margin-top: rem(35px);           
             li {               
                 display: flex;
                 justify-content: flex-start;               
                 .full_characteriscs_info_title {
                     display: flex;
-                    max-width: 310px;
+                    max-width: rem(310px);
                     width: 100%;
                     opacity: 0.5;
                     color: #000;
                     font-family: Arial;
-                    font-size: 16px;
+                    font-size: rem(16px);
                     font-weight: 400;
-                    line-height: 44px;                    
+                    line-height: rem(44px);                    
                 }
                 .full_characteriscs_information {
                     font-family: Arial;
-                    font-size: 16px;
+                    font-size: rem(16px);
                     font-weight: 400;
-                    line-height: 44px;
+                    line-height: rem(44px);
                     color: #000;
                     display: flex;
                     a {
@@ -84,9 +53,9 @@
                 display: flex;
                 color: #010101;
                 font-family: Arial;
-                font-size: 16px;
+                font-size: rem(16px);
                 font-weight: 400;
-                line-height: 11px;
+                line-height: rem(11px);
                 text-decoration: underline;
                 width: 100%;
                 justify-content: center;
@@ -152,48 +121,49 @@
             .info_buy_price {
                 color: #282828;
                 font-family: Arial;
-                font-size: 14px;
+                font-size: rem(14px);
                 font-weight: 400;
-                line-height: 14px;
+                line-height: rem(14px);
                 div {
                     color: #010101;
                     font-family: Arial;
                     font-weight: 400;
-                    line-height: 35px;
-                    font-size: 35px;
-                    padding-left: 10px;
+                    line-height: rem(35px);
+                    font-size: rem(35px);
+                    padding-left: rem(10px);
                     span {
-                        font-size: 19px;
+                        font-size: rem(19px);
                     }
                 }
             }
             .buy_button {
                 max-width: rem(192px);
                 width: 100%;
-                height: 45px;
-                font-size: 20px;
+                height: rem(45px);
+                font-size: rem(20px);
                 font-weight: 400;
-                line-height: 45px;
+                line-height: rem(45px);
                 text-transform: uppercase;
             }
         }
         .dop_tovar_info {
-            margin-top: 15px;
-            padding-left: 15px;
+            margin-top: rem(15px);
+            padding-left: rem(15px);
             .promo_sertif {
-                margin-top: 5px;
+                margin-top: rem(5px);
+                cursor: pointer;
                 i {
-                    margin-right: 10px;
+                    margin-right: rem(10px);
                     color: #010101;
-                    font-size: 10px;
+                    font-size: rem(10px);
                     text-decoration: none;
                 }
                 span {
                     color: #5198d9;
                     font-family: Arial;
-                    font-size: 14px;
+                    font-size: rem(14px);
                     font-weight: 400;
-                    line-height: 14px;
+                    line-height: rem(14px);
                     text-decoration: underline;
                 }
             }

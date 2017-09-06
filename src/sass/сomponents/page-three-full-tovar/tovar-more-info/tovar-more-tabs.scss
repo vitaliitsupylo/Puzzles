@@ -1,0 +1,36 @@
+.tab_title {
+    background: #fff;
+    padding: rem(10px) rem(30px);
+    vertical-align: middle;
+    color: #5198d9;
+    font-family: Arial;
+    font-size: rem(16px);
+    font-weight: 400;
+    line-height: rem(14px);
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #ffffff;
+    border-bottom-color: #e6e6e6;
+    top: 1px;
+    &:first-of-type {
+        border-left: none;
+    }
+    &:last-child {
+        border-right: none;
+    }
+    &.active {
+        position: relative;
+        z-index: 2;
+        border-color: #e6e6e6;
+        border-bottom-color: #ffffff;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: rem(3px);
+            background: #ff2f34;
+        }
+    }
+}
