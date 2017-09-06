@@ -1,0 +1,20 @@
+.slider_cards {
+  width: 100%;
+  margin-bottom: rem(10px);
+  .slider_cards_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .pagination_nav {
+    .pagination_buttons {
+      border: solid rem(1px) #d2d2d2;
+    }
+  }
+}
+.full_slider_cards{
+  .container{
+    padding-top: rem(30px);
+    border-top: solid rem(1px) rgba(142,142,142, .5);
+  }
+}

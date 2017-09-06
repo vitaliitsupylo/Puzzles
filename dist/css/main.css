@@ -121,12 +121,13 @@ body {
 
 .link_page {
   color: #5198d9;
-  text-decoration: underline;
   font-size: 0.875rem;
   display: inline-flex;
   align-items: center;
   opacity: .7;
   transition: opacity .3s; }
+  .link_page span {
+    text-decoration: underline; }
   .link_page i {
     display: block;
     width: 1.5rem;
@@ -414,8 +415,19 @@ footer {
     color: #000; }
     .select_set:hover .select_active::before {
       transform: rotate(90deg); }
+  .select_set:hover .select_list {
+    visibility: visible;
+    opacity: 1; }
   .select_set .select_list {
-    display: none; }
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s;
+    background-color: #fff;
+    padding: 0.625rem 0.625rem 0.625rem 0; }
+    .select_set .select_list li {
+      cursor: pointer;
+      margin-bottom: 0.125rem; }
 
 .contact_numbers {
   display: flex;
@@ -1676,6 +1688,22 @@ footer {
     align-self: center; }
 
 /*end main content left*/
+/*full slider */
+.slider_cards {
+  width: 100%;
+  margin-bottom: 0.625rem; }
+  .slider_cards .slider_cards_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+  .slider_cards .pagination_nav .pagination_buttons {
+    border: solid 0.0625rem #d2d2d2; }
+
+.full_slider_cards .container {
+  padding-top: 1.875rem;
+  border-top: solid 0.0625rem rgba(142, 142, 142, 0.5); }
+
+/*end slider*/
 /*END PAGE TWO*/
 /* PAGE 3 full tovar*/
 /* breadcrums */

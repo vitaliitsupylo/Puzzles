@@ -48,10 +48,23 @@
         transform: rotate(90deg);
       }
     }
+    .select_list{
+      visibility: visible;
+      opacity: 1;
+    }
   }
   margin-right: rem(25px);
   .select_list {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s;
+    background-color: #fff;
+    padding: rem(10px) rem(10px) rem(10px) 0;
+    li{
+      cursor: pointer;
+      margin-bottom: rem(2px);
+    }
   }
 }
 .contact_numbers {

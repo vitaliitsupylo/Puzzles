@@ -69,12 +69,14 @@ body {
 
 .link_page {
     color: $sky-color;
-    text-decoration: underline;
     font-size: rem(14px);
     display: inline-flex;
     align-items: center;
     opacity: .7;
     transition: opacity .3s;
+    span{
+        text-decoration: underline;
+    }
     i {
         display: block;
         width: rem(24px);
