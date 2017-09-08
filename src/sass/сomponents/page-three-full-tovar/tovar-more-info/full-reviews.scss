@@ -1,0 +1,136 @@
+.comment_inner {
+    padding-bottom: rem(60px);
+    border-bottom: 1px solid #e6e6e6;
+    .comment_content {       
+        .comment_info {
+            span {
+                color: #000;
+                font-family: Arial;
+                font-size: rem(15px);
+                line-height: rem(15px);
+            }
+            .name_comment {
+                font-weight: 700;
+                margin-right: rem(20px);
+            }
+            .time_comment {
+                opacity: .5;
+                margin-right: rem(10px);
+            }
+            .like_dislike_comment {
+                .like_comment {
+                    i {
+                        color: #0A7F0A;
+                        font-size: 20px;
+                    }
+                }
+                .dislike_comment {
+                    i {
+                        color: #FF0202;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .comment_text {
+            color: #000;
+            font-family: Arial;
+            font-size: rem(14px);
+            font-weight: 400;
+            line-height: rem(44px);
+        }
+        .comment_answer_button {
+            padding-left: rem(35px);
+            position: relative;
+            color: #5198d9;
+            font-family: Arial;
+            font-size: rem(14px);
+            font-weight: 400;
+            line-height: rem(24px);
+            text-decoration: underline;
+            cursor: pointer;
+            padding-bottom: rem(10px);
+            border-bottom: 1px dashed #dddddd;
+            i {
+                position: absolute;
+                top: 0;
+                left: rem(10px);
+            }
+            .answer_area_text_wrap {
+                .answer_textarea {
+                    position: relative;
+                    border-bottom: 1px solid #cecece;
+                    &:before {
+                        content:'' ;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: -1px;
+                        margin: auto;
+                        width: 0;
+                        height: 2px;
+                        background: #000;
+                    }
+                    &:hover:before {
+                        width: 100%;
+                        transition: width .2s linear;
+                    }
+                    &:active:before {
+                        width: 100%;
+                        transition: width .2s linear;
+                    }
+                    &:focus:before {
+                        width: 100%;
+                        transition: width .2s linear;
+                    }
+                    label {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        left: 0;
+                        width: 100%;
+                        padding-bottom: 5px;
+                    }
+                    textarea {
+                        resize: none;
+                        position: relative;
+                        outline: none;
+                        box-shadow: none;
+                        padding: 0;
+                        width: 100%;
+                        max-width: 100%;
+                        background: transparent;
+                        border: none;
+                        height: 100%;
+                        -webkit-writing-mode: horizontal-tb;
+
+                        text-rendering: auto;
+                        color: initial;
+                        letter-spacing: normal;
+                        word-spacing: normal;
+                        text-transform: none;
+                        text-indent: 0px;
+                        text-shadow: none;
+                        display: inline-block;
+                        text-align: start;
+                        margin: 0em;
+                    }
+                }
+            }
+        }
+    }
+    .comment_answer {    
+        padding-left: rem(35px);
+        .all_comments_view {
+            margin-top: 10px;
+            font-family: Arial;
+            font-size: rem(15px);
+            font-weight: 700;
+            line-height: rem(24px); 
+            cursor: pointer;       
+        }    
+        .comment_content {
+            margin-top: rem(15px);
+        }
+    }
+}

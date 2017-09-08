@@ -56,7 +56,9 @@
     @import "сomponents/page-two/slider/slider-cards.scss";
   /*end slider*/
 /*END PAGE TWO*/
+
 /* PAGE 3 full tovar*/
+
   /* breadcrums */
    @import "сomponents/page-three-full-tovar/breadcrumbs/breadcrums.scss";
   /* end breadcrums*/
@@ -93,5 +95,8 @@
   /* full-reviews */
     @import "сomponents/page-three-full-tovar/tovar-more-info/full-reviews.scss";
   /* end full-reviews */
+  /* tovar-info-right */
+  @import "сomponents/page-three-full-tovar/tovar-more-info/tovar-info-right.scss";
+  /* end tovar-info-right */
 
 /* END PAGE 3 full tovar*/
