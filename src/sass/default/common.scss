@@ -324,18 +324,47 @@ body {
     }
     .characteristics_content {
         padding-top: rem(40px);
+        padding-left: rem(40px);
+        .full_characteristics_title {
+            color: #000;
+            font-family: Arial;
+            font-size: rem(20px);
+            font-weight: 400;
+            line-height: rem(44px);
+            text-transform: uppercase;
+            .btn_red {
+                display: inline-block;
+                margin-left: rem(20px);
+            }
+        }
         .content_inner {
             display: none;
+            justify-content: space-between;
+            flex-wrap: wrap;
             &.active {
                 display: flex;
             }
-        }
+            .more_info_inner_left {
+                flex: 1 1 rem(310px);
+                padding-right: rem(45px);
+            }
+            .tovar_info_right {
+                flex: 1 1 rem(310px);
+                max-width: rem(407px);
+                margin-top: rem(80px);
+            }
+        }                
     }
 }
 
 
-
 /* end more info characteritics */
+
+/* more full comments */
+.comments_wrap {
+    margin-top: rem(45px);
+}
+/* end full comments */
 
 
 /* footer */

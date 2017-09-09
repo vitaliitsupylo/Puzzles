@@ -14,10 +14,7 @@
     top: 1px;
     &:first-of-type {
         border-left: none;
-    }
-    &:last-child {
-        border-right: none;
-    }
+    }   
     &.active {
         position: relative;
         z-index: 2;

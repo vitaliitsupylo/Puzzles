@@ -307,13 +307,38 @@ body {
     justify-content: flex-start;
     border-bottom: 1px solid #e6e6e6; }
   .full_tovar_more_characteristics .characteristics_content {
-    padding-top: 2.5rem; }
+    padding-top: 2.5rem;
+    padding-left: 2.5rem; }
+    .full_tovar_more_characteristics .characteristics_content .full_characteristics_title {
+      color: #000;
+      font-family: Arial;
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 2.75rem;
+      text-transform: uppercase; }
+      .full_tovar_more_characteristics .characteristics_content .full_characteristics_title .btn_red {
+        display: inline-block;
+        margin-left: 1.25rem; }
     .full_tovar_more_characteristics .characteristics_content .content_inner {
-      display: none; }
+      display: none;
+      justify-content: space-between;
+      flex-wrap: wrap; }
       .full_tovar_more_characteristics .characteristics_content .content_inner.active {
         display: flex; }
+      .full_tovar_more_characteristics .characteristics_content .content_inner .more_info_inner_left {
+        flex: 1 1 19.375rem;
+        padding-right: 2.8125rem; }
+      .full_tovar_more_characteristics .characteristics_content .content_inner .tovar_info_right {
+        flex: 1 1 19.375rem;
+        max-width: 25.4375rem;
+        margin-top: 5rem; }
 
 /* end more info characteritics */
+/* more full comments */
+.comments_wrap {
+  margin-top: 2.8125rem; }
+
+/* end full comments */
 /* footer */
 footer {
   padding-top: 2.1875rem;
@@ -1956,8 +1981,6 @@ footer {
   top: 1px; }
   .tab_title:first-of-type {
     border-left: none; }
-  .tab_title:last-child {
-    border-right: none; }
   .tab_title.active {
     position: relative;
     z-index: 2;
@@ -1976,6 +1999,15 @@ footer {
 /* buy together */
 /* end buy together */
 /* more-delivery-info */
+.delivery_info_text {
+  max-width: 755px;
+  opacity: 0.5;
+  color: #000;
+  font-family: Arial;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem; }
+
 /* end more-delivery-info */
 /* full-characteristic.scss */
 .more_info_wrap {
@@ -1984,12 +2016,6 @@ footer {
   flex-wrap: wrap; }
   .more_info_wrap .tovar_info_left {
     flex: 1 1 310px; }
-    .more_info_wrap .tovar_info_left .full_characteristics_title {
-      color: #000;
-      font-family: Arial;
-      font-size: 1.25rem;
-      font-weight: 400;
-      line-height: 2.75rem; }
     .more_info_wrap .tovar_info_left .full_characteriscs_info {
       margin-top: 2.1875rem; }
       .more_info_wrap .tovar_info_left .full_characteriscs_info li {
@@ -2015,111 +2041,6 @@ footer {
           .more_info_wrap .tovar_info_left .full_characteriscs_info li .full_characteriscs_information a {
             color: #5198d9;
             text-decoration: underline; }
-  .more_info_wrap .tovar_info_right {
-    flex: 1 1 19.375rem;
-    max-width: 25.4375rem; }
-    .more_info_wrap .tovar_info_right .tovar_info_right_title {
-      display: flex;
-      justify-content: space-between; }
-      .more_info_wrap .tovar_info_right .tovar_info_right_title .tovar_vash_tovar_inner {
-        display: flex;
-        color: #010101;
-        font-family: Arial;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 0.6875rem;
-        text-decoration: underline;
-        width: 100%;
-        justify-content: center; }
-        .more_info_wrap .tovar_info_right .tovar_info_right_title .tovar_vash_tovar_inner.active {
-          text-decoration: none; }
-    .more_info_wrap .tovar_info_right .vash_tovar {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 0.625rem;
-      padding: 1.875rem 1.25rem 1.5625rem;
-      border: 1px solid #e6e6e6;
-      border-radius: 4px;
-      box-shadow: 0.5px 0.9px 6px rgba(0, 0, 0, 0.1); }
-      .more_info_wrap .tovar_info_right .vash_tovar .card_min_img {
-        max-width: 10.4375rem;
-        width: 100%; }
-        .more_info_wrap .tovar_info_right .vash_tovar .card_min_img img {
-          width: 100%;
-          height: auto; }
-      .more_info_wrap .tovar_info_right .vash_tovar .vash_tovar_info_price {
-        padding-left: 2.5rem; }
-        .more_info_wrap .tovar_info_right .vash_tovar .vash_tovar_info_price .card_min_title {
-          font-size: 0.75rem;
-          color: #5198d9;
-          line-height: 0.875rem;
-          margin-bottom: 0.5rem;
-          margin-top: 1.25rem; }
-        .more_info_wrap .tovar_info_right .vash_tovar .vash_tovar_info_price .card_min_price {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          font-size: 1.375rem; }
-          .more_info_wrap .tovar_info_right .vash_tovar .vash_tovar_info_price .card_min_price .new {
-            display: block;
-            border-radius: 0.1875rem;
-            text-align: center;
-            height: 2.1875rem;
-            width: 100%;
-            max-width: 5.9375rem;
-            line-height: 2.0625rem;
-            border: 0.0625rem solid #ffe6bf;
-            background-color: #fff5e5; }
-            .more_info_wrap .tovar_info_right .vash_tovar .vash_tovar_info_price .card_min_price .new span {
-              font-size: 0.875rem; }
-    .more_info_wrap .tovar_info_right .tovar_info_buy {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 0.625rem;
-      padding: 1.25rem 1.25rem 1.25rem 2.5rem;
-      border: 1px dashed #e6e6e6;
-      border-radius: 4px; }
-      .more_info_wrap .tovar_info_right .tovar_info_buy .info_buy_price {
-        color: #282828;
-        font-family: Arial;
-        font-size: 0.875rem;
-        font-weight: 400;
-        line-height: 0.875rem; }
-        .more_info_wrap .tovar_info_right .tovar_info_buy .info_buy_price div {
-          color: #010101;
-          font-family: Arial;
-          font-weight: 400;
-          line-height: 2.1875rem;
-          font-size: 2.1875rem;
-          padding-left: 0.625rem; }
-          .more_info_wrap .tovar_info_right .tovar_info_buy .info_buy_price div span {
-            font-size: 1.1875rem; }
-      .more_info_wrap .tovar_info_right .tovar_info_buy .buy_button {
-        max-width: 12rem;
-        width: 100%;
-        height: 2.8125rem;
-        font-size: 1.25rem;
-        font-weight: 400;
-        line-height: 2.8125rem;
-        text-transform: uppercase; }
-    .more_info_wrap .tovar_info_right .dop_tovar_info {
-      margin-top: 0.9375rem;
-      padding-left: 0.9375rem; }
-      .more_info_wrap .tovar_info_right .dop_tovar_info .promo_sertif {
-        margin-top: 0.3125rem;
-        cursor: pointer; }
-        .more_info_wrap .tovar_info_right .dop_tovar_info .promo_sertif i {
-          margin-right: 0.625rem;
-          color: #010101;
-          font-size: 0.625rem;
-          text-decoration: none; }
-        .more_info_wrap .tovar_info_right .dop_tovar_info .promo_sertif span {
-          color: #5198d9;
-          font-family: Arial;
-          font-size: 0.875rem;
-          font-weight: 400;
-          line-height: 0.875rem;
-          text-decoration: underline; }
 
 /* end full-characteristic.scss */
 /* tovar-foto */
@@ -2127,7 +2048,220 @@ footer {
 /* view-video */
 /* end view-video */
 /* full-reviews */
+.comment_inner {
+  padding-bottom: 3.75rem;
+  border-bottom: 1px solid #e6e6e6; }
+  .comment_inner .comment_content .comment_info span {
+    color: #000;
+    font-family: Arial;
+    font-size: 0.9375rem;
+    line-height: 0.9375rem; }
+  .comment_inner .comment_content .comment_info .name_comment {
+    font-weight: 700;
+    margin-right: 1.25rem; }
+  .comment_inner .comment_content .comment_info .time_comment {
+    opacity: .5;
+    margin-right: 0.625rem; }
+  .comment_inner .comment_content .comment_info .like_dislike_comment .like_comment i {
+    color: #0A7F0A;
+    font-size: 20px; }
+  .comment_inner .comment_content .comment_info .like_dislike_comment .dislike_comment i {
+    color: #FF0202;
+    font-size: 20px; }
+  .comment_inner .comment_content .comment_text {
+    color: #000;
+    font-family: Arial;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 2.75rem; }
+  .comment_inner .comment_content .comment_answer_button {
+    padding-left: 2.1875rem;
+    position: relative;
+    color: #5198d9;
+    font-family: Arial;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-decoration: underline;
+    cursor: pointer;
+    padding-bottom: 0.625rem;
+    border-bottom: 1px dashed #dddddd; }
+    .comment_inner .comment_content .comment_answer_button i {
+      position: absolute;
+      top: 0;
+      left: 0.625rem; }
+    .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea {
+      position: relative;
+      border-bottom: 1px solid #cecece; }
+      .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -1px;
+        margin: auto;
+        width: 0;
+        height: 2px;
+        background: #000; }
+      .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea:hover:before {
+        width: 100%;
+        transition: width .2s linear; }
+      .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea:active:before {
+        width: 100%;
+        transition: width .2s linear; }
+      .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea:focus:before {
+        width: 100%;
+        transition: width .2s linear; }
+      .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea label {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        padding-bottom: 5px; }
+      .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea textarea {
+        resize: none;
+        position: relative;
+        outline: none;
+        box-shadow: none;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+        background: transparent;
+        border: none;
+        height: 100%;
+        -webkit-writing-mode: horizontal-tb;
+        text-rendering: auto;
+        color: initial;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: start;
+        margin: 0em; }
+  .comment_inner .comment_answer {
+    padding-left: 2.1875rem; }
+    .comment_inner .comment_answer .all_comments_view {
+      margin-top: 10px;
+      font-family: Arial;
+      font-size: 0.9375rem;
+      font-weight: 700;
+      line-height: 1.5rem;
+      cursor: pointer; }
+    .comment_inner .comment_answer .comment_content {
+      margin-top: 0.9375rem; }
+
 /* end full-reviews */
+/* tovar-info-right */
+.tovar_info_right_title {
+  display: flex;
+  justify-content: space-between; }
+  .tovar_info_right_title .tovar_vash_tovar_inner {
+    display: flex;
+    color: #010101;
+    font-family: Arial;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 0.6875rem;
+    text-decoration: underline;
+    width: 100%;
+    justify-content: center; }
+    .tovar_info_right_title .tovar_vash_tovar_inner.active {
+      text-decoration: none; }
+
+.vash_tovar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.625rem;
+  padding: 1.875rem 1.25rem 1.5625rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  box-shadow: 0.5px 0.9px 6px rgba(0, 0, 0, 0.1); }
+  .vash_tovar .card_min_img {
+    max-width: 10.4375rem;
+    width: 100%; }
+    .vash_tovar .card_min_img img {
+      width: 100%;
+      height: auto; }
+  .vash_tovar .vash_tovar_info_price {
+    padding-left: 2.5rem; }
+    .vash_tovar .vash_tovar_info_price .card_min_title {
+      font-size: 0.75rem;
+      color: #5198d9;
+      line-height: 0.875rem;
+      margin-bottom: 0.5rem;
+      margin-top: 1.25rem; }
+    .vash_tovar .vash_tovar_info_price .card_min_price {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.375rem; }
+      .vash_tovar .vash_tovar_info_price .card_min_price .new {
+        display: block;
+        border-radius: 0.1875rem;
+        text-align: center;
+        height: 2.1875rem;
+        width: 100%;
+        max-width: 5.9375rem;
+        line-height: 2.0625rem;
+        border: 0.0625rem solid #ffe6bf;
+        background-color: #fff5e5; }
+        .vash_tovar .vash_tovar_info_price .card_min_price .new span {
+          font-size: 0.875rem; }
+
+.tovar_info_buy {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.625rem;
+  padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+  border: 1px dashed #e6e6e6;
+  border-radius: 4px; }
+  .tovar_info_buy .info_buy_price {
+    color: #282828;
+    font-family: Arial;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 0.875rem; }
+    .tovar_info_buy .info_buy_price div {
+      color: #010101;
+      font-family: Arial;
+      font-weight: 400;
+      line-height: 2.1875rem;
+      font-size: 2.1875rem;
+      padding-left: 0.625rem; }
+      .tovar_info_buy .info_buy_price div span {
+        font-size: 1.1875rem; }
+  .tovar_info_buy .buy_button {
+    max-width: 12rem;
+    width: 100%;
+    height: 2.8125rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2.8125rem;
+    text-transform: uppercase; }
+
+.dop_tovar_info {
+  margin-top: 0.9375rem;
+  padding-left: 0.9375rem; }
+  .dop_tovar_info .promo_sertif {
+    margin-top: 0.3125rem;
+    cursor: pointer; }
+    .dop_tovar_info .promo_sertif i {
+      margin-right: 0.625rem;
+      color: #010101;
+      font-size: 0.625rem;
+      text-decoration: none; }
+    .dop_tovar_info .promo_sertif span {
+      color: #5198d9;
+      font-family: Arial;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 0.875rem;
+      text-decoration: underline; }
+
+/* end tovar-info-right */
 /* END PAGE 3 full tovar*/
 
 /*# sourceMappingURL=main.css.map*/
