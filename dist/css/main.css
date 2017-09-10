@@ -561,48 +561,64 @@ footer {
   width: 45%;
   display: flex;
   max-width: 35rem;
-  height: 2.3125rem;
-  border: 1px solid #cdcdcd;
-  border-radius: 0.1875rem;
   justify-content: space-between;
   align-items: center; }
   .search .search_input {
     width: 60%;
     border: none;
     background: none;
+    height: 2.3125rem;
+    width: 100%;
+    border-radius: 0.1875rem 0 0 0.1875rem;
     padding-left: 1.375rem;
     font-size: 1rem;
-    color: rgba(0, 0, 0, 0.5); }
+    color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #cdcdcd;
+    border-right: none; }
   .search .search_btn {
-    display: none; }
+    display: none;
+    height: 2.3125rem; }
   .search .category_search {
     width: 100%;
     max-width: 11.25rem;
     padding: 0 1.875rem 0 1.5625rem;
     text-align: center;
     position: relative;
-    border-left: solid 0.0625rem #cdcdcd; }
+    height: 2.3125rem;
+    border-radius: 0 0.1875rem 0.1875rem 0;
+    border: solid 0.0625rem #cdcdcd;
+    border-left: none; }
     .search .category_search::after {
       content: ">";
       position: absolute;
       right: 0.6875rem;
-      top: -0.1875rem;
+      top: 0.375rem;
       cursor: pointer;
       color: #cdcdcd;
       font-size: 1.125rem;
       transform: rotate(90deg); }
+    .search .category_search::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0.0625rem;
+      height: 50%;
+      background-color: #cdcdcd;
+      left: 0.3125rem;
+      top: 25%; }
     .search .category_search .active_category_search {
       font-size: 0.75rem;
       color: #5198d9;
+      line-height: 2.25rem;
       cursor: pointer; }
     .search .category_search .list_category_search {
       display: none;
       flex-direction: column;
       width: 12.5rem;
       position: absolute;
-      z-index: 5;
+      z-index: 7;
       display: none;
-      top: calc(100% + 0.6rem);
+      top: 100%;
       right: -0.0625rem;
       background-color: #fff;
       padding: 0.625rem 0;
@@ -616,6 +632,9 @@ footer {
         font-size: 0.9375rem; }
     .search .category_search.active .list_category_search {
       display: flex; }
+  .search.focus .search_btn {
+    display: block;
+    margin-left: 1.25rem; }
 
 /*end search line*/
 /*footer*/
@@ -1389,6 +1408,7 @@ footer {
     line-height: 1; }
   .queue .select_queue {
     position: absolute;
+    z-index: 7;
     display: none;
     flex-direction: column;
     padding: 1.25rem;

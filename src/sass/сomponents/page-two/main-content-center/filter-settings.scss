@@ -82,6 +82,7 @@
   }
   .select_queue {
     position: absolute;
+    z-index: 7;
     display: none;
     flex-direction: column;
     padding: rem(20px);

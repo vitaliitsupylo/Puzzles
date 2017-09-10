@@ -2,21 +2,24 @@
   width: 45%;
   display: flex;
   max-width: rem(560px);
-  height: rem(37px);
-  border: 1px solid #cdcdcd;
-  border-radius: rem(3px);
   justify-content: space-between;
   align-items: center;
   .search_input{
     width: 60%;
     border: none;
     background:none;
+    height: rem(37px);
+    width: 100%;
+    border-radius: rem(3px) 0 0 rem(3px) ;
     padding-left: rem(22px);
     font-size: rem(16px);
     color: rgba(0,0,0,.5);
+    border: 1px solid #cdcdcd;
+    border-right: none;
   }
   .search_btn{
     display: none;
+    height: rem(37px);
   }
   .category_search{
     width: 100%;
@@ -24,20 +27,29 @@
     padding:0 rem(30px) 0 rem(25px);
     text-align: center;
     position: relative;
-    border-left: solid rem(1px) #cdcdcd;
+    height: rem(37px);
+    border-radius: 0 rem(3px) rem(3px) 0;
+    border: solid rem(1px) #cdcdcd;
+    border-left: none;
     &::after{
       content: ">";
       position: absolute;
       right: rem(11px);
-      top: rem(-3px);
+      top: rem(6px);
       cursor: pointer;
       color: #cdcdcd;
       font-size: rem(18px);
       transform: rotate(90deg);
     }
+    &::before{
+      @include before_fig(rem(1px),50%,#cdcdcd);
+      left: rem(5px);
+      top: 25%;
+    }
     .active_category_search{
       font-size: rem(12px);
       color: #5198d9;
+      line-height: rem(36px);
       cursor: pointer;
     }
     .list_category_search{
@@ -45,9 +57,9 @@
       flex-direction: column;
       width: rem(200px);
       position: absolute;
-      z-index: 5;
+      z-index: 7;
       display: none;
-      top: calc(100% + 0.6rem);
+      top: 100%;
       right: rem(-1px);
       background-color: #fff;
       padding: rem(10px) 0;
@@ -65,6 +77,12 @@
       .list_category_search{
         display: flex;
       }
+    }
+  }
+  &.focus{
+    .search_btn{
+      display: block;
+      margin-left: rem(20px);
     }
   }
 }
