@@ -307,8 +307,7 @@ body {
     justify-content: flex-start;
     border-bottom: 1px solid #e6e6e6; }
   .full_tovar_more_characteristics .characteristics_content {
-    padding-top: 2.5rem;
-    padding-left: 2.5rem; }
+    padding-top: 2.5rem; }
     .full_tovar_more_characteristics .characteristics_content .full_characteristics_title {
       color: #000;
       font-family: Arial;
@@ -322,16 +321,29 @@ body {
     .full_tovar_more_characteristics .characteristics_content .content_inner {
       display: none;
       justify-content: space-between;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      position: relative; }
       .full_tovar_more_characteristics .characteristics_content .content_inner.active {
         display: flex; }
       .full_tovar_more_characteristics .characteristics_content .content_inner .more_info_inner_left {
         flex: 1 1 19.375rem;
-        padding-right: 2.8125rem; }
+        padding-right: 2.8125rem;
+        padding-left: 2.5rem;
+        max-width: 71.875rem;
+        width: 100%; }
       .full_tovar_more_characteristics .characteristics_content .content_inner .tovar_info_right {
         flex: 1 1 19.375rem;
         max-width: 25.4375rem;
-        margin-top: 5rem; }
+        margin-top: 5rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #fff; }
+      .full_tovar_more_characteristics .characteristics_content .content_inner .add_review {
+        display: block;
+        width: 100%; }
+        .full_tovar_more_characteristics .characteristics_content .content_inner .add_review .rating_star_block {
+          margin: 2.1875rem 0 1.5625rem; }
 
 /* end more info characteritics */
 /* more full comments */
@@ -2071,6 +2083,8 @@ footer {
 .comment_inner {
   padding-bottom: 3.75rem;
   border-bottom: 1px solid #e6e6e6; }
+  .comment_inner:last-of-type {
+    border-bottom: none; }
   .comment_inner .comment_content .comment_info span {
     color: #000;
     font-family: Arial;
@@ -2102,7 +2116,6 @@ footer {
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.5rem;
-    text-decoration: underline;
     cursor: pointer;
     padding-bottom: 0.625rem;
     border-bottom: 1px dashed #dddddd; }
@@ -2112,7 +2125,8 @@ footer {
       left: 0.625rem; }
     .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea {
       position: relative;
-      border-bottom: 1px solid #cecece; }
+      border-bottom: 1px solid #cecece;
+      margin-bottom: 5px; }
       .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea:before {
         content: '';
         position: absolute;
@@ -2161,6 +2175,38 @@ footer {
         display: inline-block;
         text-align: start;
         margin: 0em; }
+    .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea_buttons {
+      display: flex;
+      justify-content: flex-end; }
+      .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea_buttons a {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        padding: 5px 10px;
+        display: flex; }
+      .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea_buttons .cancel_answer {
+        color: #000;
+        opacity: .5;
+        text-decoration: none; }
+        .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea_buttons .cancel_answer:hover {
+          opacity: 1; }
+      .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea_buttons .go_answer {
+        margin-left: 5px;
+        background: #2693e6;
+        color: #ffffff;
+        position: relative;
+        z-index: 4; }
+        .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea_buttons .go_answer .button_pattern_white {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          opacity: .5;
+          z-index: 5; }
+        .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea_buttons .go_answer.active .button_pattern_white {
+          display: none; }
   .comment_inner .comment_answer {
     padding-left: 2.1875rem; }
     .comment_inner .comment_answer .all_comments_view {
@@ -2282,6 +2328,8 @@ footer {
       text-decoration: underline; }
 
 /* end tovar-info-right */
+/* add reviews */
+/* end add reviews */
 /* END PAGE 3 full tovar*/
 
 /*# sourceMappingURL=main.css.map*/

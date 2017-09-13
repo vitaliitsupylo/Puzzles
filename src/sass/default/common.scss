@@ -323,8 +323,7 @@ body {
         border-bottom: 1px solid #e6e6e6;
     }
     .characteristics_content {
-        padding-top: rem(40px);
-        padding-left: rem(40px);
+        padding-top: rem(40px);       
         .full_characteristics_title {
             color: #000;
             font-family: Arial;
@@ -341,17 +340,32 @@ body {
             display: none;
             justify-content: space-between;
             flex-wrap: wrap;
+            position: relative;
             &.active {
                 display: flex;
             }
             .more_info_inner_left {
                 flex: 1 1 rem(310px);
                 padding-right: rem(45px);
+                padding-left: rem(40px);
+                max-width: rem(1150px);
+                width: 100%;
             }
             .tovar_info_right {
                 flex: 1 1 rem(310px);
                 max-width: rem(407px);
                 margin-top: rem(80px);
+                position: absolute;
+                right: 0;
+                top: 0;
+                background: #fff;                
+            }
+            .add_review {
+                display: block;
+                width: 100%;   
+                .rating_star_block {
+                    margin: rem(35px) 0 rem(25px);
+                }            
             }
         }                
     }

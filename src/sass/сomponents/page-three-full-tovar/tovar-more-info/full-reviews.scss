@@ -1,6 +1,9 @@
 .comment_inner {
     padding-bottom: rem(60px);
     border-bottom: 1px solid #e6e6e6;
+    &:last-of-type{
+        border-bottom: none;
+    }
     .comment_content {       
         .comment_info {
             span {
@@ -46,8 +49,7 @@
             font-family: Arial;
             font-size: rem(14px);
             font-weight: 400;
-            line-height: rem(24px);
-            text-decoration: underline;
+            line-height: rem(24px);            
             cursor: pointer;
             padding-bottom: rem(10px);
             border-bottom: 1px dashed #dddddd;
@@ -60,6 +62,7 @@
                 .answer_textarea {
                     position: relative;
                     border-bottom: 1px solid #cecece;
+                    margin-bottom: 5px;
                     &:before {
                         content:'' ;
                         position: absolute;
@@ -103,7 +106,6 @@
                         border: none;
                         height: 100%;
                         -webkit-writing-mode: horizontal-tb;
-
                         text-rendering: auto;
                         color: initial;
                         letter-spacing: normal;
@@ -114,6 +116,47 @@
                         display: inline-block;
                         text-align: start;
                         margin: 0em;
+                    }
+                }
+                .answer_textarea_buttons {
+                    display: flex;
+                    justify-content: flex-end;                    
+                    a {
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        padding: 5px 10px;                       
+                        display: flex;                        
+                    }
+                    .cancel_answer {
+                        color: #000;
+                        opacity: .5;
+                        text-decoration: none;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                    .go_answer {
+                        margin-left: 5px;
+                        background: #2693e6;
+                        color: #ffffff;
+                        position: relative;
+                        z-index: 4;                        
+                        .button_pattern_white {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: #fff;
+                            opacity: .5;
+                            z-index: 5;
+                        }
+                        &.active {
+                            .button_pattern_white {
+                                display: none;
+                            }
+                        }
                     }
                 }
             }
@@ -134,3 +177,7 @@
         }
     }
 }
+
+
+
+
