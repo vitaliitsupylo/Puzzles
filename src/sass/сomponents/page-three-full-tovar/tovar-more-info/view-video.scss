@@ -1,0 +1,33 @@
+.tovar_video_list {
+    li {
+        max-width: rem(813px);
+        width: 100%;
+        margin-top: rem(30px);
+        &:first-of-type{
+            margin-top: 0;
+        }
+        .video_title {
+            opacity: 0.5;
+            color: #000;
+            font-family: Arial;
+            font-size: rem(20px);
+            font-weight: 400;
+            line-height: rem(44px);
+        }
+        iframe {
+            width: 100%;
+            height: rem(493px);            
+        }
+    }
+}
+.podpiska_youtube {
+    color: #282828;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: rem(14px);
+    margin-top: rem(20px);
+}
+.youtuve_podpiska_button {
+    margin-top: 20px;
+}

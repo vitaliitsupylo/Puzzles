@@ -331,11 +331,18 @@ body {
         padding-left: 2.5rem;
         max-width: 71.875rem;
         width: 100%; }
+        .full_tovar_more_characteristics .characteristics_content .content_inner .more_info_inner_left .foto_video_title_inner {
+          opacity: 0.5;
+          color: #000;
+          font-family: Arial;
+          font-size: 1.25rem;
+          font-weight: 400;
+          line-height: 2.75rem; }
       .full_tovar_more_characteristics .characteristics_content .content_inner .tovar_info_right {
         flex: 1 1 19.375rem;
         max-width: 25.4375rem;
         margin-top: 5rem;
-        position: absolute;
+        position: relative;
         right: 0;
         top: 0;
         background: #fff; }
@@ -2076,8 +2083,49 @@ footer {
 
 /* end full-characteristic.scss */
 /* tovar-foto */
+.tovar_foto_list {
+  margin-top: 1.875rem; }
+  .tovar_foto_list li {
+    padding: 0 0.625rem;
+    text-align: center;
+    margin-top: 3.125rem; }
+    .tovar_foto_list li:first-child {
+      margin-top: 0; }
+    .tovar_foto_list li img {
+      max-width: 47.5rem;
+      width: 100%;
+      height: auto; }
+
 /* end tovar-foto */
 /* view-video */
+.tovar_video_list li {
+  max-width: 50.8125rem;
+  width: 100%;
+  margin-top: 1.875rem; }
+  .tovar_video_list li:first-of-type {
+    margin-top: 0; }
+  .tovar_video_list li .video_title {
+    opacity: 0.5;
+    color: #000;
+    font-family: Arial;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2.75rem; }
+  .tovar_video_list li iframe {
+    width: 100%;
+    height: 30.8125rem; }
+
+.podpiska_youtube {
+  color: #282828;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 0.875rem;
+  margin-top: 1.25rem; }
+
+.youtuve_podpiska_button {
+  margin-top: 20px; }
+
 /* end view-video */
 /* full-reviews */
 .comment_inner {
@@ -2329,85 +2377,106 @@ footer {
 
 /* end tovar-info-right */
 /* add reviews */
-.add_comment_wrap ul {
-  max-width: 55rem;
-  width: 100%; }
-  .add_comment_wrap ul li {
-    display: block;
-    margin-bottom: 1.25rem; }
-    .add_comment_wrap ul li label {
+.sml_comment .rating_star_block {
+  display: none; }
+
+.add_comment_wrap {
+  padding-bottom: 1.5625rem;
+  border-bottom: 1px solid #c6c6c6; }
+  .add_comment_wrap ul {
+    max-width: 55rem;
+    width: 100%; }
+    .add_comment_wrap ul.big_comment {
+      display: none; }
+    .add_comment_wrap ul.small_comment {
+      display: block; }
+    .add_comment_wrap ul li {
       display: block;
-      margin-bottom: 0.3125rem;
-      font-family: Arial;
-      font-size: 0.875rem;
-      font-weight: 400;
-      line-height: 0.875rem; }
-    .add_comment_wrap ul li input {
-      border: 1px solid #c2bfbf;
-      border-radius: 4px;
-      box-shadow: inset -1.7px 1px 9px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      height: 2.125rem;
-      padding: 5px; }
-    .add_comment_wrap ul li textarea {
-      height: 184px;
-      resize: none;
-      width: 100%;
-      padding: 5px; }
-    .add_comment_wrap ul li .comments_add_content_button {
-      width: 2.875rem;
-      height: 2.5rem;
-      background-color: #bfbfbf;
-      border-radius: 0.25rem;
-      display: inline-block;
-      margin-right: 0.625rem; }
-    .add_comment_wrap ul li .comments_add_content_caption {
-      display: inline-block;
-      opacity: 0.5;
-      color: #000;
-      font-family: Arial;
-      font-size: 0.875rem;
-      font-weight: 400;
-      line-height: 2.5rem;
-      vertical-align: top; }
-
-.add_comment_wrap .check_notice input {
-  position: absolute;
-  left: -50px;
-  display: none; }
-
-.add_comment_wrap .check_notice label {
-  position: relative;
-  padding-left: 30px; }
-
-.add_comment_wrap .check_notice label:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 15px;
-  height: 15px;
-  background-color: #fef8f9;
-  border: 1px solid #dadada;
-  border-radius: 4px;
-  box-shadow: inset -0.9px 0.5px 5px rgba(194, 6, 28, 0.38);
-  z-index: 3; }
-
-.add_comment_wrap .check_notice label:after {
-  content: '';
-  position: absolute;
-  left: 2px;
-  top: -3px;
-  width: 15px;
-  height: 15px;
-  background-image: url("C:/Users/Yaruy_Robot/Desktop/Dima_puzlls/Puzzles/img/check_ok.png");
-  background-repeat: no-repeat;
-  background-size: 15px 15px;
-  z-index: 5;
-  display: none; }
-
-.add_comment_wrap .check_notice input[type=checkbox]:checked + label:after {
-  display: block; }
+      margin-bottom: 1.25rem;
+      overflow: hidden; }
+      .add_comment_wrap ul li label {
+        display: block;
+        margin-bottom: 0.3125rem;
+        font-family: Arial;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 0.875rem; }
+      .add_comment_wrap ul li input {
+        border: 1px solid #c2bfbf;
+        border-radius: 4px;
+        box-shadow: inset -1.7px 1px 9px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 2.125rem;
+        padding: 5px; }
+      .add_comment_wrap ul li textarea {
+        border: 1px solid #c2bfbf;
+        border-radius: 4px;
+        box-shadow: inset -1.7px 1px 9px rgba(0, 0, 0, 0.1);
+        height: 184px;
+        resize: none;
+        width: 100%;
+        padding: 5px; }
+      .add_comment_wrap ul li .comments_add_content_button {
+        width: 2.875rem;
+        height: 2.5rem;
+        background-color: #bfbfbf;
+        border-radius: 0.25rem;
+        display: inline-block;
+        margin-right: 0.625rem; }
+      .add_comment_wrap ul li .comments_add_content_caption {
+        display: inline-block;
+        opacity: 0.5;
+        color: #000;
+        font-family: Arial;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 2.5rem;
+        vertical-align: top; }
+      .add_comment_wrap ul li .check_notice input {
+        position: absolute;
+        left: -50px;
+        display: none; }
+      .add_comment_wrap ul li .check_notice label {
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer; }
+      .add_comment_wrap ul li .check_notice label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 15px;
+        height: 15px;
+        background-color: #fef8f9;
+        border: 1px solid #dadada;
+        border-radius: 4px;
+        box-shadow: inset -0.9px 0.5px 5px rgba(194, 6, 28, 0.38);
+        z-index: 3; }
+      .add_comment_wrap ul li .check_notice label:after {
+        content: '';
+        position: absolute;
+        left: 2px;
+        top: -3px;
+        width: 15px;
+        height: 15px;
+        background-image: url("C:/Users/Yaruy_Robot/Desktop/Dima_puzlls/Puzzles/img/check_ok.png");
+        background-repeat: no-repeat;
+        background-size: 15px 15px;
+        z-index: 5;
+        display: none; }
+      .add_comment_wrap ul li .check_notice input[type=checkbox]:checked + label:after {
+        display: block; }
+      .add_comment_wrap ul li .btn_red {
+        max-width: 14.6875rem;
+        float: right; }
+  .add_comment_wrap .comment_modern {
+    margin-top: 2.8125rem;
+    opacity: 0.58;
+    color: #000;
+    font-family: Arial;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 0.875rem; }
 
 /* end add reviews */
 /* END PAGE 3 full tovar*/

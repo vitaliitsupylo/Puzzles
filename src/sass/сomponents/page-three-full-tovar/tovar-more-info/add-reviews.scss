@@ -1,10 +1,24 @@
+.sml_comment {
+    .rating_star_block {
+        display: none;
+    }
+}
 .add_comment_wrap {
+    padding-bottom: rem(25px);
+    border-bottom: 1px solid #c6c6c6;
     ul {
         max-width: rem(880px);
         width: 100%;
+        &.big_comment {
+            display: none;
+        } 
+        &.small_comment {
+            display: block;
+        }      
         li {
             display: block;
             margin-bottom: rem(20px);
+            overflow: hidden;
             label {
                 display: block;
                 margin-bottom: rem(5px);
@@ -22,6 +36,9 @@
                 padding: 5px;
             }
             textarea {
+                border: 1px solid #c2bfbf;
+                border-radius: 4px;
+                box-shadow: inset -1.7px 1px 9px rgba(0, 0, 0, 0.1);
                 height: 184px;
                 resize: none;
                 width: 100%;
@@ -47,47 +64,61 @@
                 font-weight: 400;
                 line-height: rem(40px);
                 vertical-align: top;
-            }            
+            } 
+            .check_notice {                
+                input {
+                    position: absolute;
+                    left: -50px;
+                    display: none;
+                }
+                label {
+                    position: relative;
+                    padding-left: 30px;
+                    cursor: pointer;
+                }
+                label:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 15px;
+                    height: 15px;
+                    background-color: #fef8f9;
+                    border: 1px solid #dadada;
+                    border-radius: 4px;
+                    box-shadow: inset -0.9px 0.5px 5px rgba(194, 6, 28, 0.38);
+                    z-index: 3;
+                }
+                label:after {         
+                    content: '';   
+                    position: absolute;
+                    left: 2px;
+                    top: -3px;
+                    width: 15px;
+                    height: 15px;
+                    background-image: url("C:/Users/Yaruy_Robot/Desktop/Dima_puzlls/Puzzles/img/check_ok.png");            
+                    background-repeat: no-repeat;       
+                    background-size: 15px 15px;        
+                    z-index: 5;
+                    display: none;
+                }
+                input[type=checkbox]:checked + label:after {
+                    display: block;
+                }
+            }
+            .btn_red {
+                max-width: rem(235px); 
+                float: right;
+            }           
         }
-    }
-    .check_notice {
-        input {
-            position: absolute;
-            left: -50px;
-            display: none;
-        }
-        label {
-            position: relative;
-            padding-left: 30px;
-        }
-        label:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 15px;
-            height: 15px;
-            background-color: #fef8f9;
-            border: 1px solid #dadada;
-            border-radius: 4px;
-            box-shadow: inset -0.9px 0.5px 5px rgba(194, 6, 28, 0.38);
-            z-index: 3;
-        }
-        label:after {         
-            content: '';   
-            position: absolute;
-            left: 2px;
-            top: -3px;
-            width: 15px;
-            height: 15px;
-            background-image: url("C:/Users/Yaruy_Robot/Desktop/Dima_puzlls/Puzzles/img/check_ok.png");            
-            background-repeat: no-repeat;       
-            background-size: 15px 15px;        
-            z-index: 5;
-            display: none;
-        }
-        input[type=checkbox]:checked + label:after {
-            display: block;
-        }
+    }   
+    .comment_modern {
+        margin-top: rem(45px);
+        opacity: 0.58;
+        color: #000;
+        font-family: Arial;
+        font-size: rem(14px);
+        font-weight: 400;
+        line-height: rem(14px);
     }
 }
