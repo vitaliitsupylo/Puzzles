@@ -1,0 +1,16 @@
+.tovar_foto_list {
+    margin-top: rem(30px);
+    li {
+        padding: 0 rem(10px);
+        text-align: center;
+        margin-top: rem(50px);
+        &:first-child {
+            margin-top: 0;
+        }
+        img {
+            max-width: rem(760px);
+            width: 100%;
+            height: auto;
+        }
+    }
+}
