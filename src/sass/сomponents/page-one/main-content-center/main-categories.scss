@@ -6,6 +6,11 @@
     margin-left: rem(25px);
     margin-bottom: rem(33px);
     position: relative;
+    @include respond-to(desktop) {
+        flex: 1 1 rem(200px);
+        max-width: rem(300px);
+        overflow: hidden;
+    }
     &:hover .category_name {
         .category_name_text {
             span {
@@ -50,11 +55,18 @@
         bottom: 0;
         right: 0;
         margin: auto;
+        @include respond-to(desktop) {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
     .category_name {
         position: absolute;
-        left: rem(1px);
-        top: rem(99px);
+        left: rem(-10px);
+        top: rem(90px);
         z-index: 3;
         display: flex;
         justify-content: space-between;

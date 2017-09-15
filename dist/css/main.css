@@ -220,10 +220,14 @@ body {
         position: relative;
         margin-top: -4.0625rem;
         flex: 1 1 40%;
-        margin-right: 1.25rem; }
+        margin-right: 1.25rem;
+        z-index: 10; }
         .main_content .container .main .main_content_left.full_tovar {
           position: absolute;
           z-index: 10; }
+        @media only screen and (max-width: 1280px) {
+          .main_content .container .main .main_content_left {
+            position: absolute; } }
       .main_content .container .main .main_content_center {
         width: 100%;
         flex: 1 1 40%; }
@@ -296,6 +300,9 @@ body {
   align-content: stretch;
   flex-flow: row wrap;
   position: relative; }
+  @media only screen and (max-width: 1280px) {
+    .full_tovar_main_block {
+      justify-content: flex-end; } }
 
 /* end  full_tovar_main_block */
 /* more info characteritics */
@@ -385,7 +392,8 @@ footer {
       justify-content: space-between;
       margin-top: 4.1875rem;
       max-width: 62.625rem;
-      width: 100%; }
+      width: 100%;
+      padding-right: 0.3125rem; }
   footer .right_block_footer {
     flex: 0 1 18.75rem; }
     footer .right_block_footer .right_footer_title {
@@ -833,6 +841,10 @@ footer {
 .categories_list.active .p_two_absolute {
   display: block; }
 
+@media only screen and (max-width: 1280px) {
+  .categories_list.active ul {
+    display: block; } }
+
 .categories_list span {
   width: 16.1875rem;
   height: 2.5rem;
@@ -935,6 +947,13 @@ footer {
     left: 0;
     top: 2.5rem;
     width: 100%; }
+  @media only screen and (max-width: 1280px) {
+    .categories_list ul {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 2.5rem;
+      width: 100%; } }
 
 /*end categories list*/
 /*main content center*/
@@ -1034,6 +1053,11 @@ footer {
   margin-left: 1.5625rem;
   margin-bottom: 2.0625rem;
   position: relative; }
+  @media only screen and (max-width: 1280px) {
+    .category_block {
+      flex: 1 1 12.5rem;
+      max-width: 18.75rem;
+      overflow: hidden; } }
   .category_block:hover .category_name .category_name_text span {
     color: #ffffff;
     transition: color .4s ease; }
@@ -1066,10 +1090,16 @@ footer {
     bottom: 0;
     right: 0;
     margin: auto; }
+    @media only screen and (max-width: 1280px) {
+      .category_block .category_img_block {
+        width: 100%; } }
+    .category_block .category_img_block img {
+      width: 100%;
+      height: auto; }
   .category_block .category_name {
     position: absolute;
-    left: 0.0625rem;
-    top: 6.1875rem;
+    left: -0.625rem;
+    top: 5.625rem;
     z-index: 3;
     display: flex;
     justify-content: space-between; }
