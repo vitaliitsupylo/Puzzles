@@ -197,9 +197,13 @@ body {
                 margin-top: rem(-65px);
                 flex: 1 1 40%;
                 margin-right: 1.25rem;
+                z-index: 10;
                 &.full_tovar {
                     position: absolute;
                     z-index: 10;
+                }
+                @include respond-to(desktop) {
+                    position: absolute;
                 }
             }
             .main_content_center {
@@ -306,6 +310,9 @@ body {
     align-content: stretch;
     flex-flow: row wrap;
     position: relative;
+    @include respond-to(desktop) {
+        justify-content: flex-end;
+    }
 }
 
 
@@ -421,6 +428,7 @@ footer {
             margin-top: rem(67px);
             max-width: rem(1002px);
             width: 100%;
+            padding-right: rem(5px);
         }
     }
     .right_block_footer {
