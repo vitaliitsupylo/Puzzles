@@ -1,7 +1,6 @@
 .age_category{
   display: flex;
   margin-right: 10%;
-
   .age_btn{
     display: block;
     cursor: pointer;
@@ -21,4 +20,8 @@
       color:$red-color;
     }
   }
+      @include respond-to(desktop) {
+        margin-right: 0;
+        margin-top: rem(30px)
+      }
 }

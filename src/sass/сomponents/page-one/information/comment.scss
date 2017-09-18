@@ -28,6 +28,13 @@
         opacity: .5;
         margin-right: rem(25px);
       }
+      @include respond-to(tablet) {
+          flex-wrap: wrap;
+          .comment_name{
+            width: 100%;
+            display: block;
+          }
+        }
     }
   }
 }
