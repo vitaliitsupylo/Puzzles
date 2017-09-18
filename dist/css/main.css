@@ -507,11 +507,11 @@ footer {
 
 .cashbox_set {
   width: 100%;
-  max-width: 17.5rem;
   flex: 1 1 25%;
   display: flex;
   flex-direction: column;
-  align-items: flex-end; }
+  align-items: flex-end;
+  position: relative; }
   .cashbox_set .user_enter_btn {
     color: #5198d9;
     transition: color .3s;
@@ -561,6 +561,125 @@ footer {
       border-color: #fc303d; }
     .cashbox_set .cashbox_info .basket i {
       color: #fc303d; }
+
+.registration_wrap {
+  position: absolute;
+  right: 0.625rem;
+  top: 1.25rem;
+  max-width: 36.75rem;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+  box-shadow: 2.5px 4.3px 27px rgba(0, 0, 0, 0.43);
+  z-index: 15;
+  padding: 1.875rem 0.3125rem 2.5rem 1.875rem; }
+  .registration_wrap .reg_title {
+    margin-bottom: 1.25rem;
+    color: #282828;
+    font-family: Arial;
+    font-size: 1.5rem;
+    font-weight: 400; }
+  .registration_wrap .reg_inner {
+    display: flex;
+    justify-content: flex-start; }
+    .registration_wrap .reg_inner .auth_title {
+      margin-bottom: 0.625rem;
+      color: #282828;
+      font-family: Arial;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 0.875rem; }
+    .registration_wrap .reg_inner .auth_text_info {
+      margin-top: 0.625rem;
+      color: #848484;
+      font-family: Arial;
+      font-size: 0.75rem;
+      font-weight: 400;
+      line-height: 0.875rem; }
+    .registration_wrap .reg_inner .reg_left {
+      flex: 0 1 16.875rem;
+      padding-right: 0.3125rem; }
+      .registration_wrap .reg_inner .reg_left .auth_blocks {
+        margin-bottom: 1.25rem; }
+        .registration_wrap .reg_inner .reg_left .auth_blocks input {
+          width: 100%;
+          height: 2.125rem;
+          background-color: #fff;
+          border: 1px solid #c2bfbf;
+          border-radius: 4px;
+          box-shadow: inset 2px 0 9px rgba(0, 0, 0, 0.1); }
+      .registration_wrap .reg_inner .reg_left .btn_red {
+        max-width: 13.75rem;
+        width: 100%;
+        font-size: 16px;
+        height: 2.375rem;
+        background-color: #00b230;
+        background-image: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%);
+        border-radius: 4px;
+        box-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.86);
+        padding: 0;
+        text-align: center;
+        line-height: 2.375rem;
+        margin-bottom: 1.25rem; }
+        .registration_wrap .reg_inner .reg_left .btn_red.active {
+          background-image: none; }
+      .registration_wrap .reg_inner .reg_left .approov_reg_text {
+        max-width: 12.5rem;
+        width: 100%;
+        color: #848484;
+        font-family: Arial;
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 0.875rem; }
+        .registration_wrap .reg_inner .reg_left .approov_reg_text a {
+          color: #5198d9;
+          text-decoration: underline; }
+    .registration_wrap .reg_inner .reg_right {
+      flex: 0 1 14.0625rem;
+      margin-left: 1.25rem; }
+      .registration_wrap .reg_inner .reg_right .auth_title {
+        padding-left: 1.875rem; }
+      .registration_wrap .reg_inner .reg_right .reg_right_inner {
+        padding-left: 1.875rem;
+        border-left: 1px solid #c2bfbf; }
+        .registration_wrap .reg_inner .reg_right .reg_right_inner .auth_text_info {
+          margin-bottom: 1.875rem; }
+        .registration_wrap .reg_inner .reg_right .reg_right_inner .soc_enter {
+          border: 1px solid #c2bfbf;
+          border-radius: 4px;
+          padding: 0.3125rem;
+          display: flex;
+          justify-content: flex-start;
+          margin-bottom: 0.625rem;
+          cursor: pointer; }
+          .registration_wrap .reg_inner .reg_right .reg_right_inner .soc_enter:last-of-type {
+            margin-bottom: 0; }
+          .registration_wrap .reg_inner .reg_right .reg_right_inner .soc_enter.ggl .soc_enter_text {
+            color: #282828; }
+            .registration_wrap .reg_inner .reg_right .reg_right_inner .soc_enter.ggl .soc_enter_text span {
+              color: #dd4b39; }
+          .registration_wrap .reg_inner .reg_right .reg_right_inner .soc_enter .soc_enter_logo {
+            flex: 0 1 2.625rem;
+            height: 2.625rem;
+            line-height: 2.5625rem;
+            text-align: center;
+            border-radius: 1.5625rem;
+            background-color: #e8e8e8; }
+            .registration_wrap .reg_inner .reg_right .reg_right_inner .soc_enter .soc_enter_logo img {
+              width: 32px;
+              vertical-align: middle; }
+          .registration_wrap .reg_inner .reg_right .reg_right_inner .soc_enter .soc_enter_text {
+            flex: 1 1 3.125rem;
+            margin-left: 0.625rem;
+            margin-top: 0.3125rem;
+            color: #3b5998;
+            font-family: Arial;
+            font-size: 0.875rem;
+            font-weight: 400; }
+            .registration_wrap .reg_inner .reg_right .reg_right_inner .soc_enter .soc_enter_text span {
+              font-weight: 900;
+              text-decoration: underline;
+              display: block; }
 
 /*end header*/
 /*search line*/
