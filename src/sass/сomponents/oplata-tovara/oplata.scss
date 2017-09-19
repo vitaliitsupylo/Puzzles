@@ -1,0 +1,139 @@
+.oplata_inner {
+    margin-bottom: rem(30px);
+    &.no_active {
+        opacity: .4;
+        .oplata_title {
+            span {
+                border-color: #000;
+            }
+        }
+    }
+}
+.oplata_t_form_inner {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+.oplata_title {
+    color: #000;
+    font-family: Arial;
+    font-size: rem(18px);
+    font-weight: 400;
+    line-height: rem(14px);
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dadada;
+    span {
+        position: absolute;       
+        display: inline-block;
+        width: rem(35px);
+        height: rem(35px);
+        border-radius: rem(20px);
+        border: 2px solid #5198d9;
+        color: #282828;
+        font-size: rem(20px);
+        left: rem(-45px);
+        top: rem(-10px);
+        line-height: rem(31px);
+        text-align: center;
+    }
+}
+.oplata_tabs {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: rem(5px);
+    margin-top: rem(19px);
+    .oplata_tab_title {
+        border: 1px solid #dadada;
+        border-radius: 4px 4px 0 0;
+        padding: rem(10px);
+        margin-right: rem(10px);
+        background: #fff;
+        position: relative;
+        top: 1px;
+        z-index: 2;
+        opacity: .5;
+        &:last-of-type{
+            margin-top: 0;
+        }
+        &.active {
+            border-bottom: none;
+            opacity: 1;
+        }
+    }
+}
+.oplata_tovara_form {
+    border: rem(1px) solid #dadada;
+    position: relative;
+    z-index: 1;
+    border-radius:rem(4px);
+    padding: rem(20px);
+    padding-bottom: rem(30px);
+    &.second_oplata_form {
+        margin-top: rem(20px);
+    }
+    .oplata_inputs {
+        margin-top: rem(20px);
+        &:first-child {
+            margin-top: 0;
+        }
+        .oplata_inp_title {
+            margin-bottom: rem(10px);
+            color: #282828;
+            font-family: Arial;
+            font-size: rem(14px);
+            font-weight: 400;
+            line-height: rem(14px);
+        }
+        input {
+            width: 100%;
+            height: rem(34px);
+            padding: rem(10px);
+            border: rem(1px) solid #c2bfbf;
+            border-radius:rem(4px);
+            box-shadow: insetrem(2px) 0 rem(9px) rgba(0, 0, 0, 0.1);
+            &:-moz-placeholder {
+                color: #bababa;
+                font-family: Arial;
+                font-size: rem(14px);
+                font-weight: 400;
+                line-height: rem(14px);
+            }
+            &::-webkit-input-placeholder {
+                color: #bababa;
+                font-family: Arial;
+                font-size: rem(14px);
+                font-weight: 400;
+                line-height: rem(14px);
+            }
+            &.active {
+                border: 1px solid #00b230;
+            }
+        }        
+    }    
+}
+.oplata_btn {
+    width: rem(120px);
+    margin-top: rem(20px);    
+    font-size: rem(20px);
+ }
+
+ .regular_customer_title {
+    color: #282828;
+    font-family: Arial;
+    font-size: rem(14px);
+    font-weight: 400;
+    line-height: rem(14px);
+    margin-bottom: 20px;
+ }
+ .pss_frgt {
+    color: #5198d9;
+    font-family: Arial;
+    font-size: rem(14px);
+    font-weight: 400;
+    line-height: rem(14px);
+    text-decoration: underline;
+    margin-top: rem(10px);
+    display: block;
+ }

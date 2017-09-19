@@ -208,6 +208,9 @@ body {
                 }
                 @include respond-to(desktop) {
                     position: absolute;
+                    &.categories_left {
+                        position: relative;
+                    }
                 }
             }
             .main_content_center {
@@ -343,64 +346,64 @@ body {
 
 .full_tovar_more_characteristics {
     margin-top: rem(30px);
-    padding-bottom: rem(50px);
-    .characteristics_tabs {
-        display: flex;
-        justify-content: flex-start;
-        border-bottom: 1px solid #e6e6e6;
+    padding-bottom: rem(50px);    
+}
+.characteristics_tabs {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #e6e6e6;
+}
+.characteristics_content {
+    padding-top: rem(40px);
+    .full_characteristics_title {
+        color: #000;
+        font-family: Arial;
+        font-size: rem(20px);
+        font-weight: 400;
+        line-height: rem(44px);
+        text-transform: uppercase;
+        .btn_red {
+            display: inline-block;
+            margin-left: rem(20px);
+        }
     }
-    .characteristics_content {
-        padding-top: rem(40px);
-        .full_characteristics_title {
-            color: #000;
-            font-family: Arial;
-            font-size: rem(20px);
-            font-weight: 400;
-            line-height: rem(44px);
-            text-transform: uppercase;
-            .btn_red {
-                display: inline-block;
-                margin-left: rem(20px);
+    .content_inner {
+        display: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        &.active {
+            display: flex;
+        }
+        .more_info_inner_left {
+            flex: 1 1 rem(310px);
+            padding-right: rem(45px);
+            padding-left: rem(40px);
+            max-width: rem(1150px);
+            width: 100%;
+            .foto_video_title_inner {
+                opacity: 0.5;
+                color: #000;
+                font-family: Arial;
+                font-size: rem(20px);
+                font-weight: 400;
+                line-height: rem(44px);
             }
         }
-        .content_inner {
-            display: none;
-            justify-content: space-between;
-            flex-wrap: wrap;
+        .tovar_info_right {
+            flex: 1 1 rem(310px);
+            max-width: rem(407px);
+            margin-top: rem(80px);
             position: relative;
-            &.active {
-                display: flex;
-            }
-            .more_info_inner_left {
-                flex: 1 1 rem(310px);
-                padding-right: rem(45px);
-                padding-left: rem(40px);
-                max-width: rem(1150px);
-                width: 100%;
-                .foto_video_title_inner {
-                    opacity: 0.5;
-                    color: #000;
-                    font-family: Arial;
-                    font-size: rem(20px);
-                    font-weight: 400;
-                    line-height: rem(44px);
-                }
-            }
-            .tovar_info_right {
-                flex: 1 1 rem(310px);
-                max-width: rem(407px);
-                margin-top: rem(80px);
-                position: relative;
-                right: 0;
-                top: 0;
-                background: #fff;
-            }
-            .add_review {
-                display: block;
-                width: 100%;
-                .rating_star_block {
-                    margin: rem(35px) 0 rem(25px);
-                }
+            right: 0;
+            top: 0;
+            background: #fff;
+        }
+        .add_review {
+            display: block;
+            width: 100%;
+            .rating_star_block {
+                margin: rem(35px) 0 rem(25px);
             }
         }
     }
@@ -415,6 +418,16 @@ body {
 }
 /* end full comments */
 
+/* oplata tovara */
+.oplata_left_block {
+    flex: 1 1 rem(300px);
+    max-width: rem(580px);
+    padding-left: rem(50px);
+}
+.oplata_right_block {
+    flex: 1 1 rem(300px);    
+}
+/* end oplata tovara */
 
 /* footer */
 
