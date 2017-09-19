@@ -231,7 +231,9 @@ body {
           z-index: 10; }
         @media only screen and (max-width: 1280px) {
           .main_content .container .main .main_content_left {
-            position: absolute; } }
+            position: absolute; }
+            .main_content .container .main .main_content_left.categories_left {
+              position: relative; } }
       .main_content .container .main .main_content_center {
         width: 100%;
         flex: 1 1 40%; }
@@ -325,55 +327,57 @@ body {
 .full_tovar_more_characteristics {
   margin-top: 1.875rem;
   padding-bottom: 3.125rem; }
-  .full_tovar_more_characteristics .characteristics_tabs {
-    display: flex;
-    justify-content: flex-start;
-    border-bottom: 1px solid #e6e6e6; }
-  .full_tovar_more_characteristics .characteristics_content {
-    padding-top: 2.5rem; }
-    .full_tovar_more_characteristics .characteristics_content .full_characteristics_title {
-      color: #000;
-      font-family: Arial;
-      font-size: 1.25rem;
-      font-weight: 400;
-      line-height: 2.75rem;
-      text-transform: uppercase; }
-      .full_tovar_more_characteristics .characteristics_content .full_characteristics_title .btn_red {
-        display: inline-block;
-        margin-left: 1.25rem; }
-    .full_tovar_more_characteristics .characteristics_content .content_inner {
-      display: none;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      position: relative; }
-      .full_tovar_more_characteristics .characteristics_content .content_inner.active {
-        display: flex; }
-      .full_tovar_more_characteristics .characteristics_content .content_inner .more_info_inner_left {
-        flex: 1 1 19.375rem;
-        padding-right: 2.8125rem;
-        padding-left: 2.5rem;
-        max-width: 71.875rem;
-        width: 100%; }
-        .full_tovar_more_characteristics .characteristics_content .content_inner .more_info_inner_left .foto_video_title_inner {
-          opacity: 0.5;
-          color: #000;
-          font-family: Arial;
-          font-size: 1.25rem;
-          font-weight: 400;
-          line-height: 2.75rem; }
-      .full_tovar_more_characteristics .characteristics_content .content_inner .tovar_info_right {
-        flex: 1 1 19.375rem;
-        max-width: 25.4375rem;
-        margin-top: 5rem;
-        position: relative;
-        right: 0;
-        top: 0;
-        background: #fff; }
-      .full_tovar_more_characteristics .characteristics_content .content_inner .add_review {
-        display: block;
-        width: 100%; }
-        .full_tovar_more_characteristics .characteristics_content .content_inner .add_review .rating_star_block {
-          margin: 2.1875rem 0 1.5625rem; }
+
+.characteristics_tabs {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #e6e6e6; }
+
+.characteristics_content {
+  padding-top: 2.5rem; }
+  .characteristics_content .full_characteristics_title {
+    color: #000;
+    font-family: Arial;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2.75rem;
+    text-transform: uppercase; }
+    .characteristics_content .full_characteristics_title .btn_red {
+      display: inline-block;
+      margin-left: 1.25rem; }
+  .characteristics_content .content_inner {
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative; }
+    .characteristics_content .content_inner.active {
+      display: flex; }
+    .characteristics_content .content_inner .more_info_inner_left {
+      flex: 1 1 19.375rem;
+      padding-right: 2.8125rem;
+      padding-left: 2.5rem;
+      max-width: 71.875rem;
+      width: 100%; }
+      .characteristics_content .content_inner .more_info_inner_left .foto_video_title_inner {
+        opacity: 0.5;
+        color: #000;
+        font-family: Arial;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 2.75rem; }
+    .characteristics_content .content_inner .tovar_info_right {
+      flex: 1 1 19.375rem;
+      max-width: 25.4375rem;
+      margin-top: 5rem;
+      position: relative;
+      right: 0;
+      top: 0;
+      background: #fff; }
+    .characteristics_content .content_inner .add_review {
+      display: block;
+      width: 100%; }
+      .characteristics_content .content_inner .add_review .rating_star_block {
+        margin: 2.1875rem 0 1.5625rem; }
 
 /* end more info characteritics */
 /* more full comments */
@@ -381,6 +385,16 @@ body {
   margin-top: 2.8125rem; }
 
 /* end full comments */
+/* oplata tovara */
+.oplata_left_block {
+  flex: 1 1 18.75rem;
+  max-width: 36.25rem;
+  padding-left: 3.125rem; }
+
+.oplata_right_block {
+  flex: 1 1 18.75rem; }
+
+/* end oplata tovara */
 /* footer */
 footer {
   padding-top: 2.1875rem;
@@ -623,7 +637,8 @@ footer {
           background-color: #fff;
           border: 1px solid #c2bfbf;
           border-radius: 4px;
-          box-shadow: inset 2px 0 9px rgba(0, 0, 0, 0.1); }
+          box-shadow: inset 2px 0 9px rgba(0, 0, 0, 0.1);
+          padding: 0.625rem; }
       .registration_wrap .reg_inner .reg_left .btn_red {
         max-width: 13.75rem;
         width: 100%;
@@ -2655,5 +2670,128 @@ footer {
 
 /* end add reviews */
 /* END PAGE 3 full tovar*/
+/* oplata tovara  */
+.oplata_inner {
+  margin-bottom: 1.875rem; }
+  .oplata_inner.no_active {
+    opacity: .4; }
+    .oplata_inner.no_active .oplata_title span {
+      border-color: #000; }
+
+.oplata_t_form_inner {
+  display: none; }
+  .oplata_t_form_inner.active {
+    display: block; }
+
+.oplata_title {
+  color: #000;
+  font-family: Arial;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 0.875rem;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dadada; }
+  .oplata_title span {
+    position: absolute;
+    display: inline-block;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    border-radius: 1.25rem;
+    border: 2px solid #5198d9;
+    color: #282828;
+    font-size: 1.25rem;
+    left: -2.8125rem;
+    top: -0.625rem;
+    line-height: 1.9375rem;
+    text-align: center; }
+
+.oplata_tabs {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0.3125rem;
+  margin-top: 1.1875rem; }
+  .oplata_tabs .oplata_tab_title {
+    border: 1px solid #dadada;
+    border-radius: 4px 4px 0 0;
+    padding: 0.625rem;
+    margin-right: 0.625rem;
+    background: #fff;
+    position: relative;
+    top: 1px;
+    z-index: 2;
+    opacity: .5; }
+    .oplata_tabs .oplata_tab_title:last-of-type {
+      margin-top: 0; }
+    .oplata_tabs .oplata_tab_title.active {
+      border-bottom: none;
+      opacity: 1; }
+
+.oplata_tovara_form {
+  border: 0.0625rem solid #dadada;
+  position: relative;
+  z-index: 1;
+  border-radius: 0.25rem;
+  padding: 1.25rem;
+  padding-bottom: 1.875rem; }
+  .oplata_tovara_form.second_oplata_form {
+    margin-top: 1.25rem; }
+  .oplata_tovara_form .oplata_inputs {
+    margin-top: 1.25rem; }
+    .oplata_tovara_form .oplata_inputs:first-child {
+      margin-top: 0; }
+    .oplata_tovara_form .oplata_inputs .oplata_inp_title {
+      margin-bottom: 0.625rem;
+      color: #282828;
+      font-family: Arial;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 0.875rem; }
+    .oplata_tovara_form .oplata_inputs input {
+      width: 100%;
+      height: 2.125rem;
+      padding: 0.625rem;
+      border: 0.0625rem solid #c2bfbf;
+      border-radius: 0.25rem;
+      box-shadow: insetrem(2px) 0 0.5625rem rgba(0, 0, 0, 0.1); }
+      .oplata_tovara_form .oplata_inputs input:-moz-placeholder {
+        color: #bababa;
+        font-family: Arial;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 0.875rem; }
+      .oplata_tovara_form .oplata_inputs input::-webkit-input-placeholder {
+        color: #bababa;
+        font-family: Arial;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 0.875rem; }
+      .oplata_tovara_form .oplata_inputs input.active {
+        border: 1px solid #00b230; }
+
+.oplata_btn {
+  width: 7.5rem;
+  margin-top: 1.25rem;
+  font-size: 1.25rem; }
+
+.regular_customer_title {
+  color: #282828;
+  font-family: Arial;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 0.875rem;
+  margin-bottom: 20px; }
+
+.pss_frgt {
+  color: #5198d9;
+  font-family: Arial;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 0.875rem;
+  text-decoration: underline;
+  margin-top: 0.625rem;
+  display: block; }
+
+/* end oplata tovara  */
 
 /*# sourceMappingURL=main.css.map*/
