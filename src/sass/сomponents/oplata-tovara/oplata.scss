@@ -9,12 +9,14 @@
         }
     }
 }
+
 .oplata_t_form_inner {
     display: none;
     &.active {
         display: block;
     }
 }
+
 .oplata_title {
     color: #000;
     font-family: Arial;
@@ -25,7 +27,7 @@
     padding-bottom: 10px;
     border-bottom: 1px solid #dadada;
     span {
-        position: absolute;       
+        position: absolute;
         display: inline-block;
         width: rem(35px);
         height: rem(35px);
@@ -39,6 +41,7 @@
         text-align: center;
     }
 }
+
 .oplata_tabs {
     display: flex;
     justify-content: flex-start;
@@ -54,7 +57,7 @@
         top: 1px;
         z-index: 2;
         opacity: .5;
-        &:last-of-type{
+        &:last-of-type {
             margin-top: 0;
         }
         &.active {
@@ -63,11 +66,12 @@
         }
     }
 }
+
 .oplata_tovara_form {
     border: rem(1px) solid #dadada;
     position: relative;
     z-index: 1;
-    border-radius:rem(4px);
+    border-radius: rem(4px);
     padding: rem(20px);
     padding-bottom: rem(30px);
     &.second_oplata_form {
@@ -91,7 +95,7 @@
             height: rem(34px);
             padding: rem(10px);
             border: rem(1px) solid #c2bfbf;
-            border-radius:rem(4px);
+            border-radius: rem(4px);
             box-shadow: insetrem(2px) 0 rem(9px) rgba(0, 0, 0, 0.1);
             &:-moz-placeholder {
                 color: #bababa;
@@ -110,24 +114,26 @@
             &.active {
                 border: 1px solid #00b230;
             }
-        }        
-    }    
+        }
+    }
 }
+
 .oplata_btn {
     width: rem(120px);
-    margin-top: rem(20px);    
+    margin-top: rem(20px);
     font-size: rem(20px);
- }
+}
 
- .regular_customer_title {
+.regular_customer_title {
     color: #282828;
     font-family: Arial;
     font-size: rem(14px);
     font-weight: 400;
     line-height: rem(14px);
     margin-bottom: 20px;
- }
- .pss_frgt {
+}
+
+.pss_frgt {
     color: #5198d9;
     font-family: Arial;
     font-size: rem(14px);
@@ -136,4 +142,67 @@
     text-decoration: underline;
     margin-top: rem(10px);
     display: block;
- }
+}
+
+.oplata_ch_box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    .oplata_radio_inner {
+        flex: 1 1 70px;
+        padding-left: 30px;
+        position: relative;
+        input[type=radio] {
+            position: absolute;
+            visibility: hidden;
+            &:checked~.check { 
+                box-shadow:none;              
+                &::before {
+                   display: block;
+                }
+            }
+            &:checked~label {
+               
+            }
+        }
+        label {
+            cursor: pointer;
+            -webkit-transition: all 0.25s linear;
+            z-index: 9;
+            .check {
+                display: block;
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                border-radius: 15px;
+                background-color: white;
+                border: 1px solid #888;
+                box-shadow: inset 2px 0 9px rgba(0, 0, 0, 0.2);
+                top: 0;
+                left: 0;
+                z-index: 5;
+                transition: border .25s linear;
+                -webkit-transition: border .25s linear;
+                &::before {      
+                    display: none;          
+                    position: absolute;
+                    content: '';
+                    border-radius: 100%;
+                    top: 2px;
+                    left: 2px; 
+                    width: 12px;
+                    height: 12px;
+                    background-color: #5198d9;
+                    margin: auto;
+                    transition: background 0.25s linear;
+                    -webkit-transition: background 0.25s linear;
+                }
+            }
+        }        
+        img {
+            max-width: 80px;
+            width: 100%;
+            height: auto;
+        }
+    }
+}

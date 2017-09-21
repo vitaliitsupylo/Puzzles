@@ -151,16 +151,43 @@
                             </div>
                         </form>
                     </div>
-                    <div class="oplata_inner "> <!-- no_active  будет серым -->
+                    <div class="oplata_inner ">
+                        <!-- no_active  будет серым -->
                         <div class="oplata_title">
                             <span>2</span>Выбор способов доставки и оплаты
                         </div>
                         <form action="">
                             <div class="oplata_tovara_form second_oplata_form">
-
+                                <div class="oplata_inp_title">
+                                    Способы оплаты:
+                                </div>
+                                <div class="oplata_ch_box">
+                                    <div class="oplata_radio_inner">
+                                        <input type="radio" id="oplata_kurier" name="oplata">
+                                        <label for="oplata_kurier">Наличными <br> курьеру</label>
+                                        <div class="check"></div>
+                                    </div>
+                                    <div class="oplata_radio_inner">
+                                        <input type="radio" id="oplata_privat" name="oplata">
+                                        <label for="oplata_privat">
+                                            <img src="img/privat.png" alt="">
+                                            <div class="check"></div>
+                                        </label>
+                                    </div>
+                                    <div class="oplata_radio_inner">
+                                        <input type="radio" id="oplata_visa" name="oplata">
+                                        <label for="oplata_visa"><img src="img/visa.png" alt=""></label>
+                                        <div class="check"></div>
+                                    </div>
+                                    <div class="oplata_radio_inner">
+                                        <input type="radio" id="oplata_mscard" name="oplata">
+                                        <label for="oplata_mscard"><img src="img/master.png" alt=""></label>
+                                        <div class="check"></div>
+                                    </div>
+                                </div>
                             </div>
                         </form>
-                    </div>                   
+                    </div>
                 </div>
         </div>
         <div class="oplata_right_block">
