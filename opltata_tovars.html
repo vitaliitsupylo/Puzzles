@@ -164,8 +164,10 @@
                                 <div class="oplata_ch_box">
                                     <div class="oplata_radio_inner">
                                         <input type="radio" id="oplata_kurier" name="oplata">
-                                        <label for="oplata_kurier">Наличными <br> курьеру</label>
-                                        <div class="check"></div>
+                                        <label for="oplata_kurier"><span>Наличными  курьеру</span>
+                                            <div class="check"></div>
+                                        </label>
+
                                     </div>
                                     <div class="oplata_radio_inner">
                                         <input type="radio" id="oplata_privat" name="oplata">
@@ -176,15 +178,59 @@
                                     </div>
                                     <div class="oplata_radio_inner">
                                         <input type="radio" id="oplata_visa" name="oplata">
-                                        <label for="oplata_visa"><img src="img/visa.png" alt=""></label>
-                                        <div class="check"></div>
+                                        <label for="oplata_visa">
+                                            <img src="img/visa.png" alt="">
+                                            <div class="check"></div>
+                                        </label>
+
                                     </div>
                                     <div class="oplata_radio_inner">
                                         <input type="radio" id="oplata_mscard" name="oplata">
-                                        <label for="oplata_mscard"><img src="img/master.png" alt=""></label>
-                                        <div class="check"></div>
+                                        <label for="oplata_mscard">
+                                            <img src="img/master.png" alt="">
+                                            <div class="check"></div>
+                                        </label>
+
                                     </div>
                                 </div>
+                                <div class="oplata_inp_title">
+                                    Доставка
+                                </div>
+                                <ul class="delivery_ch_box">
+                                    <li>
+                                        <input type="radio" id="delivery_itself" name="selector">
+                                        <label for="delivery_itself">Самовывоз из нашего магазина                                                 
+                                            <div class="check"></div>
+                                        </label>
+
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="delivery_new_post" name="selector">
+                                        <label for="delivery_new_post">Самовывоз из Новой Почты
+                                            <div class="check"></div>
+                                        </label>
+
+                                    </li>
+                                    <li class="selct_inp">
+                                        <div class="deliver_select">
+                                            
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="delivery_curier" name="selector">
+                                        <label for="delivery_curier">
+                                            <div class="check"></div>Курьер по вашему адресу
+                                        </label>
+
+                                    </li>
+                                    <li class="selct_inp">
+                                            <select name="deliver_curiert" id="deliver_curiert">
+                                                    <option>Here is the first option</option>
+                                                    <option>Here 3</option>
+                                                    <option>Here 4</option>
+                                            </select>
+                                    </li>
+                                </ul>
                             </div>
                         </form>
                     </div>
