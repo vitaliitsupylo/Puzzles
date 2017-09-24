@@ -10,7 +10,7 @@
     @import "сomponents/header/contact-set.scss";
     @import "сomponents/header/personal-area.scss";
     @import "сomponents/header/registration.scss";
- 
+
   /*end header*/
   /*search line*/
     @import "сomponents/search-line/category-top.scss";
@@ -25,6 +25,9 @@
     @import "сomponents/page-one/aside/filter.scss";
     @import "сomponents/page-one/aside/filter-track.scss";
     /*end aside*/
+    /*popups*/
+    @import "сomponents/popups/product-slider.scss";
+    /*end popus*/
 /*BEGIN PAGE ONE*/
   /*categories list*/
     @import "сomponents/page-one/main-content-left/categories-list.scss";
@@ -108,10 +111,10 @@
 
 /* END PAGE 3 full tovar*/
 
-// Oplata tovara page 
+// Oplata tovara page
 
  /* oplata tovara  */
  @import "сomponents/oplata-tovara/oplata.scss";
  /* end oplata tovara  */
 
-// End oplata tovara 
+// End oplata tovara

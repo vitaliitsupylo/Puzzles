@@ -537,6 +537,7 @@ footer {
 
 .cashbox_set {
   width: 100%;
+  max-width: 17.5rem;
   flex: 1 1 25%;
   display: flex;
   flex-direction: column;
@@ -546,13 +547,17 @@ footer {
     color: #5198d9;
     transition: color .3s;
     display: inline-block;
-    margin-bottom: 0.9375rem; }
+    cursor: pointer;
+    padding-bottom: 0.9375rem; }
     .cashbox_set .user_enter_btn i {
       color: #282828;
       text-decoration: none;
       margin-right: 0.625rem; }
     .cashbox_set .user_enter_btn:hover {
       color: #282828; }
+      .cashbox_set .user_enter_btn:hover .registration_wrap {
+        opacity: 1;
+        visibility: visible; }
   .cashbox_set .cashbox_info {
     display: flex; }
     .cashbox_set .cashbox_info .compare, .cashbox_set .cashbox_info .desires, .cashbox_set .cashbox_info .basket {
@@ -596,12 +601,14 @@ footer {
   position: absolute;
   right: 0.625rem;
   top: 1.25rem;
-  max-width: 36.75rem;
-  width: 100%;
+  width: 36.75rem;
   background-color: #ffffff;
   border-radius: 0.25rem;
   box-shadow: 2.5px 4.3px 27px rgba(0, 0, 0, 0.43);
   z-index: 15;
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
   padding: 1.875rem 0.3125rem 2.5rem 1.875rem; }
   .registration_wrap .reg_title {
     margin-bottom: 1.25rem;
@@ -990,6 +997,65 @@ footer {
       margin-bottom: 2.5rem; }
 
 /*end aside*/
+/*popups*/
+.product_slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(71, 41, 11, 0.82); }
+  .product_slider .product_slider_wrap {
+    width: 100%;
+    max-width: 62.1875rem;
+    height: auto;
+    background-color: #fff;
+    padding: 3.125rem 2.8125rem;
+    border-radius: 0.1875rem; }
+    .product_slider .product_slider_wrap .slider_about_price {
+      padding: 1.25rem;
+      display: inline-flex;
+      flex-direction: column;
+      position: relative;
+      border: 0.0625rem dotted #282828; }
+      .product_slider .product_slider_wrap .slider_about_price > [class^="btn"], .product_slider .product_slider_wrap .slider_about_price > button {
+        text-transform: none;
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 1.25rem 2.8125rem; }
+        .product_slider .product_slider_wrap .slider_about_price > [class^="btn"] i, .product_slider .product_slider_wrap .slider_about_price > button i {
+          margin-right: 1.125rem; }
+      .product_slider .product_slider_wrap .slider_about_price .slider_price_count {
+        position: absolute;
+        bottom: calc(100% - 1rem);
+        padding: 0 0.3125rem;
+        display: inline-block;
+        background-color: #fff;
+        left: 1.25rem;
+        font-size: 1rem;
+        color: #7d7d7d; }
+        .product_slider .product_slider_wrap .slider_about_price .slider_price_count span {
+          font-size: 3rem;
+          color: #000;
+          padding: 0 0.3125rem; }
+      .product_slider .product_slider_wrap .slider_about_price .slider_product_code {
+        margin-top: 0.625rem;
+        margin-bottom: -1.875rem;
+        align-self: center;
+        border: 0.0625rem solid #ffe6bf;
+        background-color: #fff5e5;
+        display: inline-block;
+        padding: 0.1875rem 0.5rem;
+        border-radius: 0.1875rem; }
+        .product_slider .product_slider_wrap .slider_about_price .slider_product_code span {
+          font-weight: 700; }
+
+/*end popus*/
 /*BEGIN PAGE ONE*/
 /*categories list*/
 .categories_list.active .p_two_absolute {
