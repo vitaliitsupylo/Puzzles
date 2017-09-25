@@ -77,18 +77,18 @@
     &.second_oplata_form {
         margin-top: rem(20px);
     }
+    .oplata_inp_title {
+        margin-bottom: rem(10px);
+        color: #282828;
+        font-family: Arial;
+        font-size: rem(14px);
+        font-weight: 400;
+        line-height: rem(14px);
+    }
     .oplata_inputs {
         margin-top: rem(20px);
         &:first-child {
             margin-top: 0;
-        }
-        .oplata_inp_title {
-            margin-bottom: rem(10px);
-            color: #282828;
-            font-family: Arial;
-            font-size: rem(14px);
-            font-weight: 400;
-            line-height: rem(14px);
         }
         input {
             width: 100%;
@@ -153,8 +153,10 @@
     margin-bottom: 15px;
     .oplata_radio_inner {
         flex: 1 1 70px;
-        padding-left: 30px;
         position: relative;
+        &.radio_text {
+            flex: 2 1 70px;
+        }
         input[type=radio] {
             position: absolute;
             visibility: hidden;
@@ -177,8 +179,10 @@
             font-weight: 400;
             line-height: 14px;
             text-transform: uppercase;
-            height: 83px;   
-            display: block;         
+            height: 83px;
+            display: block;
+            max-width: 70px;
+            position: relative;
             span {
                 position: absolute;
                 top: 0;
@@ -186,17 +190,16 @@
                 right: 0;
                 bottom: 0;
                 margin: auto;
-                display: block;                
+                display: block;
                 height: 30px;
-            }            
+            }
         }
         img {
-            max-width: 80px;
             width: 100%;
             height: auto;
             position: absolute;
             top: 0;
-            left: 0;
+            left: 30px;
             bottom: 0;
             right: 0;
             margin: auto;
@@ -206,12 +209,17 @@
 
 .delivery_ch_box {
     margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dadada;
     li {
         position: relative;
         padding-left: 30px;
         margin-bottom: 30px;
         &.selct_inp {
             padding-left: 0;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
         }
         input[type=radio] {
             position: absolute;
@@ -228,8 +236,8 @@
         label {
             cursor: pointer;
         }
-        .deliver_select {       
-            position: relative;     
+        .list_select {
+            position: relative;
             max-width: 438px;
             width: 100%;
             height: 34px;
@@ -237,6 +245,7 @@
             border: 1px solid #00b230;
             border-radius: 4px;
             box-shadow: inset 2px 0 9px rgba(0, 0, 0, 0.1);
+            padding: 10px 0 10px 15px;
             &:before {
                 content: '>';
                 position: absolute;
@@ -246,9 +255,36 @@
                 margin: auto;
                 transform: rotate(90deg);
             }
+            .option_select {
+                color: #282828;
+                font-family: Arial;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 14px;
+            }
+            .list_deliver_post,
+            .list_curier_adrress {
+                display: none;
+            }
         }
     }
 }
+
+.oplata_comment_inpt {
+    margin-top: 20px;
+    textarea {
+        margin-top: 15px;
+        width: 100%;
+        height: 94px;
+        padding: 15px;
+        background-color: white;
+        border: 1px solid #c2bfbf;
+        border-radius: 4px;
+        box-shadow: inset 2px 0 9px rgba(0, 0, 0, 0.1);
+        resize: none;
+    }
+}
+
 .check {
     display: block;
     position: absolute;
@@ -278,5 +314,106 @@
         margin: auto;
         transition: background 0.25s linear;
         -webkit-transition: background 0.25s linear;
+    }
+}
+
+// oplata right block
+.oplata_right_inner {
+    max-width: 427px;
+    width: 100%;
+    background-color: #f5ffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    padding: 10px;
+    padding-bottom: 40px;
+    position: relative;
+    .selected_tovar_list {
+        .vash_tovar {
+            background: #fff;
+            margin-bottom: 10px;
+            margin-top: 0;
+            cursor: pointer;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            .card_min_img {
+                max-width: 100px;
+            }
+            .card_min_title {
+                margin-top: 5px;
+            }
+        }
+    }    
+    .dop_tovar_info {
+        padding-left: 30px;
+    }
+    .zakaz_edit {
+        width: 221px;
+        height: 44px;
+        background-color: white;
+        border: 1px solid #e6e6e6;
+        border-radius: 4px;
+        text-align: center;
+        line-height: 44px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -22px;
+        margin: auto;
+        z-index: 5;
+        cursor: pointer;
+        color: black;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 400;       
+        display: block;
+    }
+}
+
+
+.order_confirm {
+    margin-top: 35px;
+    padding: 20px 25px;
+    text-align: center;
+    border: 1px dashed #b8b9b9;
+    position: relative;
+    .tovar_sum {
+        position: absolute;
+        left: 0;
+        top: -15px;
+        text-align: center;
+        width: 100%;
+        .tovar_sum_inner {
+            padding: 5px 20px;
+            background: #f5ffff;
+            z-index: 3;
+            display: inline-block;
+            color: #282828;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+            span {
+                margin-left: 35px;
+                color: #010101;
+                font-family: Arial;
+                font-weight: 400;
+                line-height: 2px;
+                font-size: 38px;
+                position: relative;
+                top: 6px;
+                span {
+                    font-size: 19px;
+                    margin-left: 0px;
+                    top: -1px;
+                    left: -5px;
+                }
+            }
+        }
+    }
+    .confim_oplata_btn {
+        .btn_red {
+            text-align: center;
+        }
     }
 }
