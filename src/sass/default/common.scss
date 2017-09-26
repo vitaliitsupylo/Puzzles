@@ -34,6 +34,44 @@ body {
     text-align: center;
 }
 
+.close {
+    width: rem(36px);
+    height: rem(36px);
+    border-radius: rem(25px);
+    background-color: #fee;
+    border: 1px solid #dadada;
+    position: absolute;
+    top: rem(10px);
+    right: rem(10px);
+    cursor: pointer;
+    &:before {
+        content: '';
+        width: rem(17px);
+        height: rem(2px);
+        background-color: #e42828;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        transform: rotate(45deg)
+    }
+    &:after {
+        content: '';
+        width: rem(17px);
+        height: rem(2px);
+        background-color: #e42828;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        transform: rotate(-45deg)
+    }
+}
+
 .title_link {
     color: #000;
     font-size: rem(24px);

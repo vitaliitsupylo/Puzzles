@@ -59,13 +59,7 @@
       height: 100%;
       object-fit: cover;
     }
-  }
-  .card_min_title {
-    font-size: rem(14px);
-    color: $sky-color;
-    line-height: 1.5;
-    margin-bottom: rem(8px);
-  }
+  }  
   .add_comment {
     margin-bottom: rem(10px);
     align-self: flex-end;
@@ -152,4 +146,10 @@
     overflow: visible;
     z-index:10;
   }
+}
+.card_min_title {
+  font-size: rem(14px);
+  color: $sky-color;
+  line-height: 1.5;
+  margin-bottom: rem(8px);
 }
