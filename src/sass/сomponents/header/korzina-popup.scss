@@ -1,0 +1,197 @@
+.korzina_popup {
+    background-color: rgba(71, 41, 11, 0.82);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    padding: 0 rem(10px);    
+    .korz_pup_inner {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 20%;
+        margin: auto;
+        max-width: 960px;
+        width: 100%;       
+        background-color: white;
+        border-radius: 4px;
+        padding: rem(60px) rem(40px) rem(40px);        
+        .korz_pop_title {
+            border-bottom: 1px solid #ececec;
+            padding-bottom: rem(30px);
+            .korz_titl_main {
+                opacity: 0.77;
+                color: black;
+                font-family: Arial;
+                font-size: rem(22px);
+                font-weight: 400;
+                line-height: rem(18px);
+            }
+            .korz_titl_tovarinfo , .korz_titl_price {
+                opacity: 0.5;
+                color: black;
+                font-family: Arial;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 18px;
+            }            
+        }  
+        .korz_pup_content {                          
+            padding-top: rem(17px);
+            position: relative;
+            padding-bottom: rem(15px);
+            border-bottom: 1px solid #ececec;
+            margin-bottom: 55px;
+            .korz_tovar_del {
+                position: absolute;
+                left: 5px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: rem(24px);
+                height: rem(24px);
+                background-color: #fee;
+                border: 1px solid #dadada;
+                border-radius: rem(20px);
+                cursor: pointer;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    margin: auto;
+                    width: rem(10px);
+                    height: rem(1px);
+                    background: #9a9a9a;
+                    transform: rotate(45deg)
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    margin: auto;
+                    width: rem(10px);
+                    height: rem(1px);
+                    background: #9a9a9a;
+                    transform: rotate(-45deg)
+                }
+            }
+            .korz_pop_img {
+                padding-left: 50px;
+                img {
+                    max-width: rem(110px);
+                    width: 100%;
+                }
+            }
+            .korz_pop_maininfo {
+                .card_min_title {
+                    margin-bottom: rem(15px);
+                }
+                .korz_tvr_price {
+                    display: inline-block;
+                    margin-right: rem(10px);
+                    border-radius: rem(3px);
+                    text-align: center;
+                    height: rem(35px);
+                    width: 100%;
+                    max-width: rem(95px);
+                    line-height: rem(33px);
+                    border: rem(1px) solid #ffe6bf;
+                    background-color: #fff5e5;
+                    font-size: rem(22px);
+                    font-family: Roboto;
+                    font-weight: 500;
+                    span {
+                      font-size: rem(14px);
+                    }
+                } 
+                .tovar_quantity  {
+                    display: inline-block;
+                    color: #7d7d7d;
+                    font-family: Arial;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    .quantity_inpt {
+                        display: inline-block;
+                        margin-left: 10px;
+                        span {
+                            cursor: pointer;
+                        }
+                        input {
+                            width: 33px;
+                            height: 33px;                           
+                            background-color: white;
+                            border: 1px solid #7d7d7d;
+                            border-radius: 4px;
+                            margin: 0 10px;
+                            text-align: center;
+                        }
+                    }
+                }               
+            }
+            .korz_pop_total_price {
+                padding-top: rem(45px);
+                color: black;
+                font-family: 'Roboto';
+                font-weight: 500;
+                line-height: rem(14px);                
+                font-size: rem(22px);
+                span {
+                    font-size: rem(14px);
+                }
+            }
+        }      
+    }
+}
+.oform_tovar_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ececec;
+}
+.comeback_tovar_btn {
+    width: 269px;
+    height: 42px;
+    background-color: white;
+    border: 1px solid #ffbabc;
+    border-radius: 4px;
+    color: #606060;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 42px;
+    margin-top: 20px;
+    cursor: pointer;
+    i {
+       color: #e42828;
+    }
+}
+
+.korz_pop_flx_wrp {
+    display: flex;
+    justify-content: flex-start;       
+    .korz_pop_left {
+        flex: 2 1 rem(193px);
+        max-width: rem(280px);   
+        width: 100%;   
+    }
+    .korz_pop_center {
+        flex: 4 1 rem(300px);
+        max-width: rem(500px);
+        width: 100%;
+    }
+    .korz_pop_right {
+        flex: 1 1 rem(50px);
+    }
+}
