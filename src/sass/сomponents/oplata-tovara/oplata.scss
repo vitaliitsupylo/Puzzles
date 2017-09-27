@@ -328,6 +328,7 @@
     padding-bottom: 40px;
     position: relative;
     .selected_tovar_list {
+        margin-bottom: 35px;
         .vash_tovar {
             background: #fff;
             margin-bottom: 10px;
@@ -371,8 +372,7 @@
 }
 
 
-.order_confirm {
-    margin-top: 35px;
+.order_confirm {   
     padding: 20px 25px;
     text-align: center;
     border: 1px dashed #b8b9b9;

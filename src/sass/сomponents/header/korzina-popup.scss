@@ -43,6 +43,7 @@
             position: relative;
             padding-bottom: rem(15px);
             border-bottom: 1px solid #ececec;
+            margin-bottom: 55px;
             .korz_tovar_del {
                 position: absolute;
                 left: 5px;
@@ -150,10 +151,36 @@
         }      
     }
 }
+.oform_tovar_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ececec;
+}
+.comeback_tovar_btn {
+    width: 269px;
+    height: 42px;
+    background-color: white;
+    border: 1px solid #ffbabc;
+    border-radius: 4px;
+    color: #606060;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 42px;
+    margin-top: 20px;
+    cursor: pointer;
+    i {
+       color: #e42828;
+    }
+}
 
 .korz_pop_flx_wrp {
     display: flex;
-    justify-content: flex-start;    
+    justify-content: flex-start;       
     .korz_pop_left {
         flex: 2 1 rem(193px);
         max-width: rem(280px);   

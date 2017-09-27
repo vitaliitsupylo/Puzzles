@@ -3047,17 +3047,19 @@ footer {
   padding: 10px;
   padding-bottom: 40px;
   position: relative; }
-  .oplata_right_inner .selected_tovar_list .vash_tovar {
-    background: #fff;
-    margin-bottom: 10px;
-    margin-top: 0;
-    cursor: pointer; }
-    .oplata_right_inner .selected_tovar_list .vash_tovar:last-of-type {
-      margin-bottom: 0; }
-    .oplata_right_inner .selected_tovar_list .vash_tovar .card_min_img {
-      max-width: 100px; }
-    .oplata_right_inner .selected_tovar_list .vash_tovar .card_min_title {
-      margin-top: 5px; }
+  .oplata_right_inner .selected_tovar_list {
+    margin-bottom: 35px; }
+    .oplata_right_inner .selected_tovar_list .vash_tovar {
+      background: #fff;
+      margin-bottom: 10px;
+      margin-top: 0;
+      cursor: pointer; }
+      .oplata_right_inner .selected_tovar_list .vash_tovar:last-of-type {
+        margin-bottom: 0; }
+      .oplata_right_inner .selected_tovar_list .vash_tovar .card_min_img {
+        max-width: 100px; }
+      .oplata_right_inner .selected_tovar_list .vash_tovar .card_min_title {
+        margin-top: 5px; }
   .oplata_right_inner .dop_tovar_info {
     padding-left: 30px; }
   .oplata_right_inner .zakaz_edit {
@@ -3082,7 +3084,6 @@ footer {
     display: block; }
 
 .order_confirm {
-  margin-top: 35px;
   padding: 20px 25px;
   text-align: center;
   border: 1px dashed #b8b9b9;
@@ -3163,7 +3164,8 @@ footer {
       padding-top: 1.0625rem;
       position: relative;
       padding-bottom: 0.9375rem;
-      border-bottom: 1px solid #ececec; }
+      border-bottom: 1px solid #ececec;
+      margin-bottom: 55px; }
       .korzina_popup .korz_pup_inner .korz_pup_content .korz_tovar_del {
         position: absolute;
         left: 5px;
@@ -3252,6 +3254,31 @@ footer {
         font-size: 1.375rem; }
         .korzina_popup .korz_pup_inner .korz_pup_content .korz_pop_total_price span {
           font-size: 0.875rem; }
+
+.oform_tovar_wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ececec; }
+
+.comeback_tovar_btn {
+  width: 269px;
+  height: 42px;
+  background-color: white;
+  border: 1px solid #ffbabc;
+  border-radius: 4px;
+  color: #606060;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 42px;
+  margin-top: 20px;
+  cursor: pointer; }
+  .comeback_tovar_btn i {
+    color: #e42828; }
 
 .korz_pop_flx_wrp {
   display: flex;
