@@ -1382,7 +1382,7 @@ footer {
       height: 100%;
       opacity: 0; }
     .category_block .category_name .category_name_text {
-      max-width: 152px;
+      max-width: 9.5rem;
       font-family: "Arial", sans-serif;
       font-size: 0.875rem;
       font-weight: 400;
@@ -2076,16 +2076,18 @@ footer {
     opacity: 0.7;
     color: #282828;
     font-family: Arial;
-    font-size: 0.625rem;
+    font-size: 0.875rem;
     font-weight: 400;
-    line-height: 0.875rem; }
+    line-height: 0.875rem;
+    font-size: 0.625rem; }
   .breadcrumb > li a {
     opacity: 0.7;
     color: #282828;
     font-family: Arial;
-    font-size: 0.625rem;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 0.875rem;
+    font-size: 0.625rem;
     text-decoration: underline; }
   .breadcrumb > li:hover a {
     opacity: 1; }
@@ -2109,6 +2111,7 @@ footer {
   .full_tovar_price .deliver_check {
     margin-bottom: 0.625rem; }
     .full_tovar_price .deliver_check span {
+      color: #282828;
       color: #282828;
       font-family: Arial;
       font-size: 0.875rem;
@@ -2139,10 +2142,11 @@ footer {
       margin-bottom: 0.3125rem;
       display: flex;
       justify-content: flex-start;
+      color: #282828;
       font-family: Arial;
-      font-size: 14px;
+      font-size: 0.875rem;
       font-weight: 400;
-      line-height: 14px; }
+      line-height: 0.875rem; }
       .full_tovar_price .characteristics_list li .characteristics_list_title {
         margin-right: 0.3125rem;
         color: #878787; }
@@ -2159,9 +2163,9 @@ footer {
       .full_tovar_price .all_characteristics .show_all_characteristics:hover {
         text-decoration: none; }
       .full_tovar_price .all_characteristics .show_all_characteristics i {
-        margin-left: 15px;
-        width: 15px;
-        height: 10px;
+        margin-left: 0.9375rem;
+        width: 0.9375rem;
+        height: 0.625rem;
         position: relative; }
         .full_tovar_price .all_characteristics .show_all_characteristics i::before {
           content: ">";
@@ -2170,7 +2174,7 @@ footer {
           top: -1px;
           right: 0;
           color: #282828;
-          font-size: 15px;
+          font-size: 0.9375rem;
           z-index: 3;
           transform: rotate(90deg); }
 
@@ -2187,10 +2191,11 @@ footer {
       margin-right: 1.25rem; }
     .full_tovar_rating .rating_star_block .reviews {
       color: #606060;
+      color: #282828;
       font-family: Arial;
       font-size: 0.875rem;
       font-weight: 400;
-      line-height: 1rem;
+      line-height: 0.875rem;
       text-decoration: underline; }
       .full_tovar_rating .rating_star_block .reviews a {
         display: block; }
@@ -2201,11 +2206,12 @@ footer {
     .full_tovar_rating .detail_tools a:hover span {
       color: #000; }
     .full_tovar_rating .detail_tools a i {
-      width: 23px; }
+      width: 1.4375rem; }
     .full_tovar_rating .detail_tools a span {
       color: #606060;
+      color: #282828;
       font-family: Arial;
-      font-size: 0.6875rem;
+      font-size: 0.875rem;
       font-weight: 400;
       line-height: 0.875rem;
       margin-left: 0.625rem; }
@@ -2220,10 +2226,11 @@ footer {
     margin-bottom: 5.625rem; }
     .full_tovar_rating .one_click_but a {
       color: #606060;
+      color: #282828;
       font-family: Arial;
-      font-size: 11px;
+      font-size: 0.875rem;
       font-weight: 400;
-      line-height: 14px;
+      line-height: 0.875rem;
       text-transform: uppercase; }
   .full_tovar_rating .soc_block {
     display: flex;
@@ -2260,10 +2267,11 @@ footer {
     .full_tovar_delivery .delyvery_block .delivery_info {
       margin-bottom: 1.5625rem; }
       .full_tovar_delivery .delyvery_block .delivery_info p {
+        color: #282828;
         font-family: Arial;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 400;
-        line-height: 14px;
+        line-height: 0.875rem;
         color: #000000;
         margin-bottom: 0.3125rem; }
         .full_tovar_delivery .delyvery_block .delivery_info p:last-of-type {
@@ -2285,9 +2293,10 @@ footer {
   .full_tovar_delivery .pay_info {
     color: #282828;
     font-family: Arial;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     font-weight: 400;
-    line-height: 0.875rem; }
+    line-height: 0.875rem;
+    font-size: 0.75rem; }
 
 /* full tovar delivery */
 /* full slider */
@@ -2331,12 +2340,15 @@ footer {
 /* end buy together */
 /* more-delivery-info */
 .delivery_info_text {
-  max-width: 755px;
+  max-width: 47.1875rem;
+  width: 100%;
   opacity: 0.5;
-  color: #000;
+  color: #282828;
   font-family: Arial;
   font-size: 0.875rem;
   font-weight: 400;
+  line-height: 0.875rem;
+  color: #000;
   line-height: 1.25rem; }
 
 /* end more-delivery-info */
@@ -2346,7 +2358,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap; }
   .more_info_wrap .tovar_info_left {
-    flex: 1 1 310px; }
+    flex: 1 1 19.375rem; }
     .more_info_wrap .tovar_info_left .full_characteriscs_info {
       margin-top: 2.1875rem; }
       .more_info_wrap .tovar_info_left .full_characteriscs_info li {
@@ -2408,15 +2420,12 @@ footer {
     height: 30.8125rem; }
 
 .podpiska_youtube {
-  color: #282828;
-  font-family: Arial;
+  color: #5198d9;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 0.875rem;
   margin-top: 1.25rem; }
 
 .youtuve_podpiska_button {
-  margin-top: 20px; }
+  margin-top: 1.25rem; }
 
 /* end view-video */
 /* full-reviews */
@@ -2426,8 +2435,12 @@ footer {
   .comment_inner:last-of-type {
     border-bottom: none; }
   .comment_inner .comment_content .comment_info span {
-    color: #000;
+    color: #282828;
     font-family: Arial;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 0.875rem;
+    color: #000;
     font-size: 0.9375rem;
     line-height: 0.9375rem; }
   .comment_inner .comment_content .comment_info .name_comment {
@@ -2438,23 +2451,27 @@ footer {
     margin-right: 0.625rem; }
   .comment_inner .comment_content .comment_info .like_dislike_comment .like_comment i {
     color: #0A7F0A;
-    font-size: 20px; }
+    font-size: 1.25rem; }
   .comment_inner .comment_content .comment_info .like_dislike_comment .dislike_comment i {
     color: #FF0202;
-    font-size: 20px; }
+    font-size: 1.25rem; }
   .comment_inner .comment_content .comment_text {
-    color: #000;
+    color: #282828;
     font-family: Arial;
     font-size: 0.875rem;
     font-weight: 400;
+    line-height: 0.875rem;
+    color: #000;
     line-height: 2.75rem; }
   .comment_inner .comment_content .comment_answer_button {
     padding-left: 2.1875rem;
     position: relative;
-    color: #5198d9;
+    color: #282828;
     font-family: Arial;
     font-size: 0.875rem;
     font-weight: 400;
+    line-height: 0.875rem;
+    color: #5198d9;
     line-height: 1.5rem;
     cursor: pointer;
     padding-bottom: 0.625rem;
@@ -2466,7 +2483,7 @@ footer {
     .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea {
       position: relative;
       border-bottom: 1px solid #cecece;
-      margin-bottom: 5px; }
+      margin-bottom: 0.3125rem; }
       .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea:before {
         content: '';
         position: absolute;
@@ -2492,7 +2509,7 @@ footer {
         right: 0;
         left: 0;
         width: 100%;
-        padding-bottom: 5px; }
+        padding-bottom: 0.3125rem; }
       .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea textarea {
         resize: none;
         position: relative;
@@ -2521,8 +2538,8 @@ footer {
       .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea_buttons a {
         text-align: center;
         text-transform: uppercase;
-        font-size: 16px;
-        padding: 5px 10px;
+        font-size: 1rem;
+        padding: 0.3125rem 0.625rem;
         display: flex; }
       .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea_buttons .cancel_answer {
         color: #000;
@@ -2531,7 +2548,7 @@ footer {
         .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea_buttons .cancel_answer:hover {
           opacity: 1; }
       .comment_inner .comment_content .comment_answer_button .answer_area_text_wrap .answer_textarea_buttons .go_answer {
-        margin-left: 5px;
+        margin-left: 0.3125rem;
         background: #2693e6;
         color: #ffffff;
         position: relative;
@@ -2550,7 +2567,7 @@ footer {
   .comment_inner .comment_answer {
     padding-left: 2.1875rem; }
     .comment_inner .comment_answer .all_comments_view {
-      margin-top: 10px;
+      margin-top: 0.625rem;
       font-family: Arial;
       font-size: 0.9375rem;
       font-weight: 700;
@@ -2660,11 +2677,12 @@ footer {
       font-size: 0.625rem;
       text-decoration: none; }
     .dop_tovar_info .promo_sertif span {
-      color: #5198d9;
+      color: #282828;
       font-family: Arial;
       font-size: 0.875rem;
       font-weight: 400;
       line-height: 0.875rem;
+      color: #5198d9;
       text-decoration: underline; }
 
 /* end tovar-info-right */
@@ -2689,25 +2707,26 @@ footer {
       .add_comment_wrap ul li label {
         display: block;
         margin-bottom: 0.3125rem;
+        color: #282828;
         font-family: Arial;
         font-size: 0.875rem;
         font-weight: 400;
         line-height: 0.875rem; }
       .add_comment_wrap ul li input {
         border: 1px solid #c2bfbf;
-        border-radius: 4px;
+        border-radius: 0.25rem;
         box-shadow: inset -1.7px 1px 9px rgba(0, 0, 0, 0.1);
         width: 100%;
         height: 2.125rem;
-        padding: 5px; }
+        padding: 0.3125rem; }
       .add_comment_wrap ul li textarea {
         border: 1px solid #c2bfbf;
-        border-radius: 4px;
+        border-radius: 0.25rem;
         box-shadow: inset -1.7px 1px 9px rgba(0, 0, 0, 0.1);
-        height: 184px;
+        height: 11.5rem;
         resize: none;
         width: 100%;
-        padding: 5px; }
+        padding: 0.3125rem; }
       .add_comment_wrap ul li .comments_add_content_button {
         width: 2.875rem;
         height: 2.5rem;
@@ -2718,42 +2737,44 @@ footer {
       .add_comment_wrap ul li .comments_add_content_caption {
         display: inline-block;
         opacity: 0.5;
-        color: #000;
+        color: #282828;
         font-family: Arial;
         font-size: 0.875rem;
         font-weight: 400;
+        line-height: 0.875rem;
+        color: #000;
         line-height: 2.5rem;
         vertical-align: top; }
       .add_comment_wrap ul li .check_notice input {
         position: absolute;
-        left: -50px;
+        left: -3.125rem;
         display: none; }
       .add_comment_wrap ul li .check_notice label {
         position: relative;
-        padding-left: 30px;
+        padding-left: 1.875rem;
         cursor: pointer; }
       .add_comment_wrap ul li .check_notice label:before {
         content: '';
         position: absolute;
         left: 0;
         top: 0;
-        width: 15px;
-        height: 15px;
+        width: 0.9375rem;
+        height: 0.9375rem;
         background-color: #fef8f9;
         border: 1px solid #dadada;
-        border-radius: 4px;
+        border-radius: 0.25rem;
         box-shadow: inset -0.9px 0.5px 5px rgba(194, 6, 28, 0.38);
         z-index: 3; }
       .add_comment_wrap ul li .check_notice label:after {
         content: '';
         position: absolute;
-        left: 2px;
-        top: -3px;
-        width: 15px;
-        height: 15px;
+        left: 0.125rem;
+        top: -0.1875rem;
+        width: 0.9375rem;
+        height: 0.9375rem;
         background-image: url("C:/Users/Yaruy_Robot/Desktop/Dima_puzlls/Puzzles/img/check_ok.png");
         background-repeat: no-repeat;
-        background-size: 15px 15px;
+        background-size: 0.9375rem 0.9375rem;
         z-index: 5;
         display: none; }
       .add_comment_wrap ul li .check_notice input[type=checkbox]:checked + label:after {
@@ -2764,11 +2785,12 @@ footer {
   .add_comment_wrap .comment_modern {
     margin-top: 2.8125rem;
     opacity: 0.58;
-    color: #000;
+    color: #282828;
     font-family: Arial;
     font-size: 0.875rem;
     font-weight: 400;
-    line-height: 0.875rem; }
+    line-height: 0.875rem;
+    color: #000; }
 
 /* end add reviews */
 /* END PAGE 3 full tovar*/
@@ -2786,11 +2808,13 @@ footer {
     display: block; }
 
 .oplata_title {
-  color: #000;
+  color: #282828;
   font-family: Arial;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 0.875rem;
+  color: #000;
+  font-size: 1.125rem;
   position: relative;
   padding-bottom: 10px;
   border-bottom: 1px solid #dadada; }
@@ -2858,12 +2882,14 @@ footer {
       box-shadow: insetrem(2px) 0 0.5625rem rgba(0, 0, 0, 0.1); }
       .oplata_tovara_form .oplata_inputs input:-moz-placeholder {
         color: #bababa;
+        color: #282828;
         font-family: Arial;
         font-size: 0.875rem;
         font-weight: 400;
         line-height: 0.875rem; }
       .oplata_tovara_form .oplata_inputs input::-webkit-input-placeholder {
         color: #bababa;
+        color: #282828;
         font-family: Arial;
         font-size: 0.875rem;
         font-weight: 400;
@@ -2882,10 +2908,11 @@ footer {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 0.875rem;
-  margin-bottom: 20px; }
+  margin-bottom: 1.25rem; }
 
 .pss_frgt {
   color: #5198d9;
+  color: #282828;
   font-family: Arial;
   font-size: 0.875rem;
   font-weight: 400;
@@ -2897,15 +2924,15 @@ footer {
 .oplata_ch_box {
   display: flex;
   justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding-top: 0.9375rem;
+  padding-bottom: 1.25rem;
   border-bottom: 1px solid #dadada;
-  margin-bottom: 15px; }
+  margin-bottom: 0.9375rem; }
   .oplata_ch_box .oplata_radio_inner {
-    flex: 1 1 70px;
+    flex: 1 1 4.375rem;
     position: relative; }
     .oplata_ch_box .oplata_radio_inner.radio_text {
-      flex: 2 1 70px; }
+      flex: 2 1 4.375rem; }
     .oplata_ch_box .oplata_radio_inner input[type=radio] {
       position: absolute;
       visibility: hidden; }
@@ -2917,43 +2944,43 @@ footer {
       cursor: pointer;
       -webkit-transition: all 0.25s linear;
       z-index: 9;
-      color: black;
+      color: #282828;
       font-family: Arial;
-      font-size: 14px;
+      font-size: 0.875rem;
       font-weight: 400;
-      line-height: 14px;
+      line-height: 0.875rem;
       text-transform: uppercase;
-      height: 83px;
+      height: 5.1875rem;
       display: block;
-      max-width: 70px;
+      max-width: 4.375rem;
       position: relative; }
       .oplata_ch_box .oplata_radio_inner label span {
         position: absolute;
         top: 0;
-        left: 25px;
+        left: 1.5625rem;
         right: 0;
         bottom: 0;
         margin: auto;
         display: block;
-        height: 30px; }
+        height: 1.875rem; }
     .oplata_ch_box .oplata_radio_inner img {
       width: 100%;
       height: auto;
       position: absolute;
       top: 0;
-      left: 30px;
+      left: 1.875rem;
       bottom: 0;
       right: 0;
       margin: auto; }
 
 .delivery_ch_box {
-  margin-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 1.25rem;
+  padding-bottom: 1.25rem;
   border-bottom: 1px solid #dadada; }
   .delivery_ch_box li {
     position: relative;
-    padding-left: 30px;
-    margin-bottom: 30px; }
+    padding-left: 1.875rem;
+    margin-bottom: 1.875rem; }
     .delivery_ch_box li.selct_inp {
       padding-left: 0; }
       .delivery_ch_box li.selct_inp:last-of-type {
@@ -2969,18 +2996,18 @@ footer {
       cursor: pointer; }
     .delivery_ch_box li .list_select {
       position: relative;
-      max-width: 438px;
+      max-width: 27.375rem;
       width: 100%;
-      height: 34px;
+      height: 2.125rem;
       background-color: white;
       border: 1px solid #00b230;
       border-radius: 4px;
       box-shadow: inset 2px 0 9px rgba(0, 0, 0, 0.1);
-      padding: 10px 0 10px 15px; }
+      padding: 0.625rem 0 0.625rem 0.9375rem; }
       .delivery_ch_box li .list_select:before {
         content: '>';
         position: absolute;
-        right: 15px;
+        right: 0.9375rem;
         top: 0;
         bottom: 0;
         margin: auto;
@@ -2988,20 +3015,20 @@ footer {
       .delivery_ch_box li .list_select .option_select {
         color: #282828;
         font-family: Arial;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 400;
-        line-height: 14px; }
+        line-height: 0.875rem; }
       .delivery_ch_box li .list_select .list_deliver_post,
       .delivery_ch_box li .list_select .list_curier_adrress {
         display: none; }
 
 .oplata_comment_inpt {
-  margin-top: 20px; }
+  margin-top: 1.25rem; }
   .oplata_comment_inpt textarea {
-    margin-top: 15px;
+    margin-top: 0.9375rem;
     width: 100%;
-    height: 94px;
-    padding: 15px;
+    height: 5.875rem;
+    padding: 0.9375rem;
     background-color: white;
     border: 1px solid #c2bfbf;
     border-radius: 4px;
@@ -3011,9 +3038,9 @@ footer {
 .check {
   display: block;
   position: absolute;
-  width: 18px;
-  height: 18px;
-  border-radius: 15px;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 0.9375rem;
   background-color: white;
   border: 1px solid #888;
   box-shadow: inset 2px 0 9px rgba(0, 0, 0, 0.2);
@@ -3031,90 +3058,92 @@ footer {
     border-radius: 100%;
     top: 2px;
     left: 2px;
-    width: 12px;
-    height: 12px;
+    width: 0.75rem;
+    height: 0.75rem;
     background-color: #5198d9;
     margin: auto;
     transition: background 0.25s linear;
     -webkit-transition: background 0.25s linear; }
 
 .oplata_right_inner {
-  max-width: 427px;
+  max-width: 26.6875rem;
   width: 100%;
   background-color: #f5ffff;
   border: 1px solid #e6e6e6;
-  border-radius: 4px;
-  padding: 10px;
-  padding-bottom: 40px;
+  border-radius: 0.25rem;
+  padding: 0.625rem;
+  padding-bottom: 2.5rem;
   position: relative; }
   .oplata_right_inner .selected_tovar_list {
-    margin-bottom: 35px; }
+    margin-bottom: 2.1875rem; }
     .oplata_right_inner .selected_tovar_list .vash_tovar {
       background: #fff;
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem;
       margin-top: 0;
       cursor: pointer; }
       .oplata_right_inner .selected_tovar_list .vash_tovar:last-of-type {
         margin-bottom: 0; }
       .oplata_right_inner .selected_tovar_list .vash_tovar .card_min_img {
-        max-width: 100px; }
+        max-width: 6.25rem; }
       .oplata_right_inner .selected_tovar_list .vash_tovar .card_min_title {
-        margin-top: 5px; }
+        margin-top: 0.3125rem; }
   .oplata_right_inner .dop_tovar_info {
-    padding-left: 30px; }
+    padding-left: 1.875rem; }
   .oplata_right_inner .zakaz_edit {
-    width: 221px;
-    height: 44px;
-    background-color: white;
+    width: 13.8125rem;
+    height: 2.75rem;
+    background-color: #fff;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
     text-align: center;
-    line-height: 44px;
+    line-height: 2.75rem;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -22px;
+    bottom: -1.375rem;
     margin: auto;
     z-index: 5;
     cursor: pointer;
-    color: black;
+    color: #282828;
     font-family: Arial;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
+    line-height: 0.875rem;
+    color: #000;
     display: block; }
 
 .order_confirm {
-  padding: 20px 25px;
+  padding: 1.25rem 1.5625rem;
   text-align: center;
   border: 1px dashed #b8b9b9;
   position: relative; }
   .order_confirm .tovar_sum {
     position: absolute;
     left: 0;
-    top: -15px;
+    top: -0.9375rem;
     text-align: center;
     width: 100%; }
     .order_confirm .tovar_sum .tovar_sum_inner {
-      padding: 5px 20px;
+      padding: 0.3125rem 1.25rem;
       background: #f5ffff;
       z-index: 3;
       display: inline-block;
       color: #282828;
       font-family: Arial;
-      font-size: 14px;
+      font-size: 0.875rem;
       font-weight: 400;
-      line-height: 14px; }
+      line-height: 0.875rem; }
       .order_confirm .tovar_sum .tovar_sum_inner span {
-        margin-left: 35px;
+        margin-left: 2.1875rem;
         color: #010101;
         font-family: Arial;
         font-weight: 400;
         line-height: 2px;
-        font-size: 38px;
+        font-size: 2.375rem;
         position: relative;
-        top: 6px; }
+        top: 0.375rem; }
         .order_confirm .tovar_sum .tovar_sum_inner span span {
-          font-size: 19px;
+          font-size: 1.1875rem;
           margin-left: 0px;
           top: -1px;
           left: -5px; }
@@ -3124,6 +3153,7 @@ footer {
 /* end oplata tovara  */
 /* korzina popup */
 .korzina_popup {
+  display: none;
   background-color: rgba(71, 41, 11, 0.82);
   position: fixed;
   left: 0;

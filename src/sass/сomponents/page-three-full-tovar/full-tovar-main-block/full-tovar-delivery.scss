@@ -12,19 +12,12 @@
             position: absolute;
             left: rem(30px);
             top: rem(-10px);
-            color: #282828;
-            font-family: Arial;
-            font-size: rem(14px);
-            font-weight: 400;
-            line-height: rem(14px);
+            @include fsz14px400;
         }
         .delivery_info {
             margin-bottom: rem(25px);
             p{
-                font-family: Arial;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 14px;
+                @include fsz14px400;
                 color: #000000;
                 margin-bottom: rem(5px);
                 &:last-of-type {
@@ -38,11 +31,7 @@
         }
         .delivery_info_links {
             a {
-                color: #282828;
-                font-family: Arial;
-                font-size: rem(14px);
-                font-weight: 400;
-                line-height: rem(14px);
+                @include fsz14px400;
                 text-decoration: underline;
                 display: block;
                 margin-bottom: rem(15px);
@@ -53,11 +42,8 @@
         }
     }
     .pay_info {
-        color: #282828;
-        font-family: Arial;
+        @include fsz14px400;
         font-size: rem(12px);
-        font-weight: 400;
-        line-height: rem(14px);
     }
 }
 

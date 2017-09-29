@@ -4,7 +4,7 @@
     justify-content: space-between;
     flex-wrap: wrap; // toar left
     .tovar_info_left {
-        flex: 1 1 310px;        
+        flex: 1 1 rem(310px);        
         .full_characteriscs_info {
             margin-top: rem(35px);           
             li {               
