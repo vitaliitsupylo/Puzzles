@@ -18,11 +18,9 @@
 }
 
 .oplata_title {
-    color: #000;
-    font-family: Arial;
-    font-size: rem(18px);
-    font-weight: 400;
-    line-height: rem(14px);
+    @include fsz14px400;
+    color: #000;    
+    font-size: rem(18px);    
     position: relative;
     padding-bottom: 10px;
     border-bottom: 1px solid #dadada;
@@ -79,11 +77,7 @@
     }
     .oplata_inp_title {
         margin-bottom: rem(10px);
-        color: #282828;
-        font-family: Arial;
-        font-size: rem(14px);
-        font-weight: 400;
-        line-height: rem(14px);
+        @include fsz14px400;
     }
     .oplata_inputs {
         margin-top: rem(20px);
@@ -99,17 +93,11 @@
             box-shadow: insetrem(2px) 0 rem(9px) rgba(0, 0, 0, 0.1);
             &:-moz-placeholder {
                 color: #bababa;
-                font-family: Arial;
-                font-size: rem(14px);
-                font-weight: 400;
-                line-height: rem(14px);
+                @include fsz14px400;
             }
             &::-webkit-input-placeholder {
                 color: #bababa;
-                font-family: Arial;
-                font-size: rem(14px);
-                font-weight: 400;
-                line-height: rem(14px);
+                @include fsz14px400;
             }
             &.active {
                 border: 1px solid #00b230;
@@ -125,20 +113,13 @@
 }
 
 .regular_customer_title {
-    color: #282828;
-    font-family: Arial;
-    font-size: rem(14px);
-    font-weight: 400;
-    line-height: rem(14px);
-    margin-bottom: 20px;
+    @include fsz14px400;
+    margin-bottom:  rem(20px);
 }
 
 .pss_frgt {
     color: #5198d9;
-    font-family: Arial;
-    font-size: rem(14px);
-    font-weight: 400;
-    line-height: rem(14px);
+    @include fsz14px400;
     text-decoration: underline;
     margin-top: rem(10px);
     display: block;
@@ -147,15 +128,15 @@
 .oplata_ch_box {
     display: flex;
     justify-content: space-between;
-    padding-top: 15px;
-    padding-bottom: 20px;
+    padding-top:  rem(15px);
+    padding-bottom:  rem(20px);
     border-bottom: 1px solid #dadada;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
     .oplata_radio_inner {
-        flex: 1 1 70px;
+        flex: 1 1  rem(70px);
         position: relative;
         &.radio_text {
-            flex: 2 1 70px;
+            flex: 2 1  rem(70px);
         }
         input[type=radio] {
             position: absolute;
@@ -173,25 +154,21 @@
             cursor: pointer;
             -webkit-transition: all 0.25s linear;
             z-index: 9;
-            color: black;
-            font-family: Arial;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 14px;
+            @include fsz14px400;
             text-transform: uppercase;
-            height: 83px;
+            height: rem(83px);
             display: block;
-            max-width: 70px;
+            max-width:  rem(70px);
             position: relative;
             span {
                 position: absolute;
                 top: 0;
-                left: 25px;
+                left:  rem(25px);
                 right: 0;
                 bottom: 0;
                 margin: auto;
                 display: block;
-                height: 30px;
+                height:  rem(30px);
             }
         }
         img {
@@ -199,7 +176,7 @@
             height: auto;
             position: absolute;
             top: 0;
-            left: 30px;
+            left:  rem(30px);
             bottom: 0;
             right: 0;
             margin: auto;
@@ -208,13 +185,13 @@
 }
 
 .delivery_ch_box {
-    margin-top: 20px;
-    padding-bottom: 20px;
+    margin-top:  rem(20px);
+    padding-bottom: rem(20px);
     border-bottom: 1px solid #dadada;
     li {
         position: relative;
-        padding-left: 30px;
-        margin-bottom: 30px;
+        padding-left: rem(30px);
+        margin-bottom: rem(30px);
         &.selct_inp {
             padding-left: 0;
             &:last-of-type {
@@ -238,29 +215,25 @@
         }
         .list_select {
             position: relative;
-            max-width: 438px;
+            max-width: rem(438px);
             width: 100%;
-            height: 34px;
+            height: rem(34px);
             background-color: white;
             border: 1px solid #00b230;
             border-radius: 4px;
             box-shadow: inset 2px 0 9px rgba(0, 0, 0, 0.1);
-            padding: 10px 0 10px 15px;
+            padding: rem(10px) 0 rem(10px) rem(15px);
             &:before {
                 content: '>';
                 position: absolute;
-                right: 15px;
+                right: rem(15px);
                 top: 0;
                 bottom: 0;
                 margin: auto;
                 transform: rotate(90deg);
             }
             .option_select {
-                color: #282828;
-                font-family: Arial;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 14px;
+                @include fsz14px400;
             }
             .list_deliver_post,
             .list_curier_adrress {
@@ -271,12 +244,12 @@
 }
 
 .oplata_comment_inpt {
-    margin-top: 20px;
+    margin-top: rem(20px);
     textarea {
-        margin-top: 15px;
+        margin-top: rem(15px);
         width: 100%;
-        height: 94px;
-        padding: 15px;
+        height: rem(94px);
+        padding: rem(15px);
         background-color: white;
         border: 1px solid #c2bfbf;
         border-radius: 4px;
@@ -288,9 +261,9 @@
 .check {
     display: block;
     position: absolute;
-    width: 18px;
-    height: 18px;
-    border-radius: 15px;
+    width: rem(18px);
+    height: rem(18px);
+    border-radius: rem(15px);
     background-color: white;
     border: 1px solid #888;
     box-shadow: inset 2px 0 9px rgba(0, 0, 0, 0.2);
@@ -308,8 +281,8 @@
         border-radius: 100%;
         top: 2px;
         left: 2px;
-        width: 12px;
-        height: 12px;
+        width: rem(12px);
+        height: rem(12px);
         background-color: #5198d9;
         margin: auto;
         transition: background 0.25s linear;
@@ -319,91 +292,85 @@
 
 // oplata right block
 .oplata_right_inner {
-    max-width: 427px;
+    max-width: rem(427px);
     width: 100%;
     background-color: #f5ffff;
     border: 1px solid #e6e6e6;
-    border-radius: 4px;
-    padding: 10px;
-    padding-bottom: 40px;
+    border-radius: rem(4px);
+    padding: rem(10px);
+    padding-bottom: rem(40px);
     position: relative;
     .selected_tovar_list {
-        margin-bottom: 35px;
+        margin-bottom: rem(35px);
         .vash_tovar {
             background: #fff;
-            margin-bottom: 10px;
+            margin-bottom: rem(10px);
             margin-top: 0;
             cursor: pointer;
             &:last-of-type {
                 margin-bottom: 0;
             }
             .card_min_img {
-                max-width: 100px;
+                max-width: rem(100px);
             }
             .card_min_title {
-                margin-top: 5px;
+                margin-top: rem(5px);
             }
         }
     }    
     .dop_tovar_info {
-        padding-left: 30px;
+        padding-left: rem(30px);
     }
     .zakaz_edit {
-        width: 221px;
-        height: 44px;
-        background-color: white;
+        width: rem(221px);
+        height: rem(44px);
+        background-color: #fff;
         border: 1px solid #e6e6e6;
         border-radius: 4px;
         text-align: center;
-        line-height: 44px;
+        line-height: rem(44px);
         position: absolute;
         left: 0;
         right: 0;
-        bottom: -22px;
+        bottom: rem(-22px);
         margin: auto;
         z-index: 5;
-        cursor: pointer;
-        color: black;
-        font-family: Arial;
-        font-size: 14px;
-        font-weight: 400;       
+        cursor: pointer;        
+        @include fsz14px400;  
+        color: #000;    
         display: block;
     }
 }
 
 
 .order_confirm {   
-    padding: 20px 25px;
+    padding:  rem(20px)  rem(25px);
     text-align: center;
     border: 1px dashed #b8b9b9;
     position: relative;
     .tovar_sum {
         position: absolute;
         left: 0;
-        top: -15px;
+        top:  rem(-15px);
         text-align: center;
         width: 100%;
         .tovar_sum_inner {
-            padding: 5px 20px;
+            padding: rem(5px)  rem(20px);
             background: #f5ffff;
             z-index: 3;
             display: inline-block;
-            color: #282828;
-            font-family: Arial;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 14px;
+            @include fsz14px400;
             span {
-                margin-left: 35px;
+                margin-left: rem(35px);
                 color: #010101;
                 font-family: Arial;
                 font-weight: 400;
                 line-height: 2px;
-                font-size: 38px;
+                font-size: rem(38px);
                 position: relative;
-                top: 6px;
+                top: rem(6px);
                 span {
-                    font-size: 19px;
+                    font-size: rem(19px);
                     margin-left: 0px;
                     top: -1px;
                     left: -5px;
