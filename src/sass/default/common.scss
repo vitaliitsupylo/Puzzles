@@ -9,6 +9,19 @@ body {
     margin: auto;
 }
 
+.container-mobile {
+    width: 100%;   
+    padding: rem(10px) rem(7px);
+    margin: auto;
+    max-width: rem(980px);
+}
+.flex_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
 .btn_red {
     display: block;
     padding: rem(11px) rem(23px);
