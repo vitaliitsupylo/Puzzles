@@ -1059,10 +1059,11 @@ footer {
   background-color: rgba(71, 41, 11, 0.82); }
   .product_slider .product_slider_wrap {
     width: 100%;
+    position: relative;
     max-width: 62.1875rem;
     height: auto;
     background-color: #fff;
-    padding: 3.125rem 2.8125rem;
+    padding: 3.125rem 2.8125rem 1.875rem;
     border-radius: 0.1875rem; }
     .product_slider .product_slider_wrap .slider_about_price {
       padding: 1.25rem;
@@ -1101,6 +1102,200 @@ footer {
         border-radius: 0.1875rem; }
         .product_slider .product_slider_wrap .slider_about_price .slider_product_code span {
           font-weight: 700; }
+  .product_slider .product_slider_about {
+    display: flex; }
+    .product_slider .product_slider_about .slider_about_text {
+      margin-left: 3.125rem;
+      max-width: 27.5rem; }
+      .product_slider .product_slider_about .slider_about_text .slider_about_title {
+        margin-bottom: 0.625rem;
+        font-size: 1.25rem; }
+      .product_slider .product_slider_about .slider_about_text .slider_about_social {
+        display: flex; }
+        .product_slider .product_slider_about .slider_about_text .slider_about_social .slider_about_like {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 2.875rem;
+          height: 3.125rem;
+          background-color: #099f31;
+          color: #fff;
+          border-radius: 0.25rem;
+          cursor: pointer;
+          font-size: 1.25rem;
+          margin-right: 0.75rem; }
+          .product_slider .product_slider_about .slider_about_text .slider_about_social .slider_about_like span {
+            font-size: 0.75rem; }
+        .product_slider .product_slider_about .slider_about_text .slider_about_social .slider_about_smile {
+          padding-top: 0.3125rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; }
+          .product_slider .product_slider_about .slider_about_text .slider_about_social .slider_about_smile p span {
+            font-weight: 700; }
+  .product_slider .product_slider_images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.9375rem;
+    margin-bottom: 1.25rem; }
+    .product_slider .product_slider_images .slider_images_left {
+      width: 100%;
+      max-width: 46.875rem;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .product_slider .product_slider_images .slider_images_left .slider_images_page {
+        overflow: hidden;
+        width: 100%;
+        height: 25.9375rem;
+        max-width: 34.5625rem;
+        position: relative; }
+        .product_slider .product_slider_images .slider_images_left .slider_images_page .slider_images_element {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: .4s;
+          transform: scale(0.8);
+          opacity: 0;
+          visibility: hidden; }
+          .product_slider .product_slider_images .slider_images_left .slider_images_page .slider_images_element.active {
+            transform: scale(1);
+            opacity: 1;
+            visibility: visible; }
+      .product_slider .product_slider_images .slider_images_left .img_resize {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        border: 0.0625rem solid rgba(0, 0, 0, 0.22);
+        width: 1.875rem;
+        height: 1.875rem;
+        display: block;
+        font-size: 1.5625rem;
+        text-align: center;
+        z-index: 5;
+        line-height: 1.875rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        transition: color .3s, border .3s; }
+        .product_slider .product_slider_images .slider_images_left .img_resize:hover {
+          color: #eb1b35;
+          border-color: #eb1b35; }
+      .product_slider .product_slider_images .slider_images_left .slider_left, .product_slider .product_slider_images .slider_images_left .slider_right {
+        border: none;
+        cursor: pointer;
+        height: 3.4375rem;
+        width: 1.875rem;
+        font-size: 2.8125rem;
+        text-align: center;
+        line-height: 3.3125rem;
+        color: #212121;
+        transition: color .3s;
+        background-color: transparent; }
+        .product_slider .product_slider_images .slider_images_left .slider_left:hover, .product_slider .product_slider_images .slider_images_left .slider_right:hover {
+          color: #eb1b35; }
+    .product_slider .product_slider_images .slider_images_right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 8.75rem;
+      align-items: center; }
+      .product_slider .product_slider_images .slider_images_right .slider_images_list .slider_list_data {
+        display: flex;
+        flex-direction: column;
+        width: 3.75rem;
+        overflow: hidden; }
+        .product_slider .product_slider_images .slider_images_right .slider_images_list .slider_list_data .list_data_elem {
+          width: 100%;
+          position: relative;
+          overflow: hidden;
+          height: 2.8125rem;
+          margin: 0.3125rem 0;
+          cursor: pointer;
+          transition: border .3s;
+          border: 0.0625rem solid #dadada; }
+          .product_slider .product_slider_images .slider_images_right .slider_images_list .slider_list_data .list_data_elem img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+          .product_slider .product_slider_images .slider_images_right .slider_images_list .slider_list_data .list_data_elem:hover, .product_slider .product_slider_images .slider_images_right .slider_images_list .slider_list_data .list_data_elem.active {
+            border: 0.0625rem solid #eb1b35; }
+      .product_slider .product_slider_images .slider_images_right .slider_images_list .slider_up, .product_slider .product_slider_images .slider_images_right .slider_images_list .slider_down {
+        width: 100%;
+        height: 2.1875rem;
+        text-align: center;
+        font-size: 1.5625rem;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        line-height: 1.875rem; }
+      .product_slider .product_slider_images .slider_images_right .slider_images_add {
+        display: flex;
+        flex-direction: column;
+        width: 100%; }
+        .product_slider .product_slider_images .slider_images_right .slider_images_add .slider_add_elem {
+          display: block;
+          width: 100%;
+          max-width: 2.875rem;
+          height: 2.5rem;
+          border-radius: 0.25rem;
+          text-align: center;
+          line-height: 2.5rem;
+          font-size: 2rem;
+          color: #fff;
+          cursor: pointer;
+          margin: 0.3125rem auto;
+          background-color: #bfbfbf; }
+  .product_slider .product_copyright {
+    text-align: center;
+    opacity: .5; }
+  .product_slider .product_slider_close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    display: block;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    border: 0.0625rem solid #dadada;
+    background-color: #ffeeee;
+    cursor: pointer;
+    transition: background-color .3s; }
+    .product_slider .product_slider_close::before, .product_slider .product_slider_close::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 1.25rem;
+      height: 0.125rem;
+      background-color: #eb1b35;
+      position: absolute;
+      top: 1rem;
+      transition: .3s; }
+    .product_slider .product_slider_close::after {
+      left: 0.4375rem;
+      transform: rotate(45deg); }
+    .product_slider .product_slider_close::before {
+      right: 0.4375rem;
+      transform: rotate(-45deg); }
+    .product_slider .product_slider_close:hover {
+      background-color: transparent; }
+      .product_slider .product_slider_close:hover::before, .product_slider .product_slider_close:hover::after {
+        width: 1.5625rem;
+        background-color: #dadada; }
+      .product_slider .product_slider_close:hover::after {
+        left: 0.3125rem; }
+      .product_slider .product_slider_close:hover::before {
+        right: 0.3125rem; }
+
+.slider_smile {
+  font-size: 1.25rem; }
 
 /*end popus*/
 /*BEGIN PAGE ONE*/

@@ -1,38 +1,39 @@
-.product_slider{
+.product_slider {
   position: fixed;
   top: 0;
   left: 0;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   z-index: 10;
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(71, 41, 11, 0.82);
-  .product_slider_wrap{
+  .product_slider_wrap {
     width: 100%;
+    position: relative;
     max-width: rem(995px);
     height: auto;
     background-color: #fff;
-    padding: rem(50px) rem(45px);
+    padding: rem(50px) rem(45px) rem(30px);
     border-radius: rem(3px);
-    .slider_about_price{
+    .slider_about_price {
       padding: rem(20px);
       display: inline-flex;
       flex-direction: column;
       position: relative;
       border: rem(1px) dotted $black-color;
-      &>[class^="btn"],&>button{
+      & > [class^="btn"], & > button {
         text-transform: none;
         font-size: rem(24px);
         font-weight: 500;
         padding: rem(20px) rem(45px);
-        i{
+        i {
           margin-right: rem(18px);
         }
       }
-      .slider_price_count{
+      .slider_price_count {
         position: absolute;
         bottom: calc(100% - 1rem);
         padding: 0 rem(5px);
@@ -41,25 +42,253 @@
         left: rem(20px);
         font-size: rem(16px);
         color: #7d7d7d;
-        span{
+        span {
           font-size: rem(48px);
           color: #000;
           padding: 0 rem(5px);
         }
       }
-      .slider_product_code{
+      .slider_product_code {
         margin-top: rem(10px);
         margin-bottom: rem(-30px);
-        align-self:center;
+        align-self: center;
         border: rem(1px) solid #ffe6bf;
         background-color: #fff5e5;
         display: inline-block;
         padding: rem(3px) rem(8px);
         border-radius: rem(3px);
-        span{
+        span {
           font-weight: 700;
         }
       }
     }
   }
+  .product_slider_about {
+    display: flex;
+    .slider_about_text {
+      margin-left: rem(50px);
+      max-width: rem(440px);
+      .slider_about_title {
+        margin-bottom: rem(10px);
+        font-size: rem(20px);
+      }
+      .slider_about_social {
+        display: flex;
+        .slider_about_like {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: rem(46px);
+          height: rem(50px);
+          background-color: #099f31;
+          color: #fff;
+          border-radius: rem(4px);
+          cursor: pointer;
+          font-size: rem(20px);
+          margin-right: rem(12px);
+          span {
+            font-size: rem(12px);
+          }
+        }
+        .slider_about_smile {
+          padding-top: rem(5px);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          p {
+            span {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+  .product_slider_images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(15px);
+    margin-bottom: rem(20px);
+    .slider_images_left {
+      width: 100%;
+      max-width: rem(750px);
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .slider_images_page {
+        overflow: hidden;
+        width: 100%;
+        height: rem(415px);
+        max-width: rem(553px);
+        position: relative;
+        .slider_images_element {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: .4s;
+          transform: scale(.8);
+          opacity: 0;
+          visibility: hidden;
+          &.active {
+            transform: scale(1);
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+      .img_resize {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        border: rem(1px) solid rgba(0, 0, 0, .22);
+        width: rem(30px);
+        height: rem(30px);
+        display: block;
+        font-size: rem(25px);
+        text-align: center;
+        z-index: 5;
+        line-height: rem(30px);
+        border-radius: rem(4px);
+        cursor: pointer;
+        transition: color .3s, border .3s;
+        &:hover {
+          color: $red-color;
+          border-color: $red-color;
+        }
+      }
+      .slider_left, .slider_right {
+        border: none;
+        cursor: pointer;
+        height: rem(55px);
+        width: rem(30px);
+        font-size: rem(45px);
+        text-align: center;
+        line-height: rem(53px);
+        color: #212121;
+        transition: color .3s;
+        background-color: transparent;
+        &:hover {
+          color: $red-color;
+        }
+      }
+    }
+    .slider_images_right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: rem(140px);
+      align-items: center;
+      .slider_images_list {
+        .slider_list_data {
+          display: flex;
+          flex-direction: column;
+          width: rem(60px);
+          overflow: hidden;
+          .list_data_elem {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            height: rem(45px);
+            margin: rem(5px) 0;
+            cursor: pointer;
+            transition: border .3s;
+            border: rem(1px) solid #dadada;
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+            &:hover, &.active {
+              border: rem(1px) solid $red-color;
+            }
+          }
+        }
+        .slider_up, .slider_down {
+          width: 100%;
+          height: rem(35px);
+          text-align: center;
+          font-size: rem(25px);
+          cursor: pointer;
+          border: none;
+          background-color: transparent;
+          line-height: rem(30px);
+        }
+      }
+      .slider_images_add {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .slider_add_elem {
+          display: block;
+          width: 100%;
+          max-width: rem(46px);
+          height: rem(40px);
+          border-radius: rem(4px);
+          text-align: center;
+          line-height: rem(40px);
+          font-size: rem(32px);
+          color: #fff;
+          cursor: pointer;
+          margin: rem(5px) auto;
+          background-color: #bfbfbf;
+        }
+      }
+    }
+  }
+  .product_copyright {
+    text-align: center;
+    opacity: .5;
+  }
+  .product_slider_close {
+    position: absolute;
+    top: rem(20px);
+    right: rem(20px);
+    display: block;
+    width: rem(36px);
+    height: rem(36px);
+    border-radius: 50%;
+    border: rem(1px) solid #dadada;
+    background-color: #ffeeee;
+    cursor: pointer;
+    transition: background-color .3s;
+    &::before, &::after {
+      @include before_fig(rem(20px), rem(2px), $red-color);
+      position: absolute;
+      top: rem(16px);
+      transition: .3s;
+    }
+    &::after {
+      left: rem(7px);
+      transform: rotate(45deg);
+    }
+    &::before {
+      right: rem(7px);
+      transform: rotate(-45deg);
+    }
+    &:hover {
+      background-color: transparent;
+      &::before, &::after {
+        width: rem(25px);
+        background-color: #dadada;
+      }
+      &::after {
+        left: rem(5px);
+      }
+      &::before {
+        right: rem(5px);
+      }
+    }
+  }
+}
+
+.slider_smile {
+  font-size: rem(20px);
 }
