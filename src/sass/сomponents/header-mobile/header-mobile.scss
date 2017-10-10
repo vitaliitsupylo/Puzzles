@@ -1,12 +1,19 @@
 /* mob menu */
-
+.header_mobile {    
+}
 .mob_menu {
     flex: 1 1 50px;
-    max-width: 85px;
-    position: relative;    
+    max-width: 110px;
+    position: relative;
+    cursor: pointer;    
+    padding: rem(10px) 0 ;
+    padding-right: 28px;
     padding-left: 33px;
-    cursor: pointer;
-    margin-right: 28px;
+    &.active {
+        background: #ffffff;
+        z-index: 51;
+        position: relative;
+    }
     span {
         color: #ea1b35;
         font-family: $Arial;
@@ -54,7 +61,8 @@
 .header_serch_mob {
     flex: 1 1 130px;
     position: relative;
-
+    padding: rem(10px) 0 ;
+    padding-left: 10px;
     input {
         width: 100%;
         height: 27px;
@@ -68,7 +76,7 @@
     .serch_icon_btn {
         position: absolute;
         right: 12px;
-        top: 7px;
+        top: 15px;
         z-index: 10;  
         background: none;
         border: none;     
@@ -83,7 +91,7 @@
 .header_korzina_total {
     flex: 1 1 50px;
     max-width: 50px;    
-    
+    padding: rem(10px) 0 ;
 }
 .korzina_total_header {
     position: relative;

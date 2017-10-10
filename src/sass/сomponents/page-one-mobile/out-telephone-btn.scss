@@ -1,0 +1,21 @@
+.our_telephone_mob {
+    background-color: #914904;
+    border-radius: 5px;   
+    padding: 1px;
+    padding-bottom: 6px;
+    text-align: center;
+    margin-top: 20px;
+    .btn_red.gld_colr {
+        background: #f7902c;
+        border-radius: 5px;
+        padding-left: 50px;
+        position: relative;
+        box-shadow: inset 0px -1px 23px #914904;
+        i {
+            position: absolute;
+            left: 15px;
+            top: 10px;
+            font-size: 20px;
+        }
+    }   
+}
