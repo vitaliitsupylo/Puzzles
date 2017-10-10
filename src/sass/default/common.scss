@@ -10,16 +10,18 @@ body {
 }
 
 .container-mobile {
-    width: 100%;   
-    padding: rem(10px) rem(7px);
+    width: 100%;
+    padding: 0 rem(7px);
     margin: auto;
     max-width: rem(980px);
 }
+
 .flex_wrap {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .btn_red {
@@ -35,6 +37,7 @@ body {
     border-radius: 4px;
     color: #fdfdfd;
     background: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%);
+    
 }
 
 .buy_button {
@@ -125,7 +128,7 @@ body {
     align-items: center;
     opacity: .7;
     transition: opacity .3s;
-    span{
+    span {
         text-decoration: underline;
     }
     i {
@@ -221,10 +224,10 @@ body {
         align-items: center;
         width: 100%;
         padding-left: rem(260px);
-          @include respond-to(desktop) {
+        @include respond-to(desktop) {
             padding-left: 0;
             flex-direction: column-reverse;
-          }
+        }
     }
 }
 
@@ -314,14 +317,14 @@ body {
             @include respond-to(desktop) {
                 flex-direction: column;
                 flex: 1 2 30%;
-                .news_min{
-                  &:first-child {
-                      float: none;
-                      max-width: 100%;
-                      .news_img{
+                .news_min {
+                    &:first-child {
+                        float: none;
                         max-width: 100%;
-                      }
-                  }
+                        .news_img {
+                            max-width: 100%;
+                        }
+                    }
                 }
             }
         }
@@ -333,7 +336,7 @@ body {
             }
             @include respond-to(desktop) {
                 flex: 1 1 70%;
-              }
+            }
         }
     }
 }
@@ -397,13 +400,15 @@ body {
 
 .full_tovar_more_characteristics {
     margin-top: rem(30px);
-    padding-bottom: rem(50px);    
+    padding-bottom: rem(50px);
 }
+
 .characteristics_tabs {
     display: flex;
     justify-content: flex-start;
     border-bottom: 1px solid #e6e6e6;
 }
+
 .characteristics_content {
     padding-top: rem(40px);
     .full_characteristics_title {
@@ -463,22 +468,32 @@ body {
 
 /* end more info characteritics */
 
+
 /* more full comments */
+
 .comments_wrap {
     margin-top: rem(45px);
 }
+
+
 /* end full comments */
 
+
 /* oplata tovara */
+
 .oplata_left_block {
     flex: 1 1 rem(300px);
     max-width: rem(580px);
-    padding: 0 rem(50px);   
+    padding: 0 rem(50px);
 }
+
 .oplata_right_block {
-    flex: 1 1 rem(300px);    
+    flex: 1 1 rem(300px);
 }
+
+
 /* end oplata tovara */
+
 
 /* footer */
 
