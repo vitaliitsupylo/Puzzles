@@ -1,0 +1,43 @@
+.category_content_mob {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: -10px;
+}
+.mob_category {
+    flex: 1 1 325px;
+    padding: 20px 10px;
+    text-align: center;    
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-left: 10px;
+    .card_min_img {
+        height: auto;
+        img {
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+        }
+    }
+    .card_min_title {
+        text-align: left;
+    }
+    .rate_and_reviews {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .categor_rewivs {
+        opacity: 0.8;
+        color: black;
+        font-family: $Arial;
+        font-size: 12px;
+        font-weight: 400;
+        display: inline-block;
+        margin-left: 5px;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }    
+}

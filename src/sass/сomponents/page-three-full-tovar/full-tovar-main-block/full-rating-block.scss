@@ -2,67 +2,71 @@
     flex: 1 1 rem(300px);
     padding: rem(5px);
     padding-left: rem(45px);
-    .rating_star_block {
-        display: flex;
-        margin-bottom: rem(20px);
-        .rating {
-            margin-right: rem(20px);
-        }
-        .reviews {
-            color: #606060;
-            @include fsz14px400;
-            text-decoration: underline;
-            a {
-                display: block;
-            }
-        }
+}
+
+.rating_star_block {
+    display: flex;
+    margin-bottom: rem(20px);
+    .rating {
+        margin-right: rem(20px);
     }
-    .detail_tools {
+    .reviews {
+        color: #606060;
+        @include fsz14px400;
+        text-decoration: underline;
         a {
             display: block;
-            position: relative;
-            margin-bottom: rem(20px);
-            &:hover {
-                span {
-                    color: #000;
-                }
-            }
-            i {
-                width: rem(23px);
-            }
-            span {
-                color: #606060;
-                @include fsz14px400;
-                margin-left: rem(10px);
-            }
         }
     }
-    .one_click_but {
-        width: rem(182px);
-        height: rem(31px);
-        background-color: #fff;
-        border: rem(1px) solid #ff2f34;
-        border-radius: rem(4px);
-        text-align: center;
-        line-height: rem(31px);
-        margin-bottom: rem(90px);
-        a {
+}
+
+.detail_tools {
+    a {
+        display: block;
+        position: relative;
+        margin-bottom: rem(20px);
+        &:hover {
+            span {
+                color: #000;
+            }
+        }
+        i {
+            width: rem(23px);
+        }
+        span {
             color: #606060;
             @include fsz14px400;
-            text-transform: uppercase;
+            margin-left: rem(10px);
         }
     }
-    .soc_block {
-        display: flex;
-        justify-content: flex-start;
-        padding: 0;
-        a {
-            max-width: rem(35px);
-            margin-right: rem(10px);
-            img {
-                width: 100%;
-                height: auto;
-            }
+}
+
+.one_click_but {
+    width: rem(182px);
+    height: rem(31px);
+    background-color: #fff;
+    border: rem(1px) solid #ff2f34;
+    border-radius: rem(4px);
+    text-align: center;
+    line-height: rem(31px);
+    margin-bottom: rem(90px);
+    a {
+        color: #606060;
+        @include fsz14px400;
+        text-transform: uppercase;
+    }
+}
+
+.soc_block {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    a {
+        max-width: rem(35px);
+        margin-right: rem(10px);
+        img {
+            width: 100%;
+            height: auto;
         }
     }
 }

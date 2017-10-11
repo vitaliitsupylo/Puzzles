@@ -33,18 +33,18 @@
 }
 .filter_left {
   display: flex;
-  align-items: flex-start;
-  .list_filter_setting {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .filter_search {
-    display: block;
-    font-size: rem(14px);
-    margin-top: rem(7px);
-    color: $grey-dark;
-    margin-left: rem(15px);
-  }
+  align-items: flex-start;  
+}
+.list_filter_setting {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter_search {
+  display: block;
+  font-size: rem(14px);
+  margin-top: rem(7px);
+  color: $grey-dark;
+  margin-left: rem(15px);
 }
 .queue {
   display: block;
