@@ -1,5 +1,8 @@
 /* mob menu */
 .header_mobile {    
+    .container-mobile {
+        padding: 0;
+    }
 }
 .mob_menu {
     flex: 1 1 50px;
@@ -8,7 +11,7 @@
     cursor: pointer;    
     padding: rem(10px) 0 ;
     padding-right: 28px;
-    padding-left: 33px;
+    padding-left: 40px;
     &.active {
         background: #ffffff;
         z-index: 51;
@@ -24,8 +27,8 @@
 }
 .humburger_menu {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 7px;
+    top: -1px;
     bottom: 0;
     margin: auto;
     width: 23px;

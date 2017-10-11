@@ -10,137 +10,137 @@
     visibility: hidden;
     opacity: 0;
     transition: .5s;
-    padding: rem(30px) rem(5px) rem(40px) rem(30px);
-    .reg_title {
-        margin-bottom: rem(20px);
+    padding: rem(30px) rem(5px) rem(40px) rem(30px);    
+}
+.reg_title {
+    margin-bottom: rem(20px);
+    color: #282828;
+    font-family: Arial;
+    font-size: rem(24px);
+    font-weight: 400;
+}
+.reg_inner {
+    display: flex;
+    justify-content: flex-start;
+    .auth_title {
+        margin-bottom: rem(10px);
         color: #282828;
         font-family: Arial;
-        font-size: rem(24px);
+        font-size: rem(14px);
         font-weight: 400;
+        line-height: rem(14px);
     }
-    .reg_inner {
-        display: flex;
-        justify-content: flex-start;
-        .auth_title {
-            margin-bottom: rem(10px);
-            color: #282828;
-            font-family: Arial;
-            font-size: rem(14px);
-            font-weight: 400;
-            line-height: rem(14px);
-        }
-        .auth_text_info {
-            margin-top: rem(10px);
-            color: #848484;
-            font-family: Arial;
-            font-size: rem(12px);
-            font-weight: 400;
-            line-height: rem(14px);
-        }
-        .reg_left {
-            flex: 0 1 rem(270px);
-            padding-right: rem(5px);
-            .auth_blocks {
-                margin-bottom: rem(20px);
+    .auth_text_info {
+        margin-top: rem(10px);
+        color: #848484;
+        font-family: Arial;
+        font-size: rem(12px);
+        font-weight: 400;
+        line-height: rem(14px);
+    }    
+}
+.reg_left {
+    flex: 0 1 rem(270px);
+    padding-right: rem(5px);
+    .auth_blocks {
+        margin-bottom: rem(20px);
 
-                input {
-                    width: 100%;
-                    height: rem(34px);
-                    background-color: #fff;
-                    border: 1px solid #c2bfbf;
-                    border-radius: 4px;
-                    box-shadow: inset 2px 0 9px rgba(0, 0, 0, 0.1);
-                    padding: rem(10px);
-                }
-            }
-            .btn_red {
-                max-width: rem(220px);
-                width: 100%;
-                font-size: 16px;
-                height: rem(38px);
-                background-color: #00b230;
-                background-image: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%);
-                border-radius: 4px;
-                box-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.86);
-                padding: 0;
-                text-align: center;
-                line-height: rem(38px);
-                margin-bottom: rem(20px);
-                &.active {
-                    background-image: none;
-                }
-            }
-            .approov_reg_text {
-                max-width: rem(200px);
-                width: 100%;
-                color: #848484;
-                font-family: Arial;
-                font-size: rem(12px);
-                font-weight: 400;
-                line-height: rem(14px);
-                a {
-                    color: #5198d9;
-                    text-decoration: underline;
-                }
-            }
+        input {
+            width: 100%;
+            height: rem(34px);
+            background-color: #fff;
+            border: 1px solid #c2bfbf;
+            border-radius: 4px;
+            box-shadow: inset 2px 0 9px rgba(0, 0, 0, 0.1);
+            padding: rem(10px);
         }
-        .reg_right {
-            flex: 0 1 rem(225px);
-            margin-left: rem(20px);
-            .auth_title {
-                padding-left: rem(30px);
+    }
+    .btn_red {
+        max-width: rem(220px);
+        width: 100%;
+        font-size: 16px;
+        height: rem(38px);
+        background-color: #00b230;
+        background-image: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%);
+        border-radius: 4px;
+        box-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.86);
+        padding: 0;
+        text-align: center;
+        line-height: rem(38px);
+        margin-bottom: rem(20px);
+        &.active {
+            background-image: none;
+        }
+    }
+    .approov_reg_text {
+        max-width: rem(200px);
+        width: 100%;
+        color: #848484;
+        font-family: Arial;
+        font-size: rem(12px);
+        font-weight: 400;
+        line-height: rem(14px);
+        a {
+            color: #5198d9;
+            text-decoration: underline;
+        }
+    }
+}
+.reg_right {
+    flex: 0 1 rem(225px);
+    margin-left: rem(20px);
+    .auth_title {
+        padding-left: rem(30px);
+    }
+    .reg_right_inner {
+        padding-left: rem(30px);
+        border-left: 1px solid #c2bfbf;
+        .auth_text_info {
+            margin-bottom: rem(30px);
+        }
+        .soc_enter {
+            border: 1px solid #c2bfbf;
+            border-radius: 4px;
+            padding: rem(5px);
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: rem(10px);
+            cursor: pointer;
+            &:last-of-type {
+                margin-bottom: 0;
             }
-            .reg_right_inner {
-                padding-left: rem(30px);
-                border-left: 1px solid #c2bfbf;
-                .auth_text_info {
-                    margin-bottom: rem(30px);
+            &.ggl {
+                .soc_enter_text {
+                    color: #282828;
+                    span {
+                        color: #dd4b39;
+                    }
                 }
-                .soc_enter {
-                    border: 1px solid #c2bfbf;
-                    border-radius: 4px;
-                    padding: rem(5px);
-                    display: flex;
-                    justify-content: flex-start;
-                    margin-bottom: rem(10px);
-                    cursor: pointer;
-                    &:last-of-type {
-                        margin-bottom: 0;
-                    }
-                    &.ggl {
-                        .soc_enter_text {
-                            color: #282828;
-                            span {
-                                color: #dd4b39;
-                            }
-                        }
-                    }
-                    .soc_enter_logo {
-                        flex: 0 1 rem(42px);
-                        height: rem(42px);
-                        line-height: rem(41px);
-                        text-align: center;
-                        border-radius: rem(25px);
-                        background-color: #e8e8e8;
-                        img {
-                            width: 32px;
-                            vertical-align: middle;
-                        }
-                    }
-                    .soc_enter_text {
-                        flex: 1 1 rem(50px);
-                        margin-left: rem(10px);
-                        margin-top: rem(5px);
-                        color: #3b5998;
-                        font-family: Arial;
-                        font-size: rem(14px);
-                        font-weight: 400;
-                        span {
-                            font-weight: 900;
-                            text-decoration: underline;
-                            display: block;
-                        }
-                    }
+            }
+            .soc_enter_logo {
+                flex: 0 1 rem(42px);
+                height: rem(42px);
+                line-height: rem(41px);
+                text-align: center;
+                border-radius: rem(25px);
+                background-color: #e8e8e8;
+                img {
+                    width: 32px;
+                    vertical-align: middle;
+                }
+            }
+            .soc_enter_text {
+                flex: 1 1 rem(50px);
+                margin-left: rem(10px);
+                margin-top: rem(5px);
+                color: #3b5998;
+                font-family: Arial;
+                font-size: rem(14px);
+                font-weight: 400;
+                span {
+                    font-weight: 900;
+                    text-decoration: underline;
+                    display: block;
                 }
             }
         }
