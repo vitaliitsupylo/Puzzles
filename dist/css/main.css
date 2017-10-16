@@ -3797,7 +3797,8 @@ footer.footer_mobile {
 .filter_mob_top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  position: relative; }
   .filter_mob_top a {
     color: #5198d9;
     font-family: "Arial", sans-serif;
@@ -3855,7 +3856,7 @@ footer.footer_mobile {
 /* ----------------------CATEGORY MOBILE------------------------  */
 /* mob-menu-popup  */
 .mob_overlay {
-  display: none;
+  display: block;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -4004,6 +4005,86 @@ footer.footer_mobile {
   cursor: pointer; }
 
 /* end mob-menu-popup  */
+/* mobile_filter_popup  */
+.mobile_filter_popup {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 60; }
+  .mobile_filter_popup .filter_category {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    position: relative; }
+  .mobile_filter_popup .fit_title_mob {
+    opacity: 0.5;
+    color: #282828;
+    font-family: Arial;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 14px;
+    padding-left: 15px; }
+  .mobile_filter_popup .fit_podtitle {
+    padding-left: 35px; }
+  .mobile_filter_popup .fil_cat_section {
+    border: none; }
+  .mobile_filter_popup .section_content {
+    flex-direction: column;
+    padding: 0; }
+    .mobile_filter_popup .section_content .label {
+      position: relative; }
+    .mobile_filter_popup .section_content label {
+      position: relative; }
+    .mobile_filter_popup .section_content.book label {
+      line-height: 45px;
+      width: 100%;
+      padding-left: 35px;
+      border-top: 2px solid #ebebeb;
+      margin-bottom: 0;
+      position: relative; }
+      .mobile_filter_popup .section_content.book label:last-child {
+        border-bottom: 2px solid #ebebeb; }
+    .mobile_filter_popup .section_content .checkbox-custom {
+      display: none;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      margin-right: 0;
+      box-shadow: inset 0.5px 0.9px 5px rgba(194, 6, 28, 0.38);
+      border-radius: none;
+      border: none;
+      background-color: none; }
+    .mobile_filter_popup .section_content .checkbox-custom:after {
+      content: '';
+      display: none;
+      position: absolute;
+      right: 25px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 0.9375rem;
+      height: 0.9375rem;
+      background-image: url("C:/Users/Yaruy_Robot/Desktop/Dima_puzlls/Puzzles/img/check_ok.png");
+      background-repeat: no-repeat;
+      background-size: 0.9375rem 0.9375rem;
+      box-shadow: none;
+      border-radius: none;
+      border: none;
+      background-color: none; }
+    .mobile_filter_popup .section_content .checkbox-custom::before {
+      display: none; }
+    .mobile_filter_popup .section_content .checkbox:checked + .checkbox-custom {
+      display: block; }
+    .mobile_filter_popup .section_content .checkbox:checked + .checkbox-custom::before {
+      display: none; }
+    .mobile_filter_popup .section_content .checkbox:checked + .checkbox-custom::after {
+      display: block; }
+
+/* end mobile_filter_popup  */
 /* mobile  */
 
 /*# sourceMappingURL=main.css.map*/
