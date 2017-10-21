@@ -1,112 +1,112 @@
   /*default*/
-    @import "default/reset.scss";
-    @import "default/variables.scss";
-    @import "default/mixin.scss";
-    @import "default/functions.scss";
-    @import "default/common.scss";   
+    @import "default/reset";
+    @import "default/variables";
+    @import "default/mixin";
+    @import "default/functions";
+    @import "default/common";
   /*default end*/
   /*header*/
-    @import "сomponents/header/logo.scss";
-    @import "сomponents/header/contact-set.scss";
-    @import "сomponents/header/personal-area.scss";
-    @import "сomponents/header/registration.scss";
+    @import "сomponents/header/logo";
+    @import "сomponents/header/contact-set";
+    @import "сomponents/header/personal-area";
+    @import "сomponents/header/registration";
 
   /*end header*/
   /*search line*/
-    @import "сomponents/search-line/category-top.scss";
-    @import "сomponents/search-line/search.scss";
+    @import "сomponents/search-line/category-top";
+    @import "сomponents/search-line/search";
   /*end search line*/
   /*footer*/
-    @import "сomponents/footer/left-info-block.scss";
-    @import "сomponents/footer/payment-block.scss";
-    @import "сomponents/footer/soc-block-form.scss";
+    @import "сomponents/footer/left-info-block";
+    @import "сomponents/footer/payment-block";
+    @import "сomponents/footer/soc-block-form";
   /*end footer*/
   /*aside*/
-    @import "сomponents/page-one/aside/filter.scss";
-    @import "сomponents/page-one/aside/filter-track.scss";
+    @import "сomponents/page-one/aside/filter";
+    @import "сomponents/page-one/aside/filter-track";
     /*end aside*/
     /*popups*/
-    @import "сomponents/popups/product-slider.scss";
+    @import "сomponents/popups/product-slider";
     /*end popus*/
 /*BEGIN PAGE ONE*/
   /*categories list*/
-    @import "сomponents/page-one/main-content-left/categories-list.scss";
+    @import "сomponents/page-one/main-content-left/categories-list";
   /*end categories list*/
   /*main content center*/
-    @import "сomponents/page-one/main-content-center/main-banner.scss";
-    @import "сomponents/page-one/main-content-center/pagination.scss";
-    @import "сomponents/page-one/main-content-center/main-categories.scss";
-    @import "сomponents/page-one/main-content-center/slider-cards.scss";
-    @import "сomponents/page-one/main-content-center/card-min.scss";
+    @import "сomponents/page-one/main-content-center/main-banner";
+    @import "сomponents/page-one/main-content-center/pagination";
+    @import "сomponents/page-one/main-content-center/main-categories";
+    @import "сomponents/page-one/main-content-center/slider-cards";
+    @import "сomponents/page-one/main-content-center/card-min";
   /*end main content center*/
   /*information section*/
-    @import "сomponents/page-one/information/news-min.scss";
-    @import "сomponents/page-one/information/comment.scss";
-    @import "сomponents/page-one/information/about.scss";
+    @import "сomponents/page-one/information/news-min";
+    @import "сomponents/page-one/information/comment";
+    @import "сomponents/page-one/information/about";
   /*end information section*/
 /*END PAGE ONE*/
 /*BEGIN PAGE TWO*/
   /*main content center*/
-    @import "сomponents/page-two/main-content-center/filter-settings.scss";
-    @import "сomponents/page-two/main-content-center/filter-result.scss";
-    @import "сomponents/page-two/main-content-center/card-min.scss";
-    @import "сomponents/page-two/main-content-center/pagination.scss";
+    @import "сomponents/page-two/main-content-center/filter-settings";
+    @import "сomponents/page-two/main-content-center/filter-result";
+    @import "сomponents/page-two/main-content-center/card-min";
+    @import "сomponents/page-two/main-content-center/pagination";
   /*end main content center*/
   /*main content left*/
-    @import "сomponents/page-two/main-content-left/filter-category.scss";
-    @import "сomponents/page-two/main-content-left/filter-track.scss";
-    @import "сomponents/page-two/main-content-left/filter-list-category.scss";
+    @import "сomponents/page-two/main-content-left/filter-category";
+    @import "сomponents/page-two/main-content-left/filter-track";
+    @import "сomponents/page-two/main-content-left/filter-list-category";
   /*end main content left*/
   /*full slider */
-    @import "сomponents/page-two/slider/slider-cards.scss";
+    @import "сomponents/page-two/slider/slider-cards";
   /*end slider*/
 /*END PAGE TWO*/
 
 /* PAGE 3 full tovar*/
 
   /* breadcrums */
-   @import "сomponents/page-three-full-tovar/breadcrumbs/breadcrums.scss";
+   @import "сomponents/page-three-full-tovar/breadcrumbs/breadcrums";
   /* end breadcrums*/
   /* full tovar price */
-    @import "сomponents/page-three-full-tovar/full-tovar-main-block/full-tovar-price.scss";
+    @import "сomponents/page-three-full-tovar/full-tovar-main-block/full-tovar-price";
   /* full tovar price */
   /* full rating */
-    @import "сomponents/page-three-full-tovar/full-tovar-main-block/full-rating-block.scss";
+    @import "сomponents/page-three-full-tovar/full-tovar-main-block/full-rating-block";
   /* full rating */
   /* full tovar delivery */
-    @import "сomponents/page-three-full-tovar/full-tovar-main-block/full-tovar-delivery.scss";
+    @import "сomponents/page-three-full-tovar/full-tovar-main-block/full-tovar-delivery";
   /* full tovar delivery */
   /* full slider */
-    @import "сomponents/page-three-full-tovar/full-tovar-main-block/slider-block.scss";
+    @import "сomponents/page-three-full-tovar/full-tovar-main-block/slider-block";
   /* full slider */
   /* tovar-more-tabs */
-    @import "сomponents/page-three-full-tovar/tovar-more-info/tovar-more-tabs.scss";
+    @import "сomponents/page-three-full-tovar/tovar-more-info/tovar-more-tabs";
   /* end tovar-more-tabs */
   /* buy together */
-    @import "сomponents/page-three-full-tovar/tovar-more-info/buy-together.scss";
+    @import "сomponents/page-three-full-tovar/tovar-more-info/buy-together";
   /* end buy together */
   /* more-delivery-info */
-    @import "сomponents/page-three-full-tovar/tovar-more-info/more-delivery-info.scss";
+    @import "сomponents/page-three-full-tovar/tovar-more-info/more-delivery-info";
   /* end more-delivery-info */
-  /* full-characteristic.scss */
-    @import "сomponents/page-three-full-tovar/tovar-more-info/full-characteristic.scss";
-  /* end full-characteristic.scss */
+  /* full-characteristic */
+    @import "сomponents/page-three-full-tovar/tovar-more-info/full-characteristic";
+  /* end full-characteristic */
   /* tovar-foto */
-    @import "сomponents/page-three-full-tovar/tovar-more-info/tovar-foto.scss";
+    @import "сomponents/page-three-full-tovar/tovar-more-info/tovar-foto";
   /* end tovar-foto */
   /* view-video */
-    @import "сomponents/page-three-full-tovar/tovar-more-info/view-video.scss";
+    @import "сomponents/page-three-full-tovar/tovar-more-info/view-video";
   /* end view-video */
   /* full-reviews */
-    @import "сomponents/page-three-full-tovar/tovar-more-info/full-reviews.scss";
+    @import "сomponents/page-three-full-tovar/tovar-more-info/full-reviews";
   /* end full-reviews */
 
   /* tovar-info-right */
-  @import "сomponents/page-three-full-tovar/tovar-more-info/tovar-info-right.scss";
+  @import "сomponents/page-three-full-tovar/tovar-more-info/tovar-info-right";
   /* end tovar-info-right */
 
   /* add reviews */
-  @import "сomponents/page-three-full-tovar/tovar-more-info/add-reviews.scss";
+  @import "сomponents/page-three-full-tovar/tovar-more-info/add-reviews";
   /* end add reviews */
 
 /* END PAGE 3 full tovar*/
@@ -114,19 +114,24 @@
 // Oplata tovara page
 
  /* oplata tovara  */
- @import "сomponents/oplata-tovara/oplata.scss";
+ @import "сomponents/oplata-tovara/oplata";
  /* end oplata tovara  */
 
 // End oplata tovara
 
 
 /* korzina popup */
-@import "сomponents/header/korzina-popup.scss";
+@import "сomponents/header/korzina-popup";
 
 /* end korzina popup */
 
+/*BEGIN NEWSLETTER PAGE*/
+  /*account*/
+    @import "сomponents/newsletter/account";
 
-
+    @import "сomponents/newsletter/newsletter-block";
+  /*end account*/
+/*END NEWSLETTER PAGE*/
 
 
 
@@ -135,45 +140,45 @@
 /* mobile  */
 
 /* header  */
-@import "сomponents/header-mobile/header-mobile.scss";
+@import "сomponents/header-mobile/header-mobile";
 /* end header  */
 
 /* main-banner-mobile  */
-@import "сomponents/page-one-mobile/main-banner-mobile.scss";
+@import "сomponents/page-one-mobile/main-banner-mobile";
 /* end main-banner-mobile  */
 /* main-banner-mobile  */
-@import "сomponents/page-one-mobile/categor-list-mobile.scss";
+@import "сomponents/page-one-mobile/categor-list-mobile";
 /* end main-banner-mobile  */
 /* main_categories_mobile-mobile  */
-@import "сomponents/page-one-mobile/main-categories-mobile.scss";
+@import "сomponents/page-one-mobile/main-categories-mobile";
 /* end main_categories_mobile-mobile  */
 /* out-telephone-btn  */
-@import "сomponents/page-one-mobile/out-telephone-btn.scss";
+@import "сomponents/page-one-mobile/out-telephone-btn";
 /* end out-telephone-btn  */
 /* footer-mobile  */
-@import "сomponents/page-one-mobile/footer-mobile.scss";
+@import "сomponents/page-one-mobile/footer-mobile";
 /* end footer-mobile  */
 
 
 /* ----------------------CATEGORY MOBILE------------------------  */
 /* filter-mobile  */
-@import "сomponents/category-mobile/filter-mobile.scss";
+@import "сomponents/category-mobile/filter-mobile";
 /* end filter-mobile  */
 /* category-mobilep  */
-@import "сomponents/category-mobile/category-mobile.scss";
+@import "сomponents/category-mobile/category-mobile";
 /* end category-mobile  */
 /* ----------------------CATEGORY MOBILE------------------------  */
 
 
 /* mob-menu-popup  */
-@import "сomponents/mobile-popup/mob-menu-popup.scss";
+@import "сomponents/mobile-popup/mob-menu-popup";
 /* end mob-menu-popup  */
 /* mob-menu-popup  */
-@import "сomponents/mobile-popup/mob-registration.scss";
+@import "сomponents/mobile-popup/mob-registration";
 /* end mob-menu-popup  */
 
 /* mobile_filter_popup  */
-@import "сomponents/mobile-popup/mobile-filter-popup.scss";
+@import "сomponents/mobile-popup/mobile-filter-popup";
 /* end mobile_filter_popup  */
 
 

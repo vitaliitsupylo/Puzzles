@@ -1,0 +1,59 @@
+.newsletter_block {
+  padding: 0 rem(15px);
+  .newsletter_elem {
+    margin-bottom: rem(43px);
+    label {
+      margin-bottom: rem(10px);
+      display: flex;
+      align-items: center;
+    }
+    .checkbox {
+      display: none;
+    }
+    .checkbox-custom {
+      width: rem(15px);
+      cursor: pointer;
+      height: rem(15px);
+      position: relative;
+      box-shadow: inset rem(-1px) rem(1px) rem(5px) rgba(194, 6, 28, 0.38);
+      border-radius: rem(3px) rem(4px) rem(4px) rem(3px);
+      border: rem(1px) solid #dadada;
+      background-color: #ffffff;
+      margin-right: rem(15px);
+    }
+    .checkbox-custom,
+    .label {
+      display: inline-block;
+      vertical-align: middle;
+      font-weight: 700;
+      font-size: rem(14px);
+    }
+
+    .checkbox:checked + .checkbox-custom::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      bottom: 2px;
+      left: 2px;
+      background: #413548;
+      border-radius: 2px;
+    }
+    &.list {
+      flex-direction: column;
+    }
+    &.book {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      label {
+        width: 50%;
+      }
+    }
+    .newsletter_elem_text {
+      opacity: .5;
+      line-height: 1.43;
+      padding-left: rem(30px);
+    }
+  }
+}
