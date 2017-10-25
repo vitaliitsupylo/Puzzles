@@ -19,7 +19,7 @@
   .section_content {
     display: flex;
     padding: 0 rem(15px);
-    label{
+    label {
       margin-bottom: rem(18px);
     }
     .checkbox {
@@ -50,28 +50,29 @@
       right: 2px;
       bottom: 2px;
       left: 2px;
-      background: #413548;
+      background: #f8213c;
       border-radius: 2px;
     }
-    &.list{
+    &.list {
       flex-direction: column;
     }
-    &.book{
+    &.book {
       justify-content: space-between;
       flex-wrap: wrap;
-      label{
-            width: 50%;
+      label {
+        width: 50%;
       }
     }
   }
-  .filter_track_wrap{
+  .filter_track_wrap {
     padding-bottom: rem(20px);
-    .filter_track{
+    .filter_track {
       border-left: rem(1px) solid #e3e3e3;
     }
   }
 }
-.more_filter{
+
+.more_filter {
   display: inline-block;
   margin: auto;
   color: $sky-color;
