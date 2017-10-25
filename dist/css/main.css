@@ -3633,6 +3633,8 @@ footer {
         .account .account_list .account_elem:hover i {
           right: -0.3125rem; }
 
+/*end account*/
+/*newsletter*/
 .newsletter_block {
   padding: 0 0.9375rem; }
   .newsletter_block .newsletter_elem {
@@ -3681,9 +3683,45 @@ footer {
       line-height: 1.43;
       padding-left: 1.875rem; }
 
-/*end account*/
+/*end newsletter*/
 /*END NEWSLETTER PAGE*/
 /*BEGIN WISH LIST*/
+/*account*/
+.account {
+  display: block;
+  background-color: #fff;
+  margin-top: 1.6875rem;
+  border-right: solid 0.0625rem #e3e3e3; }
+  .account .account_title {
+    border-bottom: solid 0.0625rem #e3e3e3;
+    display: block;
+    font-size: 1rem;
+    padding-bottom: 1.5625rem; }
+  .account .account_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.25rem 0.625rem; }
+    .account .account_list .account_elem {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      line-height: 1;
+      margin: 0.3125rem 0;
+      font-size: 0.875rem;
+      transition: color .3s; }
+      .account .account_list .account_elem i {
+        font-size: 1.875rem;
+        margin-right: 1.4375rem;
+        position: relative;
+        right: 0;
+        transition: right .3s, color .3s; }
+      .account .account_list .account_elem:hover {
+        color: #00b230; }
+        .account .account_list .account_elem:hover i {
+          right: -0.3125rem; }
+
+/*end account*/
 /*with list*/
 .wish_list_wrap {
   display: flex;
@@ -3824,6 +3862,96 @@ footer {
 
 /*end with list*/
 /*END WISH LIST*/
+/*BEGIN USER DATA*/
+/*account*/
+.account {
+  display: block;
+  background-color: #fff;
+  margin-top: 1.6875rem;
+  border-right: solid 0.0625rem #e3e3e3; }
+  .account .account_title {
+    border-bottom: solid 0.0625rem #e3e3e3;
+    display: block;
+    font-size: 1rem;
+    padding-bottom: 1.5625rem; }
+  .account .account_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.25rem 0.625rem; }
+    .account .account_list .account_elem {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      line-height: 1;
+      margin: 0.3125rem 0;
+      font-size: 0.875rem;
+      transition: color .3s; }
+      .account .account_list .account_elem i {
+        font-size: 1.875rem;
+        margin-right: 1.4375rem;
+        position: relative;
+        right: 0;
+        transition: right .3s, color .3s; }
+      .account .account_list .account_elem:hover {
+        color: #00b230; }
+        .account .account_list .account_elem:hover i {
+          right: -0.3125rem; }
+
+/*end account*/
+/*user data*/
+.user_data_block {
+  padding: 0 0.9375rem; }
+
+/*user data*/
+/*END USER DATA*/
+/*BEGIN USER REVIEW*/
+/*account*/
+.account {
+  display: block;
+  background-color: #fff;
+  margin-top: 1.6875rem;
+  border-right: solid 0.0625rem #e3e3e3; }
+  .account .account_title {
+    border-bottom: solid 0.0625rem #e3e3e3;
+    display: block;
+    font-size: 1rem;
+    padding-bottom: 1.5625rem; }
+  .account .account_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.25rem 0.625rem; }
+    .account .account_list .account_elem {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      line-height: 1;
+      margin: 0.3125rem 0;
+      font-size: 0.875rem;
+      transition: color .3s; }
+      .account .account_list .account_elem i {
+        font-size: 1.875rem;
+        margin-right: 1.4375rem;
+        position: relative;
+        right: 0;
+        transition: right .3s, color .3s; }
+      .account .account_list .account_elem:hover {
+        color: #00b230; }
+        .account .account_list .account_elem:hover i {
+          right: -0.3125rem; }
+
+/*end account*/
+/*user reviews*/
+.user_reviews_card {
+  display: flex;
+  width: 100%; }
+
+.user_reviews {
+  padding: 0 0.9375rem; }
+
+/*end user reviews*/
+/*END USER REVIEW*/
 /* mobile  */
 /* header  */
 /* mob menu */

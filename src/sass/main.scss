@@ -3,8 +3,8 @@
     @import "default/variables.scss";
     @import "default/mixin.scss";
     @import "default/functions.scss";
-    @import "default/common.scss";   
-    @import "default/iconmoon.scss";    
+    @import "default/common.scss";
+    @import "default/iconmoon.scss";
   /*default end*/
   /*header*/
     @import "сomponents/header/logo";
@@ -128,18 +128,38 @@
 
 /*BEGIN NEWSLETTER PAGE*/
   /*account*/
-    @import "сomponents/newsletter/account";
-
-    @import "сomponents/newsletter/newsletter-block";
+    @import "сomponents/page-newsletter/account";
   /*end account*/
+  /*newsletter*/
+    @import "сomponents/page-newsletter/newsletter-block";
+  /*end newsletter*/
 /*END NEWSLETTER PAGE*/
 /*BEGIN WISH LIST*/
+  /*account*/
+    @import "сomponents/page-wish-list/account";
+  /*end account*/
   /*with list*/
-  @import "сomponents/wish-list/wish-list";
-  @import "сomponents/wish-list/card-min";
+    @import "сomponents/page-wish-list/wish-list";
+    @import "сomponents/page-wish-list/card-min";
   /*end with list*/
 /*END WISH LIST*/
-
+/*BEGIN USER DATA*/
+  /*account*/
+    @import "сomponents/page-user-data/account";
+  /*end account*/
+  /*user data*/
+    @import "сomponents/page-user-data/user-data";
+  /*user data*/
+/*END USER DATA*/
+/*BEGIN USER REVIEW*/
+  /*account*/
+    @import "сomponents/page-user-reviews/account";
+  /*end account*/
+  /*user reviews*/
+    @import "сomponents/page-user-reviews/user_reviews_card";
+    @import "сomponents/page-user-reviews/user-reviews";
+  /*end user reviews*/
+/*END USER REVIEW*/
 
 
 
