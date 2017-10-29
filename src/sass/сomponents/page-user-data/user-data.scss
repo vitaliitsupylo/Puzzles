@@ -1,3 +1,131 @@
 .user_data_block {
   padding: 0 rem(15px);
+  .user_data_name {
+    position: relative;
+    padding-bottom: rem(20px);
+    width: 100%;
+    max-width: rem(480px);
+    border-bottom: solid rem(1px) rgba(0, 0, 0, .2);
+    div {
+      display: flex;
+      width: 100%;
+      margin-bottom: rem(12px);
+      span {
+        display: block;
+        width: 100%;
+        color: #282828;
+        opacity: .5;
+        max-width: rem(150px);
+      }
+      p {
+        display: block;
+        width: 100%;
+        max-width: rem(350px);
+        margin-left: rem(15px);
+        a {
+          color: $sky-color;
+          text-decoration: underline;
+          margin-left: rem(4px);
+          transition: color .3s;
+          &:hover {
+            text-decoration: none;
+            color: $red-color;
+          }
+        }
+      }
+    }
+  }
+  .user_data_edit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: solid rem(1px) rgba(0, 0, 0, .2);
+    padding-left: rem(20px);
+    margin-left: rem(65px);
+    a {
+      color: $sky-color;
+      margin-bottom: rem(5px);
+      transition: color .3s;
+      text-decoration: underline;
+      &:hover {
+        color: $red-color;
+        text-decoration: none;
+      }
+    }
+    .exit_edit {
+      margin-top: rem(15px);
+      color: $red-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.user_data_elem {
+  position: relative;
+  padding: rem(50px) 0 rem(30px);
+  width: 100%;
+  max-width: rem(480px);
+  border-bottom: solid rem(1px) rgba(0, 0, 0, .2);
+}
+
+.user_data_main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.user_data_elem {
+
+  label {
+    margin-bottom: rem(18px);
+    margin-left: rem(17px);
+  }
+
+  .checkbox {
+    display: none;
+  }
+
+  .checkbox-custom {
+    width: rem(15px);
+    cursor: pointer;
+    height: rem(15px);
+    margin-right: rem(2px);
+    position: relative;
+    box-shadow: inset rem(-1px) rem(1px) rem(5px) rgba(0, 0, 0, 0.38);
+    border-radius: rem(3px) rem(4px) rem(4px) rem(3px);
+    border: rem(1px) solid #dadada;
+    background-color: #ffffff;
+  }
+
+  .checkbox-custom,
+  .label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .checkbox:checked + .checkbox-custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: #f8213c;
+    border-radius: 2px;
+  }
+  .btn_grey {
+    margin-top: rem(20px);
+  }
+  .user_language {
+    display: flex;
+    flex-wrap: wrap;
+    .user_language_list {
+      flex: 1 1 70%;
+    }
+    .title_data_elem {
+      flex: 1 1 30%;
+      opacity: .5;
+    }
+  }
 }
