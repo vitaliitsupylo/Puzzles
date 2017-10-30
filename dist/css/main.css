@@ -3914,6 +3914,10 @@ footer {
 /*user data*/
 .user_data_block {
   padding: 0 0.9375rem; }
+  .user_data_block .user_data_top {
+    width: 100%;
+    display: flex;
+    align-items: center; }
   .user_data_block .user_data_name {
     position: relative;
     padding-bottom: 1.25rem;
@@ -3975,6 +3979,9 @@ footer {
   justify-content: flex-start;
   align-items: flex-start; }
 
+.user_data_elem .user_language_list {
+  margin-left: 0.9375rem; }
+
 .user_data_elem label {
   margin-bottom: 1.125rem;
   margin-left: 1.0625rem; }
@@ -4012,14 +4019,53 @@ footer {
 .user_data_elem .btn_grey {
   margin-top: 1.25rem; }
 
-.user_data_elem .user_language {
-  display: flex;
-  flex-wrap: wrap; }
-  .user_data_elem .user_language .user_language_list {
-    flex: 1 1 70%; }
-  .user_data_elem .user_language .title_data_elem {
-    flex: 1 1 30%;
-    opacity: .5; }
+.user_data_elem .user_data_cat {
+  font-weight: 700;
+  margin-bottom: 0.75rem; }
+
+.user_data_elem .title_data_elem {
+  opacity: .5;
+  display: inline-block; }
+
+/*date birth move*/
+.date_birth_move {
+  display: inline-flex;
+  align-items: center;
+  width: 13.4375rem;
+  margin-left: 2.1875rem; }
+  .date_birth_move input {
+    box-shadow: inset -0.125rem 0.0625rem 0.5625rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    border: 0.0625rem solid #c2bfbf;
+    background-color: #ffffff;
+    width: 3.375rem;
+    height: 2.1875rem;
+    margin: 0 0.125rem;
+    padding: 0 0.625rem;
+    color: #bababa; }
+  .date_birth_move select {
+    box-shadow: inset -0.125rem 0.0625rem 0.5625rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    border: 0.0625rem solid #c2bfbf;
+    background-color: #ffffff;
+    width: 5.625rem;
+    height: 2.1875rem;
+    color: #bababa;
+    padding: 0 0.625rem; }
+
+/*date sex*/
+.date_sex select {
+  box-shadow: inset -0.125rem 0.0625rem 0.5625rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #c2bfbf;
+  background-color: #ffffff;
+  width: 14.6875rem;
+  height: 2.1875rem;
+  color: #bababa;
+  padding: 0 0.625rem; }
+
+.date_sex .date_sex_move {
+  margin-left: 0.9375rem; }
 
 /*user data*/
 /*END USER DATA*/

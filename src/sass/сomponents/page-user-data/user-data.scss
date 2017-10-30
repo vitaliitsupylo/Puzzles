@@ -1,5 +1,10 @@
 .user_data_block {
   padding: 0 rem(15px);
+  .user_data_top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
   .user_data_name {
     position: relative;
     padding-bottom: rem(20px);
@@ -75,7 +80,9 @@
 }
 
 .user_data_elem {
-
+  .user_language_list {
+    margin-left: rem(15px);
+  }
   label {
     margin-bottom: rem(18px);
     margin-left: rem(17px);
@@ -117,15 +124,60 @@
   .btn_grey {
     margin-top: rem(20px);
   }
-  .user_language {
-    display: flex;
-    flex-wrap: wrap;
-    .user_language_list {
-      flex: 1 1 70%;
-    }
-    .title_data_elem {
-      flex: 1 1 30%;
-      opacity: .5;
-    }
+
+  .user_data_cat {
+    font-weight: 700;
+    margin-bottom: rem(12px);
+  }
+  .title_data_elem {
+    opacity: .5;
+    display: inline-block;
+  }
+}
+
+/*date birth move*/
+
+.date_birth_move {
+  display: inline-flex;
+  align-items: center;
+  width: rem(215px);
+  margin-left: rem(35px);
+  input {
+    box-shadow: inset rem(-2px) rem(1px) rem(9px) rgba(0, 0, 0, 0.1);
+    border-radius: rem(4px);
+    border: rem(1px) solid #c2bfbf;
+    background-color: #ffffff;
+    width: rem(54px);
+    height: rem(35px);
+    margin: 0 rem(2px);
+    padding: 0 rem(10px);
+    color: #bababa;
+  }
+  select {
+    box-shadow: inset rem(-2px) rem(1px) rem(9px) rgba(0, 0, 0, 0.1);
+    border-radius: rem(4px);
+    border: rem(1px) solid #c2bfbf;
+    background-color: #ffffff;
+    width: rem(90px);
+    height: rem(35px);
+    color: #bababa;
+    padding: 0 rem(10px);
+  }
+}
+
+/*date sex*/
+.date_sex {
+  select {
+    box-shadow: inset rem(-2px) rem(1px) rem(9px) rgba(0, 0, 0, 0.1);
+    border-radius: rem(4px);
+    border: rem(1px) solid #c2bfbf;
+    background-color: #ffffff;
+    width: rem(235px);
+    height: rem(35px);
+    color: #bababa;
+    padding: 0 rem(10px);
+  }
+  .date_sex_move {
+    margin-left: rem(15px);
   }
 }

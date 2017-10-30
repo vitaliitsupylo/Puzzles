@@ -240,18 +240,63 @@
                     </div>
                     <div class="user_data_elem">
                         <form action="" class="user_language">
-                            <p class="title_data_elem">Язык общения</p>
-                            <div class="user_language_list">
-                                <label name="language_ru">
-                                    <input class="checkbox" type="checkbox" checked name="language_ru">
-                                    <span class="checkbox-custom"></span>
-                                    <span class="label">Русский</span>
-                                </label>
-                                <label name="language_ua">
-                                    <input class="checkbox" type="checkbox" name="language_ua">
-                                    <span class="checkbox-custom"></span>
-                                    <span class="label">Українська</span>
-                                </label>
+                            <div class="user_data_top">
+                                <p class="title_data_elem">Язык общения</p>
+                                <div class="user_language_list">
+                                    <label name="language_ru">
+                                        <input class="checkbox" type="checkbox" checked name="language_ru">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Русский</span>
+                                    </label>
+                                    <label name="language_ua">
+                                        <input class="checkbox" type="checkbox" name="language_ua">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Українська</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn_grey">Сохранить</button>
+                        </form>
+                    </div>
+                    <div class="user_data_elem">
+                        <p class="user_data_cat">Знаменательные даты</p>
+                        <form action="" class="date_birth">
+                            <div class="user_data_top">
+                                <p class="title_data_elem">Дата рождения</p>
+                                <div class="date_birth_move">
+                                    <input type="text" maxlength="2">
+                                    <select name="">
+                                        <option disabled>Месяц</option>
+                                        <option value="Январь">Январь</option>
+                                        <option value="Февраль">Февраль</option>
+                                        <option value="Март">Март</option>
+                                        <option value="Апрель">Апрель</option>
+                                        <option value="Май">Май</option>
+                                        <option value="Июнь">Июнь</option>
+                                        <option value="Июль">Июль</option>
+                                        <option value="Август">Август</option>
+                                        <option value="Сентябрь">Сентябрь</option>
+                                        <option value="Октябрь">Октябрь</option>
+                                        <option value="Ноябрь">Ноябрь</option>
+                                        <option value="Декабрь">Декабрь</option>
+                                    </select>
+                                    <input type="text" placeholder="год" maxlength="4">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn_grey">Сохранить</button>
+                        </form>
+                    </div>
+                    <div class="user_data_elem">
+                        <p class="user_data_cat">Личная Информация</p>
+                        <form action="" class="date_sex">
+                            <div class="user_data_top">
+                                <p class="title_data_elem">Пол</p>
+                                <div class="date_sex_move">
+                                    <select name="">
+                                        <option value="мужской">мужской</option>
+                                        <option value="женский">женский</option>
+                                    </select>
+                                </div>
                             </div>
                             <button type="submit" class="btn_grey">Сохранить</button>
                         </form>
@@ -260,7 +305,6 @@
                 </div>
 
                 <!--end user data block-->
-
 
             </div>
         </main>
