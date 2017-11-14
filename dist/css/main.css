@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url(/fonts/iconmoon/style.css);@charset "UTF-8";
 /*default*/
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -499,49 +499,6 @@ footer {
         text-transform: uppercase; }
     footer .right_block_footer .podpiska_form {
       margin-top: 4.6875rem; }
-
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-balance:before {
-  content: "\E900"; }
-
-.icon-cart:before {
-  content: "\E901"; }
-
-.icon-discount:before {
-  content: "\E902"; }
-
-.icon-envelope:before {
-  content: "\E903"; }
-
-.icon-eye:before {
-  content: "\E904"; }
-
-.icon-gift:before {
-  content: "\E905"; }
-
-.icon-home:before {
-  content: "\E906"; }
-
-.icon-information:before {
-  content: "\E907"; }
-
-.icon-like:before {
-  content: "\E908"; }
-
-.icon-magnifying-glass:before {
-  content: "\E909"; }
 
 /*default end*/
 /*header*/
