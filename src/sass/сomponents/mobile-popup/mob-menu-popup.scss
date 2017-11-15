@@ -15,15 +15,15 @@
     display: none;
     position: absolute;
     left: 0px;
-    top: 47px;
+    top: rem(47px);
     width: 100%; 
     background: #fff;
 }
 .mob_menu_top_wrap {
-    width: 297px;   
+    width: rem(297px);   
     .close {
-        width: 26px;
-        height: 26px;
+        width: rem(26px);
+        height: rem(26px);
     }
 }
 .mob_menu_top_wrap {
@@ -31,11 +31,11 @@
     z-index: 55;
 }
 .enter_block_mobile {
-    height: 46px;
-    padding-left: 15px;
-    line-height: 46px;
+    height: rem(46px);
+    padding-left: rem(15px);
+    line-height: rem(46px);
     font-family: Arial;
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 400; 
     color: #fff;   
     text-transform: uppercase;
@@ -49,22 +49,22 @@
         display: inline-block;
     }
     i {
-        width: 2px;
-        height: 18px;
-        margin: -3px 5px;
+        width: rem(2px);
+        height: rem(18px);
+        margin: rem(-3px) rem(5px);
         display: inline-block;
         background: #fff;
-        line-height: 46px;
+        line-height: rem(46px);
     }    
 }
 .drp_d_mob_menu {
     background: #fff;
     position: relative;
     z-index: 55;
-    width: 297px;
+    width: rem(297px);
     li {
-        padding-left: 60px;
-        line-height: 60px;
+        padding-left: rem(60px);
+        line-height: rem(60px);
         position: relative;
         &:hover {
             background: #ededed;
@@ -81,7 +81,7 @@
         }
         i {
             position: absolute;
-            left: 20px;
+            left: rem(20px);
             top: 0;
             bottom: 0;
             margin: auto;
@@ -89,7 +89,7 @@
         span {
             color: #5198d9;
             font-family: $Arial;
-            font-size: 18px;
+            font-size: rem(18px);
             font-weight: 400;           
         }
     }

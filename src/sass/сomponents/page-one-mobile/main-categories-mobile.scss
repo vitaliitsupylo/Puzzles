@@ -1,39 +1,39 @@
 .main_categories_wrap.mobile {
-    margin-left: -12px;
+    margin-left: rem(-12px);
     margin-top: 0;
     margin-bottom: 0;   
     .category_block {
-        margin-left: 12px;
+        margin-left: rem(12px);
         overflow: visible;
-        flex: 1 1 140px;
+        flex: 1 1 rem(140px);
         max-width: 100%;           
-        margin-bottom: 10px;   
-        padding: 7px; 
+        margin-bottom: rem(10px);   
+        padding: rem(7px); 
         .category_name_text {
-            font-size: 12px;
-            padding: 10px 10px 5px 15px;
+            font-size: rem(12px);
+            padding: rem(10px) rem(10px) rem(5px) rem(15px);
         }
     }
 }
 .more_tovar_mobile {    
     width: 100%;
-    margin-top: 10px;
-    padding: 15px 0 20px;
-    padding-left: 60px;        
-    border: 1px solid #dadada;
-    border-radius: 4px;    
+    margin-top: rem(10px);
+    padding: rem(15px) 0 rem(20px);
+    padding-left: rem(60px);        
+    border: rem(1px) solid #dadada;
+    border-radius: rem(4px);    
     position: relative;
     color: #5198d9;
     font-family: $Arial;
-    font-size: 23px;
+    font-size: rem(23px);
     font-weight: 400;
-    line-height: 14px;
+    line-height: rem(14px);
     text-align: center;
     i {
         position: absolute;
-        top: 15px;
-        left: 20px;
+        top: rem(15px);
+        left: rem(20px);
         color: red;
-        font-size: 20px;
+        font-size: rem(20px);
     }
 }

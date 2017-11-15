@@ -1,0 +1,32 @@
+.korzina_mob_wrap {
+    border-top: 1px solid #e5e5e5;
+    padding-top: rem(20px);
+}
+.back_btn {    
+    color: #5198d9;    
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: rem(25px);
+    span {        
+        font-family: Arial;
+        font-size:rem(14px);
+        font-weight: 400;
+        line-height: rem(30px);
+        text-decoration: underline;
+        display: inline-block;
+        vertical-align: top;
+    }
+    i {
+        font-size: rem(25px); 
+        text-decoration: none;
+        display: inline-block;
+     }
+}
+.korz_mob_title {
+    font-family: Arial;
+    font-size: rem(20px);
+    font-weight: 400;
+    line-height: rem(44px);
+    text-transform: uppercase;
+    margin-bottom: rem(20px);
+}

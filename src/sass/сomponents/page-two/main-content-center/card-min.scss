@@ -39,7 +39,7 @@
 
 .card_min_multimedia {
     display: flex;
-    width: 110px;
+    width: rem(110px);
     flex-direction: column;
     align-items: center;
     .add_video,
@@ -61,7 +61,7 @@
 
 .card_min_img {
     width: 100%;
-    height: rem(175px);
+    // height: rem(175px);
     margin-bottom: rem(15px);
     img {
         position: relative;
