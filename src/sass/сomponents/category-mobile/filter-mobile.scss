@@ -1,25 +1,25 @@
 .filter_mobile_wrap {
-    margin-top: 15px;
-    margin-bottom: 20px;
+    margin-top: rem(15px);
+    margin-bottom: rem(20px);
 }
 .filter_mob_top {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
     position: relative;
     a {
         color: #5198d9;
         font-family: $Arial;
-        font-size: 20px;
+        font-size: rem(20px);
         font-weight: 400;
-        line-height: 14px;
+        line-height: rem(14px);
         text-decoration: underline;
     }
     .filter_mob_top_title {
         color: #606060;
         font-family: $Arial;
-        font-size: 14px;
+        font-size: rem(14px);
         font-weight: 400;
-        line-height: 14px;
+        line-height: rem(14px);
     }
 }

@@ -1,0 +1,80 @@
+.korzina_mob_wrap {
+    border-top: 1px solid #e5e5e5;
+    padding-top: rem(20px);
+}
+.back_btn {    
+    color: #5198d9;    
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: rem(25px);
+    span {        
+        font-family: Arial;
+        font-size:rem(14px);
+        font-weight: 400;
+        line-height: rem(30px);
+        text-decoration: underline;
+        display: inline-block;
+        vertical-align: top;
+    }
+    i {
+        font-size: rem(25px); 
+        text-decoration: none;
+        display: inline-block;
+     }
+}
+.korz_mob_title {
+    font-family: Arial;
+    font-size: rem(20px);
+    font-weight: 400;
+    line-height: rem(44px);
+    text-transform: uppercase;
+    margin-bottom: rem(20px);
+}
+.korz_tovar_wrap {
+    margin-bottom: 50px;
+    .korzina_tovar:last-of-type {
+        border-bottom: 1px solid #e6e6e6;
+        margin-bottom: 3.4375rem;   
+    }    
+}
+.korzina_tovar {
+    &.vash_tovar {
+        border: none;
+        border-top: 1px solid #e6e6e6;
+        box-shadow: none;
+        margin-top: 0;
+        padding-bottom: rem(20px);   
+        position: relative;           
+        &:after {
+            content: '';
+            display: block;         
+            height: 100%;
+            width: 25%;
+            position: absolute;  
+            top: 0;          
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            z-index: 2;
+            -webkit-box-shadow: inset -150px 0px 200px -9px rgba(255,255,255,1);
+            -moz-box-shadow: inset -150px 0px 200px -9px rgba(255,255,255,1);
+            box-shadow: inset -150px 0px 200px -9px rgba(255,255,255,1);
+            z-index: 5;
+        } 
+        .close {
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            z-index: 6;
+        }
+        .card_min_img {
+            height: auto;
+        }                 
+    } 
+    
+}
+.order_mob_wrap {
+    padding: 0 rem(20px) rem(20px);
+    border-bottom: 1px solid #e6e6e6;
+}

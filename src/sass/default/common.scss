@@ -544,3 +544,10 @@ footer {
     }
   }
 }
+
+
+// mobile
+
+header , .main_content_mobile , footer {
+  padding: 0 rem(10px);
+}

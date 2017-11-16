@@ -2,20 +2,20 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-left: -10px;
+    margin-left: rem(-10px);
 }
 .mob_category {
-    flex: 1 1 325px;
-    padding: 20px 10px;
+    flex: 1 1 rem(325px);
+    padding: rem(20px) rem(10px);
     text-align: center;    
     width: 100%;
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
-    margin-left: 10px;
+    border-top: rem(1px) solid #e5e5e5;
+    border-bottom: rem(1px) solid #e5e5e5;
+    margin-left:rem( 10px);
     .card_min_img {
         height: auto;
         img {
-            max-width: 250px;
+            max-width: rem(250px);
             width: 100%;
             height: auto;
         }
@@ -31,10 +31,10 @@
         opacity: 0.8;
         color: black;
         font-family: $Arial;
-        font-size: 12px;
+        font-size: rem(12px);
         font-weight: 400;
         display: inline-block;
-        margin-left: 5px;
+        margin-left: rem(5px);
         cursor: pointer;
         &:hover {
             text-decoration: underline;
