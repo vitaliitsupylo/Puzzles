@@ -87,11 +87,11 @@ body {
   font-size: 1.125rem;
   text-transform: uppercase;
   font-weight: 500;
-  text-shadow: 0 1px 1px rgba(40, 40, 40, 0.56);
+  text-shadow: 0 0.0625rem 0.0625rem rgba(40, 40, 40, 0.56);
   border: none;
   cursor: pointer;
   line-height: 1;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   color: #fdfdfd;
   background: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%); }
 
@@ -110,7 +110,7 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 400;
-  box-shadow: 0.1875rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.12);
+  box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
   border: 0.0625rem solid #e6e6e6;
   background-image: linear-gradient(to top, #f7f7f7 0%, #fff 100%); }
@@ -120,7 +120,7 @@ body {
   height: 2.25rem;
   border-radius: 1.5625rem;
   background-color: #fee;
-  border: 1px solid #dadada;
+  border: 0.0625rem solid #dadada;
   position: absolute;
   top: 0.625rem;
   right: 0.625rem;
@@ -391,7 +391,7 @@ body {
 .characteristics_tabs {
   display: flex;
   justify-content: flex-start;
-  border-bottom: 1px solid #e6e6e6; }
+  border-bottom: 0.0625rem solid #e6e6e6; }
 
 .characteristics_content {
   padding-top: 2.5rem; }
@@ -3878,7 +3878,13 @@ header, .main_content_mobile, footer {
   .user_data_block .user_data_top {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center; }
+  .user_data_block .user_data_wrap {
+    width: 100%;
+    display: flex; }
+    .user_data_block .user_data_wrap .title_data_elem {
+      margin-right: 1.875rem; }
   .user_data_block .user_data_name {
     position: relative;
     padding-bottom: 1.25rem;
@@ -3943,18 +3949,26 @@ header, .main_content_mobile, footer {
 .user_data_elem .user_language_list {
   margin-left: 0.9375rem; }
 
+.user_data_elem .user_checkbox_list {
+  display: flex;
+  flex-direction: column; }
+  .user_data_elem .user_checkbox_list label {
+    margin-bottom: 0.75rem; }
+
 .user_data_elem label {
-  margin-bottom: 1.125rem;
-  margin-left: 1.0625rem; }
+  margin-right: 0.625rem;
+  display: inline-flex; }
 
 .user_data_elem .checkbox {
   display: none; }
 
 .user_data_elem .checkbox-custom {
   width: 0.9375rem;
+  min-width: 0.9375rem;
   cursor: pointer;
   height: 0.9375rem;
-  margin-right: 0.125rem;
+  min-height: 0.9375rem;
+  margin-right: 0.5rem;
   position: relative;
   box-shadow: inset -0.0625rem 0.0625rem 0.3125rem rgba(0, 0, 0, 0.38);
   border-radius: 0.1875rem 0.25rem 0.25rem 0.1875rem;
@@ -3963,7 +3977,7 @@ header, .main_content_mobile, footer {
 
 .user_data_elem .checkbox-custom,
 .user_data_elem .label {
-  display: inline-block;
+  display: block;
   vertical-align: middle; }
 
 .user_data_elem .checkbox:checked + .checkbox-custom::before {
@@ -3986,7 +4000,8 @@ header, .main_content_mobile, footer {
 
 .user_data_elem .title_data_elem {
   opacity: .5;
-  display: inline-block; }
+  display: inline-block;
+  margin-right: 0.9375rem; }
 
 /*date birth move*/
 .date_birth_move {
@@ -4028,7 +4043,53 @@ header, .main_content_mobile, footer {
 .date_sex .date_sex_move {
   margin-left: 0.9375rem; }
 
+/*date children _move*/
+.date_children_move {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.625rem; }
+  .date_children_move label {
+    margin-right: 1.25rem; }
+  .date_children_move select {
+    box-shadow: inset -0.125rem 0.0625rem 0.5625rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    border: 0.0625rem solid #c2bfbf;
+    background-color: #ffffff;
+    width: 5.625rem;
+    height: 2.1875rem;
+    color: #bababa;
+    padding: 0 0.625rem; }
+
 /*user data*/
+/*connect social*/
+.connect_social {
+  display: flex;
+  margin: 1.75rem 0 3rem;
+  align-items: center; }
+  .connect_social .connect_social_elem {
+    margin-right: 1.875rem;
+    display: flex;
+    align-items: center; }
+    .connect_social .connect_social_elem .connect_social_icon {
+      margin-right: 0.625rem; }
+    .connect_social .connect_social_elem .connect_social_lint {
+      text-decoration: underline;
+      font-weight: 400;
+      font-size: 0.875rem;
+      color: #3b5998; }
+      .connect_social .connect_social_elem .connect_social_lint:hover {
+        text-decoration: none; }
+    .connect_social .connect_social_elem.facebook_style .connect_social_title {
+      font-weight: 900;
+      color: #3b5998; }
+    .connect_social .connect_social_elem.gmail_style .connect_social_title {
+      color: #282828; }
+    .connect_social .connect_social_elem.subscription .connect_social_lint {
+      color: #dd4b39; }
+
+/*connect social*/
 /*END USER DATA*/
 /*BEGIN USER REVIEW*/
 /*account*/

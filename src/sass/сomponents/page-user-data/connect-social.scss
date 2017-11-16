@@ -1,0 +1,39 @@
+.connect_social {
+  display: flex;
+  margin: rem(28px) 0 rem(48px);
+  align-items: center;
+  .connect_social_elem {
+    margin-right: rem(30px);
+    display: flex;
+    align-items: center;
+    .connect_social_icon {
+      margin-right: rem(10px);
+    }
+    .connect_social_lint {
+      text-decoration: underline;
+      font-weight: 400;
+      font-size: rem(14px);
+      color: #3b5998;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    &.facebook_style {
+      .connect_social_title {
+        font-weight: 900;
+        color: #3b5998;
+      }
+    }
+    &.gmail_style {
+      .connect_social_title {
+        color: #282828;
+      }
+    }
+    &.subscription {
+      .connect_social_lint {
+        color: #dd4b39;
+      }
+    }
+
+  }
+}
