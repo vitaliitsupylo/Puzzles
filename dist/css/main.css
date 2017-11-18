@@ -70,7 +70,6 @@ body {
 
 .container-mobile {
   width: 100%;
-  padding: 0 0.4375rem;
   margin: auto;
   max-width: 61.25rem; }
 
@@ -500,8 +499,21 @@ footer {
     footer .right_block_footer .podpiska_form {
       margin-top: 4.6875rem; }
 
-header, .main_content_mobile, footer {
+header,
+.main_content_mobile,
+footer {
   padding: 0 0.625rem; }
+
+.mob_title_main {
+  color: #282828;
+  font-family: Arial;
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 0.875rem;
+  margin: 1.25rem 0 1.5625rem; }
+
+.order_confirm .tovar_sum .tovar_sum_inner span.mobile_sum_total {
+  margin-left: 0.625rem; }
 
 /*default end*/
 /*header*/
@@ -4511,6 +4523,78 @@ footer.footer_mobile {
   border-bottom: 1px solid #e6e6e6; }
 
 /* korzina mobile*/
+/* sravnenie mobile*/
+.sravnenie_main_wrap_mobile {
+  border: 1px solid #e6e6e6; }
+
+.sravnenie_wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap; }
+
+.sravnenie_tovar {
+  flex: 1 1 50%;
+  flex-direction: column;
+  position: relative;
+  margin-top: 0;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #e6e6e6; }
+  .sravnenie_tovar:first-child {
+    border-right: 1px solid #e6e6e6; }
+  .sravnenie_tovar::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 25%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+    -webkit-box-shadow: inset -150px 0px 200px -9px white;
+    -moz-box-shadow: inset -150px 0px 200px -9px white;
+    box-shadow: inset -150px 0px 200px -9px white;
+    z-index: 5; }
+  .sravnenie_tovar .card_min_img {
+    height: auto;
+    padding-right: 25%;
+    max-width: 100%; }
+  .sravnenie_tovar .vash_tovar_info_price {
+    padding-left: 0; }
+
+.sravnenie_tovar.sranenie_info::after {
+  display: none; }
+
+.sravnenie_title {
+  display: block;
+  flex: none;
+  background: #ffffff;
+  opacity: 0.5;
+  color: black;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: center; }
+
+.sranenie_info {
+  padding-left: 10px;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px; }
+  .sranenie_info a {
+    color: #5198d9;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-decoration: underline; }
+
+/* sravnenie mobile*/
 /* mob-menu-popup  */
 .mob_overlay {
   display: block;
