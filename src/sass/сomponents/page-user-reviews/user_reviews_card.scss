@@ -1,4 +1,207 @@
 .user_reviews_card {
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: rem(11px);
+  border: rem(1px) solid #e6e6e6;
+  border-top-left-radius: rem(4px);
+  border-top-right-radius: rem(4px);
+  .reviews_card_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: height .3s, opacity .3s;
+    padding: 0 rem(20px);
+    .info_moderator {
+      font-weight: 400;
+      font-size: rem(14px);
+      margin-right: rem(18px);
+      padding-right: rem(130px);
+      display: flex;
+      align-items: center;
+      i {
+        margin-right: rem(10px);
+        font-size: rem(22px);
+      }
+      &.expected {
+        color: #ec3149;
+      }
+      &.added {
+        color: #282828;
+        opacity: .5;
+        i {
+          display: none;
+        }
+      }
+    }
+    .link_product {
+      color: #5198d9;
+      font-size: rem(14px);
+      transition: color .3s;
+      text-decoration: underline;
+      &:hover {
+        color: $black-color;
+      }
+    }
+  }
+  .collapse {
+    background-color: transparent;
+    position: absolute;
+    top: calc(50% - 1rem);
+    right: rem(20px);
+    border: none;
+    border-radius: 0;
+    color: #5198d9;
+    font-weight: 400;
+    height: rem(32px);
+    margin-left: rem(35px);
+    cursor: pointer;
+    font-size: rem(14px);
+    transition: color .3s, top .3s;
+    .roll {
+      display: none;
+    }
+    &:hover {
+      color: $black-color;
+    }
+    i {
+      margin-left: rem(5px);
+      color: #b4b4b4;
+      font-style: normal;
+    }
+    &::before {
+      @include before_fig(rem(1px), 110%, #e6e6e6);
+      top: -10%;
+      left: rem(-35px);
+    }
+  }
+  .reviews_card_body {
+    width: 100%;
+    border-top: rem(1px) solid transparent;
+    transition: border .3s;
+    padding: rem(10px) rem(20px);
+    display: flex;
+    align-items: center;
+    padding-right: rem(130px);
+    .reviews_card_img {
+      position: relative;
+      display: block;
+      padding-right: rem(25px);
+      margin-right: rem(26px);
+      img {
+        transition: width .3s;
+        width: rem(68px);
+        height: auto;
+      }
+      &:before {
+        @include before_fig(rem(1px), 90%, #e6e6e6);
+        top: 5%;
+        right: 0;
+      }
+    }
+    .reviews_card_about {
+      .reviews_card_time {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        opacity: 0;
+        height: 0;
+        margin-bottom: 0;
+        transition: opacity .3s, height .3s, margin .3s;
+        time {
+          margin-right: rem(8px);
+          color: #000;
+          opacity: .5;
+        }
+        .bonus_plus {
+          color: #848484;
+          a {
+            color: #5198d9;
+            text-decoration: underline;
+          }
+          span {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: rem(25px);
+            height: rem(25px);
+            border-radius: 50%;
+            color: #fff;
+            background-color: #00b230;
+          }
+        }
+      }
+      .reviews_card_text {
+        font-size: rem(14px);
+        font-weight: 400;
+        color: #000;
+      }
+    }
+  }
+  .set_like {
+    .set_like_like, .set_like_dislik {
+      margin-right: rem(6px);
+      color: $black-color;
+      i {
+        transition: color .3s;
+        margin-right: rem(6px);
+        font-size: rem(16px);
+        &:hover {
+          color: $black-color;
+        }
+      }
+      span {
+        font-size: rem(12px);
+      }
+    }
+    .set_like_like {
+      i {
+        color: #00b230;
+      }
+    }
+    .set_like_dislik {
+      i {
+        color: #ff2f34;
+      }
+    }
+  }
+  &.active {
+    .reviews_card_top {
+      opacity: 1;
+      height: rem(52px);
+    }
+    .reviews_card_body {
+      border-top: rem(1px) solid #e6e6e6;
+      .reviews_card_img {
+        img {
+          width: rem(102px);
+        }
+      }
+      .reviews_card_about {
+        .reviews_card_time {
+          margin-bottom: rem(12px);
+          height: rem(25px);
+          opacity: 1;
+        }
+      }
+    }
+    .collapse {
+      color: $black-color;
+      top: rem(17px);
+      height: rem(20px);
+      .roll {
+        display: inline;
+      }
+      .deploy {
+        display: none;
+      }
+    }
+
+  }
 }
