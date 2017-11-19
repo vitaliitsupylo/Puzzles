@@ -163,8 +163,15 @@
     @import "сomponents/page-user-reviews/user-reviews";
   /*end user reviews*/
 /*END USER REVIEW*/
-
-
+/*BEGIN MY ORDERS*/
+/*account*/
+  @import "сomponents/page-user-reviews/account";
+/*end account*/
+/*user account*/
+  @import "сomponents/pade-my-orders/my-orders";
+  @import "сomponents/pade-my-orders/my-orders-card.scss";
+/*end user account*/
+/*END MY ORERS*/
 
 /* mobile  */
 
