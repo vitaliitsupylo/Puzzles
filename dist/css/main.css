@@ -4375,6 +4375,45 @@ footer {
 .my_orders {
   padding: 0 0 0 0.9375rem; }
 
+.my_orders_card {
+  width: 100%;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #e6e6e6;
+  display: flex;
+  margin-bottom: 1.25rem; }
+  .my_orders_card .my_orders_card_content {
+    width: 100%;
+    max-width: 56.5625rem; }
+    .my_orders_card .my_orders_card_content .my_orders_card_top {
+      border-bottom: 0.0625rem solid #e6e6e6;
+      display: flex; }
+      .my_orders_card .my_orders_card_content .my_orders_card_top .my_orders_card_code {
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        padding-left: 0.625rem;
+        color: #61a0dc;
+        font-size: 0.875rem;
+        font-weight: 400;
+        width: 8.75rem; }
+        .my_orders_card .my_orders_card_content .my_orders_card_top .my_orders_card_code span {
+          text-decoration: underline; }
+        .my_orders_card .my_orders_card_content .my_orders_card_top .my_orders_card_code i {
+          margin-right: 0.5rem; }
+      .my_orders_card .my_orders_card_content .my_orders_card_top .my_orders_card_date {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 13.75rem;
+        height: 2.5rem;
+        border-left: 0.0625rem solid #e6e6e6;
+        border-right: 0.0625rem solid #e6e6e6;
+        align-items: center; }
+  .my_orders_card .my_orders_card_status {
+    width: 100%;
+    max-width: 22.5rem;
+    border-left: 0.0625rem solid #e6e6e6; }
+
 /*end user account*/
 /*END MY ORERS*/
 /* mobile  */

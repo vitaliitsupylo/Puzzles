@@ -1,0 +1,53 @@
+.my_orders_card {
+  width: 100%;
+  border-radius: rem(4px);
+  border: rem(1px) solid #e6e6e6;
+  display: flex;
+  margin-bottom: rem(20px);
+
+  .my_orders_card_content {
+    width: 100%;
+    max-width: rem(905px);
+
+    .my_orders_card_top {
+      border-bottom: rem(1px) solid #e6e6e6;
+      display: flex;
+
+      .my_orders_card_code {
+        height: rem(40px);
+        display: flex;
+        align-items: center;
+        padding-left: rem(10px);
+        color: #61a0dc;
+        font-size: rem(14px);
+        font-weight: 400;
+        width: rem(140px);
+
+        span {
+          text-decoration: underline;
+        }
+
+        i {
+          margin-right: rem(8px);
+        }
+      }
+
+      .my_orders_card_date {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: rem(220px);
+        height: rem(40px);
+        border-left: rem(1px) solid #e6e6e6;
+        border-right: rem(1px) solid #e6e6e6;
+        align-items: center;
+      }
+    }
+  }
+
+  .my_orders_card_status {
+    width: 100%;
+    max-width: rem(360px);
+    border-left: rem(1px) solid #e6e6e6;
+  }
+}
