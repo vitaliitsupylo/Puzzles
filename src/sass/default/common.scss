@@ -572,10 +572,32 @@ footer {
 .mob_title_main {
     color: #282828;
     font-family: Arial;
-    font-size: rem(26px);
+    font-size: rem(20px);
     font-weight: 400;
     line-height: rem(14px);
     margin: rem(20px) 0 rem(25px);
+    text-transform: uppercase;
+}
+
+.back_btn {    
+    color: #5198d9;    
+    display: inline-block;
+    cursor: pointer;
+    // margin-bottom: rem(25px);
+    span {        
+        font-family: Arial;
+        font-size:rem(14px);
+        font-weight: 400;
+        line-height: rem(30px);
+        text-decoration: underline;
+        display: inline-block;
+        vertical-align: top;
+    }
+    i {
+        font-size: rem(25px); 
+        text-decoration: none;
+        display: inline-block;
+     }
 }
 
 .order_confirm {
@@ -588,4 +610,8 @@ footer {
             }
         }
     }
+}
+.order_mob_wrap {
+    padding: 0 rem(20px) rem(20px);
+    border-bottom: 1px solid #e6e6e6;
 }

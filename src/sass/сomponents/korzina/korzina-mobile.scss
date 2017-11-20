@@ -2,26 +2,6 @@
     border-top: 1px solid #e5e5e5;
     padding-top: rem(20px);
 }
-.back_btn {    
-    color: #5198d9;    
-    display: inline-block;
-    cursor: pointer;
-    margin-bottom: rem(25px);
-    span {        
-        font-family: Arial;
-        font-size:rem(14px);
-        font-weight: 400;
-        line-height: rem(30px);
-        text-decoration: underline;
-        display: inline-block;
-        vertical-align: top;
-    }
-    i {
-        font-size: rem(25px); 
-        text-decoration: none;
-        display: inline-block;
-     }
-}
 .korz_mob_title {
     font-family: Arial;
     font-size: rem(20px);
@@ -44,7 +24,8 @@
         box-shadow: none;
         margin-top: 0;
         padding-bottom: rem(20px);   
-        position: relative;           
+        position: relative;     
+        justify-content: flex-start;      
         &:after {
             content: '';
             display: block;         
@@ -73,8 +54,4 @@
         }                 
     } 
     
-}
-.order_mob_wrap {
-    padding: 0 rem(20px) rem(20px);
-    border-bottom: 1px solid #e6e6e6;
 }
