@@ -58,6 +58,13 @@ abbr, acronym {
 
 /*color*/
 /*fonts*/
+html {
+  font-size: .8332vw; }
+
+@media only screen and (max-width: 1920px) {
+  html {
+    font-size: 16px; } }
+
 body {
   font: 400 0.875rem/1.21 "Arial", sans-serif;
   color: #282828; }
@@ -4386,7 +4393,8 @@ footer {
     max-width: 56.5625rem; }
     .my_orders_card .my_orders_card_content .my_orders_card_top {
       border-bottom: 0.0625rem solid #e6e6e6;
-      display: flex; }
+      display: flex;
+      cursor: pointer; }
       .my_orders_card .my_orders_card_content .my_orders_card_top .my_orders_card_code {
         height: 2.5rem;
         display: flex;
@@ -4395,7 +4403,8 @@ footer {
         color: #61a0dc;
         font-size: 0.875rem;
         font-weight: 400;
-        width: 8.75rem; }
+        width: 100%;
+        max-width: 9.375rem; }
         .my_orders_card .my_orders_card_content .my_orders_card_top .my_orders_card_code span {
           text-decoration: underline; }
         .my_orders_card .my_orders_card_content .my_orders_card_top .my_orders_card_code i {
@@ -4404,15 +4413,70 @@ footer {
         display: flex;
         justify-content: center;
         width: 100%;
-        max-width: 13.75rem;
+        max-width: 14.375rem;
         height: 2.5rem;
         border-left: 0.0625rem solid #e6e6e6;
         border-right: 0.0625rem solid #e6e6e6;
-        align-items: center; }
+        align-items: center;
+        font-size: 0.875rem;
+        font-weight: 700; }
+      .my_orders_card .my_orders_card_content .my_orders_card_top .orders_count_price {
+        width: 100%;
+        max-width: 31.25rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1.125rem 0 0.75rem;
+        align-items: center;
+        height: 2.5rem; }
+        .my_orders_card .my_orders_card_content .my_orders_card_top .orders_count_price img {
+          height: 1.875rem;
+          width: auto; }
+        .my_orders_card .my_orders_card_content .my_orders_card_top .orders_count_price .orders_count_text {
+          font-weight: 700;
+          font-size: 0.875rem; }
   .my_orders_card .my_orders_card_status {
     width: 100%;
     max-width: 22.5rem;
     border-left: 0.0625rem solid #e6e6e6; }
+  .my_orders_card .my_orders_card_about .my_orders_card_about_link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.9375rem 1.25rem;
+    border-bottom: 0.0625rem solid #e6e6e6; }
+    .my_orders_card .my_orders_card_about .my_orders_card_about_link img {
+      width: 7.1875rem;
+      height: auto;
+      margin-right: 3.125rem; }
+    .my_orders_card .my_orders_card_about .my_orders_card_about_link a {
+      color: #5198d9;
+      font-size: 0.75rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      transition: color .2s; }
+      .my_orders_card .my_orders_card_about .my_orders_card_about_link a:hover {
+        text-decoration: underline;
+        color: #eb1b35; }
+  .my_orders_card .card_payment_method {
+    padding: 0.9375rem 1.25rem;
+    border-bottom: 0.0625rem solid #e6e6e6; }
+  .my_orders_card .my_orders_total_payment {
+    padding: 0.9375rem 1.25rem; }
+    .my_orders_card .my_orders_total_payment .card_payment_method_elem {
+      margin: 0; }
+  .my_orders_card .card_payment_method_elem {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    margin: 0.625rem 0; }
+    .my_orders_card .card_payment_method_elem p {
+      width: 8.75rem;
+      margin-right: 0.625rem;
+      color: #000;
+      opacity: .5; }
+    .my_orders_card .card_payment_method_elem span {
+      color: #000;
+      font-weight: 700; }
 
 /*end user account*/
 /*END MY ORERS*/
