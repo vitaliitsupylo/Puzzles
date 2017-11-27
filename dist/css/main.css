@@ -4437,7 +4437,65 @@ footer {
   .my_orders_card .my_orders_card_status {
     width: 100%;
     max-width: 22.5rem;
-    border-left: 0.0625rem solid #e6e6e6; }
+    border-left: 0.0625rem solid #e6e6e6;
+    padding: 0.9375rem 1.25rem; }
+    .my_orders_card .my_orders_card_status .orders_status_text {
+      color: #282828;
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 700;
+      margin-bottom: 0.9375rem; }
+    .my_orders_card .my_orders_card_status .card_status_list .card_status_elem_date {
+      opacity: 0.5;
+      color: #282828;
+      padding-bottom: 0.5rem;
+      font-size: 0.75rem;
+      font-weight: 400;
+      display: block;
+      width: 6.25%/pxrem;
+      max-width: 8.9375rem;
+      border-bottom: 0.0625rem solid #c1c1c1;
+      margin-bottom: 0.625rem; }
+    .my_orders_card .my_orders_card_status .card_status_list .card_status_elem_time {
+      position: relative;
+      padding-left: 1.125rem;
+      font-weight: 700;
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem; }
+      .my_orders_card .my_orders_card_status .card_status_list .card_status_elem_time::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0.4375rem;
+        height: 0.4375rem;
+        background-color: transparent;
+        border-radius: 50%;
+        top: 0.1875rem;
+        left: 0; }
+      .my_orders_card .my_orders_card_status .card_status_list .card_status_elem_time.green_dote::before {
+        background-color: #00b230; }
+      .my_orders_card .my_orders_card_status .card_status_list .card_status_elem_time.reg_dote::before {
+        background-color: red; }
+  .my_orders_card .card_feedback_order .card_feedback_order_text {
+    font-weight: 400;
+    font-size: 0.875rem;
+    opacity: .5;
+    margin-bottom: 0.625rem; }
+  .my_orders_card .card_feedback_order .btn {
+    display: inline-block;
+    margin-bottom: 0.9375rem; }
+  .my_orders_card .card_feedback_order .card_feedback_order_link {
+    display: block;
+    color: #61a0dc;
+    text-decoration: underline;
+    font-weight: 400;
+    transition: color .3s;
+    font-size: 0.75rem; }
+    .my_orders_card .card_feedback_order .card_feedback_order_link:hover {
+      color: #eb1b35; }
+  .my_orders_card .my_orders_card_full {
+    border-bottom: 0.0625rem solid #e6e6e6;
+    padding: 1.875rem; }
   .my_orders_card .my_orders_card_about .my_orders_card_about_link {
     width: 100%;
     display: flex;
