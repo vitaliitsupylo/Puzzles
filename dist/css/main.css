@@ -5347,6 +5347,83 @@ footer.footer_mobile {
     background-color: #fff5e5; }
 
 /* end my-orders-mobile  */
+/* my-orders-mobile  */
+.zakaz_lvl2 {
+  margin-bottom: 0; }
+
+.price-value {
+  padding-left: 10px;
+  opacity: 0.5;
+  color: black;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 7px;
+  margin-bottom: 5px; }
+
+.deliver_total_price_wrap {
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e5e5; }
+  .deliver_total_price_wrap .deliver_total_price {
+    display: flex;
+    justify-content: flex-start; }
+    .deliver_total_price_wrap .deliver_total_price span {
+      flex: 1 1 50%;
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 44px;
+      color: #000; }
+      .deliver_total_price_wrap .deliver_total_price span.deliver_total_price_inner {
+        font-size: 24px; }
+    .deliver_total_price_wrap .deliver_total_price .deliver_total_title {
+      opacity: 0.5;
+      color: #000;
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 44px; }
+      .deliver_total_price_wrap .deliver_total_price .deliver_total_title.result {
+        font-size: 20px; }
+
+.deliver_info_wrap {
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e5e5; }
+  .deliver_info_wrap .deliver_info_inner {
+    margin-bottom: 20px;
+    color: #000;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; }
+    .deliver_info_wrap .deliver_info_inner:last-of-type {
+      margin-bottom: 0; }
+    .deliver_info_wrap .deliver_info_inner span {
+      display: block;
+      opacity: 0.5;
+      color: #000;
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px; }
+
+.payment_info_wrap {
+  padding: 20px 0 10px;
+  color: #000;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; }
+  .payment_info_wrap span {
+    display: block;
+    opacity: 0.5;
+    color: #000;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; }
+
+/* end my-orders-mobile  */
 /* mobile  */
 
 /*# sourceMappingURL=main.css.map*/
