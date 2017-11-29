@@ -4,36 +4,36 @@
     justify-content: space-between;
     flex-wrap: wrap; // toar left
     .tovar_info_left {
-        flex: 1 1 rem(310px);        
-        .full_characteriscs_info {
-            margin-top: rem(35px);           
-            li {               
-                display: flex;
-                justify-content: flex-start;               
-                .full_characteriscs_info_title {
-                    display: flex;
-                    max-width: rem(310px);
-                    width: 100%;
-                    opacity: 0.5;
-                    color: #000;
-                    font-family: Arial;
-                    font-size: rem(16px);
-                    font-weight: 400;
-                    line-height: rem(44px);                    
-                }
-                .full_characteriscs_information {
-                    font-family: Arial;
-                    font-size: rem(16px);
-                    font-weight: 400;
-                    line-height: rem(44px);
-                    color: #000;
-                    display: flex;
-                    a {
-                        color: #5198d9;
-                        text-decoration: underline;
-                    }
-                }
+        flex: 1 1 rem(310px); 
+    }    
+}
+.full_characteriscs_info {
+    margin-top: rem(35px);           
+    li {               
+        display: flex;
+        justify-content: flex-start;               
+        .full_characteriscs_info_title {
+            display: flex;
+            max-width: rem(310px);
+            width: 100%;
+            opacity: 0.5;
+            color: #000;
+            font-family: Arial;
+            font-size: rem(16px);
+            font-weight: 400;
+            line-height: rem(44px);                    
+        }
+        .full_characteriscs_information {
+            font-family: Arial;
+            font-size: rem(16px);
+            font-weight: 400;
+            line-height: rem(44px);
+            color: #000;
+            display: flex;
+            a {
+                color: #5198d9;
+                text-decoration: underline;
             }
         }
-    }    
+    }
 }
