@@ -3,6 +3,7 @@
   border-radius: rem(4px);
   border: rem(1px) solid #e6e6e6;
   display: flex;
+  align-items: center;
   margin-bottom: rem(20px);
 
   .my_orders_card_content {
@@ -10,7 +11,7 @@
     max-width: rem(905px);
 
     .my_orders_card_top {
-      border-bottom: rem(1px) solid #e6e6e6;
+      border-bottom: none;
       display: flex;
       cursor: pointer;
 
@@ -62,6 +63,14 @@
           font-weight: 700;
           font-size: rem(14px);
         }
+        .open_card_full {
+          color: #61a0dc;
+          cursor: pointer;
+          display: none;
+          i {
+            margin-right: rem(5px);
+          }
+        }
       }
 
     }
@@ -77,7 +86,7 @@
       display: block;
       font-size: rem(14px);
       font-weight: 700;
-      margin-bottom: rem(15px);
+      margin-bottom: 0;
     }
     .card_status_list {
       .card_status_elem_date {
@@ -115,6 +124,38 @@
           }
         }
       }
+      .card_feedback_comment {
+        .open_comment {
+          color: #61a0dc;
+          font-size: rem(12px);
+          margin-bottom: rem(15px);
+          display: inline-block;
+          text-decoration: underline;
+          transition: color .3s;
+          &:hover {
+            color: $red-color;
+          }
+        }
+        .card_comment_bonus {
+          color: #848484;
+          font-size: rem(12px);
+          a {
+            color: #61a0dc;
+            transition: color .3s;
+            text-decoration: underline;
+            &:hover {
+              color: $red-color;
+            }
+          }
+          span {
+            background-color: #00b32d;
+            display: inline-block;
+            color: #fff;
+            padding: rem(5px);
+            border-radius: 50%;
+          }
+        }
+      }
     }
   }
   .card_feedback_order {
@@ -143,6 +184,16 @@
   .my_orders_card_full {
     border-bottom: rem(1px) solid #e6e6e6;
     padding: rem(30px);
+    display: none;
+    .card_payment_method_elem {
+      p {
+        width: 100%;
+        max-width: rem(170px);
+      }
+      span {
+        margin-left: rem(30px);
+      }
+    }
   }
   .my_orders_card_about {
     .my_orders_card_about_link {
@@ -193,6 +244,46 @@
     span {
       color: #000;
       font-weight: 700;
+    }
+  }
+  .card_status_list {
+    display: none;
+  }
+  .my_orders_card_about {
+    display: none;
+  }
+  &.active {
+    align-items: normal;
+    .my_orders_card_content {
+      .my_orders_card_top {
+        border-bottom: rem(1px) solid #e6e6e6;
+        .orders_count_price {
+          justify-content: flex-end;
+          img {
+            display: none;
+          }
+          .orders_count_text {
+            display: none;
+          }
+          .open_card_full {
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .my_orders_card_status {
+      .orders_status_text {
+        margin-bottom: rem(15px);
+      }
+    }
+    .card_status_list {
+      display: block;
+    }
+    .my_orders_card_about {
+      display: block;
+    }
+    .my_orders_card_full.active {
+      display: block;
     }
   }
 }

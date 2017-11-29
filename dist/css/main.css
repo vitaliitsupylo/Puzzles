@@ -4380,19 +4380,20 @@ footer {
 /*end account*/
 /*user account*/
 .my_orders {
-  padding: 0 0 0 0.9375rem; }
+  padding: 0 0 2.5rem 0.9375rem; }
 
 .my_orders_card {
   width: 100%;
   border-radius: 0.25rem;
   border: 0.0625rem solid #e6e6e6;
   display: flex;
+  align-items: center;
   margin-bottom: 1.25rem; }
   .my_orders_card .my_orders_card_content {
     width: 100%;
     max-width: 56.5625rem; }
     .my_orders_card .my_orders_card_content .my_orders_card_top {
-      border-bottom: 0.0625rem solid #e6e6e6;
+      border-bottom: none;
       display: flex;
       cursor: pointer; }
       .my_orders_card .my_orders_card_content .my_orders_card_top .my_orders_card_code {
@@ -4434,6 +4435,12 @@ footer {
         .my_orders_card .my_orders_card_content .my_orders_card_top .orders_count_price .orders_count_text {
           font-weight: 700;
           font-size: 0.875rem; }
+        .my_orders_card .my_orders_card_content .my_orders_card_top .orders_count_price .open_card_full {
+          color: #61a0dc;
+          cursor: pointer;
+          display: none; }
+          .my_orders_card .my_orders_card_content .my_orders_card_top .orders_count_price .open_card_full i {
+            margin-right: 0.3125rem; }
   .my_orders_card .my_orders_card_status {
     width: 100%;
     max-width: 22.5rem;
@@ -4444,7 +4451,7 @@ footer {
       display: block;
       font-size: 0.875rem;
       font-weight: 700;
-      margin-bottom: 0.9375rem; }
+      margin-bottom: 0; }
     .my_orders_card .my_orders_card_status .card_status_list .card_status_elem_date {
       opacity: 0.5;
       color: #282828;
@@ -4476,6 +4483,30 @@ footer {
         background-color: #00b230; }
       .my_orders_card .my_orders_card_status .card_status_list .card_status_elem_time.reg_dote::before {
         background-color: red; }
+    .my_orders_card .my_orders_card_status .card_status_list .card_feedback_comment .open_comment {
+      color: #61a0dc;
+      font-size: 0.75rem;
+      margin-bottom: 0.9375rem;
+      display: inline-block;
+      text-decoration: underline;
+      transition: color .3s; }
+      .my_orders_card .my_orders_card_status .card_status_list .card_feedback_comment .open_comment:hover {
+        color: #eb1b35; }
+    .my_orders_card .my_orders_card_status .card_status_list .card_feedback_comment .card_comment_bonus {
+      color: #848484;
+      font-size: 0.75rem; }
+      .my_orders_card .my_orders_card_status .card_status_list .card_feedback_comment .card_comment_bonus a {
+        color: #61a0dc;
+        transition: color .3s;
+        text-decoration: underline; }
+        .my_orders_card .my_orders_card_status .card_status_list .card_feedback_comment .card_comment_bonus a:hover {
+          color: #eb1b35; }
+      .my_orders_card .my_orders_card_status .card_status_list .card_feedback_comment .card_comment_bonus span {
+        background-color: #00b32d;
+        display: inline-block;
+        color: #fff;
+        padding: 0.3125rem;
+        border-radius: 50%; }
   .my_orders_card .card_feedback_order .card_feedback_order_text {
     font-weight: 400;
     font-size: 0.875rem;
@@ -4495,7 +4526,13 @@ footer {
       color: #eb1b35; }
   .my_orders_card .my_orders_card_full {
     border-bottom: 0.0625rem solid #e6e6e6;
-    padding: 1.875rem; }
+    padding: 1.875rem;
+    display: none; }
+    .my_orders_card .my_orders_card_full .card_payment_method_elem p {
+      width: 100%;
+      max-width: 10.625rem; }
+    .my_orders_card .my_orders_card_full .card_payment_method_elem span {
+      margin-left: 1.875rem; }
   .my_orders_card .my_orders_card_about .my_orders_card_about_link {
     width: 100%;
     display: flex;
@@ -4535,6 +4572,30 @@ footer {
     .my_orders_card .card_payment_method_elem span {
       color: #000;
       font-weight: 700; }
+  .my_orders_card .card_status_list {
+    display: none; }
+  .my_orders_card .my_orders_card_about {
+    display: none; }
+  .my_orders_card.active {
+    align-items: normal; }
+    .my_orders_card.active .my_orders_card_content .my_orders_card_top {
+      border-bottom: 0.0625rem solid #e6e6e6; }
+      .my_orders_card.active .my_orders_card_content .my_orders_card_top .orders_count_price {
+        justify-content: flex-end; }
+        .my_orders_card.active .my_orders_card_content .my_orders_card_top .orders_count_price img {
+          display: none; }
+        .my_orders_card.active .my_orders_card_content .my_orders_card_top .orders_count_price .orders_count_text {
+          display: none; }
+        .my_orders_card.active .my_orders_card_content .my_orders_card_top .orders_count_price .open_card_full {
+          display: inline-block; }
+    .my_orders_card.active .my_orders_card_status .orders_status_text {
+      margin-bottom: 0.9375rem; }
+    .my_orders_card.active .card_status_list {
+      display: block; }
+    .my_orders_card.active .my_orders_card_about {
+      display: block; }
+    .my_orders_card.active .my_orders_card_full.active {
+      display: block; }
 
 /*end user account*/
 /*END MY ORERS*/
