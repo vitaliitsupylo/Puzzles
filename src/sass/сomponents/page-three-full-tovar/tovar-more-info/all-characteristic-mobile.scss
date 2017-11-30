@@ -1,19 +1,25 @@
 
-    .mobile_info_title {
-        padding: 15px 0 10px;
+    .mobile_info_title {        
         border-bottom: 1px solid #e5e5e5; 
         color: #282828;
         font-family: Arial;
         font-size: 18px;
         font-weight: 400;
-        line-height: 14px;       
-        ul {
-            display: none;
-            &.active {
-                display: block;                
+        line-height: 14px;    
+        .full_list_title {
+            cursor: pointer;  
+            padding: 15px 0 10px;
+        }
+        &.active {
+            ul {
+                display: block; 
+                margin-top: rem(30px);   
             }
-            li {
-                padding: 0 10px;
+        } 
+        ul {
+            display: none;            
+            li {          
+                padding: 0 10px;      
                 display: flex;
                 justify-content: flex-start;
                 .full_characteriscs_info_title {
