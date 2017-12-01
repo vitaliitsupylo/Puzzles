@@ -17,9 +17,16 @@
             }
         } 
         ul {
+            &.full_characteriscs_info  {
+                li{
+                    padding: 0 10px; 
+                    &:nth-child(even) {
+                        background: #e5e5e5;
+                    }   
+                }
+            }
             display: none;            
-            li {          
-                padding: 0 10px;      
+            li {    
                 display: flex;
                 justify-content: flex-start;
                 .full_characteriscs_info_title {
@@ -27,10 +34,7 @@
                 }
                 .full_characteriscs_info_title {
                     flex: 1 1 150px;
-                }
-                &:nth-child(even) {
-                    background: #e5e5e5;
-                }                
+                }                            
             }            
         }
     }

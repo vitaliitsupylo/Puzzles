@@ -544,6 +544,15 @@ footer {
   padding: 0 1.25rem 1.25rem;
   border-bottom: 1px solid #e6e6e6; }
 
+.full_tovar_mobile.mob_category {
+  padding: 0;
+  margin: 0;
+  border-bottom: none; }
+
+.mobile_full_tovar {
+  margin-bottom: 20px;
+  border-bottom: none; }
+
 /*default end*/
 /*header*/
 .logo {
@@ -2153,7 +2162,8 @@ footer {
   font-size: 0.875rem;
   color: #5198d9;
   line-height: 1.5;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+  display: block; }
 
 .pagination {
   margin: 1.25rem 0 3.125rem;
@@ -5511,7 +5521,7 @@ footer.footer_mobile {
       height: 30px; }
 
 .value_add_review {
-  padding: 20px 10px 15px;
+  padding: 20px 0 15px;
   display: flex;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 30px; }
@@ -5522,7 +5532,8 @@ footer.footer_mobile {
     font-family: Arial;
     font-size: 20px;
     font-weight: 400;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    line-height: 20px; }
   .value_add_review .add_review_btn_mob_wrap {
     flex: 1 1 150px;
     height: 62px;
@@ -5606,23 +5617,24 @@ footer.footer_mobile {
     margin-top: 1.875rem; }
   .mobile_info_title ul {
     display: none; }
+    .mobile_info_title ul.full_characteriscs_info li {
+      padding: 0 10px; }
+      .mobile_info_title ul.full_characteriscs_info li:nth-child(even) {
+        background: #e5e5e5; }
     .mobile_info_title ul li {
-      padding: 0 10px;
       display: flex;
       justify-content: flex-start; }
       .mobile_info_title ul li .full_characteriscs_info_title {
         flex: 1 1 150px; }
       .mobile_info_title ul li .full_characteriscs_info_title {
         flex: 1 1 150px; }
-      .mobile_info_title ul li:nth-child(even) {
-        background: #e5e5e5; }
 
 /* end my-orders-mobile  */
 /*viev-video-mobile  */
 /* endviev-video-mobile  */
 /* more-deliver-mobile  */
 .city_search {
-  margin: 30px 0 20px; }
+  margin: 0 0 20px; }
   .city_search input {
     max-width: 320px;
     width: 100%;
@@ -5646,6 +5658,104 @@ footer.footer_mobile {
   .more_deliver_mobile_info p {
     color: #282828;
     margin-bottom: 5px; }
+
+/* end more-deliver-mobile  */
+/* more-deliver-mobile  */
+.slider_block_mobile {
+  padding: 40px 0;
+  text-align: center; }
+
+/* end more-deliver-mobile  */
+/* more-deliver-mobile  */
+.price_icon_fulltovar {
+  text-align: left;
+  margin-bottom: 25px; }
+  .price_icon_fulltovar .card_min_price {
+    display: inline-block;
+    margin-right: 10px; }
+  .price_icon_fulltovar .full_tovar_icon {
+    display: inline-block;
+    vertical-align: top; }
+    .price_icon_fulltovar .full_tovar_icon div {
+      display: inline-block;
+      position: relative;
+      cursor: pointer; }
+      .price_icon_fulltovar .full_tovar_icon div:hover span {
+        height: 31px; }
+      .price_icon_fulltovar .full_tovar_icon div span {
+        display: block;
+        width: 50px;
+        height: 30px;
+        text-align: center;
+        background-image: -moz-linear-gradient(90deg, #f20d3b 0%, #ff2f34 100%);
+        background-image: -webkit-linear-gradient(90deg, #f20d3b 0%, #ff2f34 100%);
+        background-image: -ms-linear-gradient(90deg, #f20d3b 0%, #ff2f34 100%);
+        margin-right: 10px;
+        border-radius: 5px;
+        z-index: 2;
+        position: relative;
+        line-height: 35px;
+        left: 1px;
+        top: 1px; }
+        .price_icon_fulltovar .full_tovar_icon div span i {
+          color: #fff;
+          font-size: 20px; }
+      .price_icon_fulltovar .full_tovar_icon div .bg_btn {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 52px;
+        height: 34px;
+        background: #9b0c22;
+        z-index: 1;
+        border-radius: 5px; }
+
+.full_tovar_main_btn {
+  background: #ededed;
+  padding: 10px 0 15px;
+  margin-bottom: 40px; }
+
+.btn_mobile {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px; }
+  .btn_mobile:last-child {
+    margin-right: 0; }
+  .btn_mobile.green .bg_btn {
+    background-color: #19750d; }
+  .btn_mobile.green span {
+    background-image: linear-gradient(to top, #209511 0%, #54ca44 60%, #54ca44 100%); }
+  .btn_mobile.blue .bg_btn {
+    background-color: #00769d; }
+  .btn_mobile.blue span {
+    background-image: linear-gradient(to top, #008ebe 0%, #14bcf4 76%, #14bcf4 100%); }
+  .btn_mobile .bg_btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    width: 160px;
+    height: 61px;
+    border-radius: 5px;
+    box-shadow: 1.9px 2.3px 5px rgba(152, 12, 36, 0.47);
+    z-index: 1; }
+  .btn_mobile span {
+    position: relative;
+    left: 1px;
+    top: 1px;
+    display: block;
+    width: 158px;
+    height: 54px;
+    line-height: 54px;
+    text-shadow: 0 1px 0.7px rgba(40, 40, 40, 0.56);
+    color: #fdfdfd;
+    font-family: Arial;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 2; }
 
 /* end more-deliver-mobile  */
 /* mobile  */
