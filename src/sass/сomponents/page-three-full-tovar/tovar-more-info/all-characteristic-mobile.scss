@@ -1,0 +1,40 @@
+
+    .mobile_info_title {        
+        border-bottom: 1px solid #e5e5e5; 
+        color: #282828;
+        font-family: Arial;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 14px;    
+        .full_list_title {
+            cursor: pointer;  
+            padding: 15px 0 10px;
+        }
+        &.active {
+            ul {
+                display: block; 
+                margin-top: rem(30px);   
+            }
+        } 
+        ul {
+            &.full_characteriscs_info  {
+                li{
+                    padding: 0 10px; 
+                    &:nth-child(even) {
+                        background: #e5e5e5;
+                    }   
+                }
+            }
+            display: none;            
+            li {    
+                display: flex;
+                justify-content: flex-start;
+                .full_characteriscs_info_title {
+                    flex: 1 1 150px;
+                }
+                .full_characteriscs_info_title {
+                    flex: 1 1 150px;
+                }                            
+            }            
+        }
+    }
