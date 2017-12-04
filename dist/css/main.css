@@ -4953,7 +4953,7 @@ footer.footer_mobile {
   .korzina_tovar.vash_tovar .close {
     top: 0;
     bottom: 0;
-    right: 0;
+    right: 15px;
     margin: auto;
     z-index: 6; }
   .korzina_tovar.vash_tovar .card_min_img {
@@ -5032,6 +5032,63 @@ footer.footer_mobile {
     text-decoration: underline; }
 
 /* sravnenie mobile*/
+/* tovar-dlya-sravnenie mobile*/
+.sravnenie_dlya_tovar {
+  padding-left: 40px; }
+  .sravnenie_dlya_tovar.checked .checked_tovar {
+    display: block; }
+
+.vash_tovar .card_min_img {
+  flex: 1 1 100px; }
+
+.vash_tovar .vash_tovar_info_price {
+  padding-left: 1.25rem;
+  flex: 5 1 150px; }
+  .vash_tovar .vash_tovar_info_price .card_min_title {
+    margin-top: 0; }
+
+.vash_tovar.korzina_tovar {
+  padding: 20px 0;
+  padding-left: 40px; }
+  .vash_tovar.korzina_tovar.sravnenie_dlya_tovar:after {
+    width: 20%; }
+
+.checked_tovar {
+  display: none;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  margin-right: 0;
+  box-shadow: inset 0.03125rem 0 0.9375rem rgba(194, 6, 28, 0.38);
+  z-index: 6; }
+
+.checked_icon {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  margin: auto;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background-image: url("C:/Users/Yaruy_Robot/Desktop/Dima_puzlls/Puzzles/img/check_ok.png");
+  background-repeat: no-repeat;
+  background-size: 0.9375rem 0.9375rem;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  background-color: none;
+  z-index: 10; }
+
+.sravnenie_btn {
+  margin-bottom: 18px; }
+
+.tovar_dlya_sravnenia_wrap {
+  margin-bottom: 20px; }
+  .tovar_dlya_sravnenia_wrap .korzina_tovar:last-of-type {
+    margin-bottom: 0; }
+
+/* tovar-dlya-sravnenie mobile*/
 /* mob-menu-popup  */
 .mob_overlay {
   display: block;

@@ -24,7 +24,7 @@
         }
     })
 
-    /*activecategory list */
+    /*active category list */
     btnCategoryList.addEventListener('click', () => {
         btnCategoryList.classList.toggle('active');
     });
