@@ -277,7 +277,7 @@ body {
           z-index: 10;
         }
         @include respond-to(desktop) {
-          position: absolute;
+          position: relative;
           &.categories_left {
             position: relative;
           }

@@ -173,7 +173,15 @@
 /*end user account*/
 /*END MY ORERS*/
 
-/* mobile  */
+/*Sravnenie spisok*/
+@import "сomponents/sravnenie/sravnenie-spisok";
+/*END Sravnenie spisok*/
+
+/*Sravnenie tovara*/
+@import "сomponents/sravnenie/sravnenie-tovar";
+/*END Sravnenie spisok*/
+
+/*----------------------- mobile ------------------------------------------ */
 
 /* header  */
 @import "сomponents/header-mobile/header-mobile";
@@ -182,15 +190,19 @@
 /* main-banner-mobile  */
 @import "сomponents/page-one-mobile/main-banner-mobile";
 /* end main-banner-mobile  */
+
 /* main-banner-mobile  */
 @import "сomponents/page-one-mobile/categor-list-mobile";
 /* end main-banner-mobile  */
+
 /* main_categories_mobile-mobile  */
 @import "сomponents/page-one-mobile/main-categories-mobile";
 /* end main_categories_mobile-mobile  */
+
 /* out-telephone-btn  */
 @import "сomponents/page-one-mobile/out-telephone-btn";
 /* end out-telephone-btn  */
+
 /* footer-mobile  */
 @import "сomponents/page-one-mobile/footer-mobile";
 /* end footer-mobile  */
@@ -200,9 +212,11 @@
 /* filter-mobile  */
 @import "сomponents/category-mobile/filter-mobile";
 /* end filter-mobile  */
+
 /* category-mobilep  */
 @import "сomponents/category-mobile/category-mobile";
 /* end category-mobile  */
+
 /* ----------------------CATEGORY MOBILE------------------------  */
 
 
@@ -216,7 +230,7 @@
 /* sravnenie mobile*/
 
 /* tovar-dlya-sravnenie mobile*/
-@import "сomponents/sravnenie/tovar-dlya-sravnenie";
+@import "сomponents/sravnenie/tovar-dlya-sravnenie-mobile";
 /* tovar-dlya-sravnenie mobile*/
 
 
@@ -262,6 +276,7 @@
 /* more-deliver-mobile  */
 @import "сomponents/page-three-full-tovar/full-tovar-main-block/slider-block-mobile";
 /* end more-deliver-mobile  */
+
 /* more-deliver-mobile  */
 @import "сomponents/page-three-full-tovar/full-tovar-main-block/full-price-info";
 /* end more-deliver-mobile  */

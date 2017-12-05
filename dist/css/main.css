@@ -297,7 +297,7 @@ body {
           z-index: 10; }
         @media only screen and (max-width: 1280px) {
           .main_content .container .main .main_content_left {
-            position: absolute; }
+            position: relative; }
             .main_content .container .main .main_content_left.categories_left {
               position: relative; } }
       .main_content .container .main .main_content_center {
@@ -1371,7 +1371,8 @@ footer {
 /*BEGIN PAGE ONE*/
 /*categories list*/
 .categories_list.active .p_two_absolute {
-  display: block; }
+  display: block;
+  z-index: 100; }
 
 @media only screen and (max-width: 1280px) {
   .categories_list.active ul {
@@ -4608,7 +4609,96 @@ footer {
 
 /*end user account*/
 /*END MY ORERS*/
-/* mobile  */
+/*Sravnenie spisok*/
+.sravnenie_list .mob_category {
+  border: none;
+  cursor: pointer;
+  flex: 1 1 254px;
+  max-width: 319px;
+  position: relative; }
+  .sravnenie_list .mob_category .close {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3; }
+
+/*END Sravnenie spisok*/
+/*Sravnenie tovara*/
+.sravnenie_tovar_wrap {
+  padding-left: 0;
+  margin-left: -1.25rem; }
+
+.Table {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  border-top: none;
+  font-size: 1rem;
+  border-left: 1px solid #e3e3e3;
+  line-height: 1.5; }
+  .Table .card_min_content {
+    max-width: 225px;
+    border: none;
+    padding: 0;
+    margin: 0; }
+  .Table-row {
+    display: flex;
+    flex-flow: row nowrap; }
+    .Table-row:nth-of-type(even) {
+      background-color: #ffffff; }
+    .Table-row-item {
+      display: flex;
+      flex-flow: row nowrap;
+      height: 86px;
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: 10px;
+      word-break: break-word;
+      max-width: 290px;
+      border: 1px solid #e3e3e3;
+      border-top: none;
+      border-left: none;
+      color: black;
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px; }
+      .Table-row-item.item_top {
+        height: auto;
+        line-height: 1; }
+      .Table-row-item a {
+        color: #5198d9;
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: underline; }
+      .Table-row-item.row-title {
+        font-weight: 700;
+        max-width: 130px;
+        color: rgba(0, 0, 0, 0.5);
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: 400; }
+
+/* Table column sizing
+================================== */
+.Rtable--2cols > .Rtable-cell {
+  width: 50%; }
+
+.Rtable--3cols > .Rtable-cell {
+  width: 33.33%; }
+
+.Rtable--4cols > .Rtable-cell {
+  width: 25%; }
+
+.Rtable--5cols > .Rtable-cell {
+  width: 20%; }
+
+.Rtable--6cols > .Rtable-cell {
+  width: 16.6%; }
+
+/*END Sravnenie spisok*/
+/*----------------------- mobile ------------------------------------------ */
 /* header  */
 /* mob menu */
 .header_mobile .container-mobile {
@@ -5580,6 +5670,7 @@ footer.footer_mobile {
 .value_add_review {
   padding: 20px 0 15px;
   display: flex;
+  width: 100%;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 30px; }
   .value_add_review .val_rev_tovar {

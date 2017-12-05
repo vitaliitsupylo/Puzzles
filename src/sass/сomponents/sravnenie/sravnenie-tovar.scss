@@ -1,0 +1,99 @@
+.sravnenie_tovar_wrap {
+    padding-left: 0;
+    margin-left: -1.25rem;
+}
+
+.Table {
+    $light-color: #ffffff;
+    $dark-color: #f2f2f2;
+
+    .card_min_content  {
+        max-width: 225px;
+        border: none;
+        padding: 0;
+        margin: 0;
+        // .card_min_img {
+        //     text-align: center;
+        //     img {
+        //         max-width: 225px;
+        //     }
+        // }
+    }
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    border-top: none;
+    font-size: 1rem;
+    border-left:1px solid #e3e3e3;
+    line-height: 1.5; // .Table-header
+    &-row {
+        display: flex;
+        flex-flow: row nowrap;        
+        &:nth-of-type(even) {
+            background-color: $light-color;
+        }
+        &:nth-of-type(odd) {}
+        // .Table-row-item
+        &-item {
+            display: flex;
+            flex-flow: row nowrap;
+            height: 86px;
+            flex-grow: 1;
+            flex-basis: 0;
+            padding: 10px;
+            word-break: break-word;
+            max-width: 290px;
+            border: 1px solid #e3e3e3;
+            border-top: none;
+            border-left: none;
+            color: black;
+            font-family: Arial;
+            font-size: 16px;
+            font-weight: 400;
+            line-height:24px;
+            &.item_top {
+                height: auto;
+                line-height: 1;
+            }
+            a {                
+                color: #5198d9;
+                font-family: Arial;
+                font-size: 16px;
+                font-weight: 400;                
+                text-decoration: underline;
+            }
+            &.row-title {
+                font-weight: 700;
+                max-width: 130px;                
+                color: rgba( 0, 0, 0, 0.5);
+                font-family: Arial;
+                font-size: 20px;
+                font-weight: 400;                
+            }
+        }
+    }
+}
+
+
+/* Table column sizing
+================================== */
+
+.Rtable--2cols>.Rtable-cell {
+    width: 50%;
+}
+
+.Rtable--3cols>.Rtable-cell {
+    width: 33.33%;
+}
+
+.Rtable--4cols>.Rtable-cell {
+    width: 25%;
+}
+
+.Rtable--5cols>.Rtable-cell {
+    width: 20%;
+}
+
+.Rtable--6cols>.Rtable-cell {
+    width: 16.6%;
+}
