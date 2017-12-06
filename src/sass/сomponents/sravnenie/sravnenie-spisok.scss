@@ -13,3 +13,21 @@
         }
     }
 }
+.sravnenie_spisok_wrap {
+    .title_block {
+        display: inline-block;
+        margin-right: 30px;
+    }
+    .back_btn_block {       
+        text-align: left;
+        &:hover {
+            span {
+                left: 75%;
+            }
+        }
+        span {
+            transform: rotate(0);
+            left: 70%;
+        }        
+    }   
+}
