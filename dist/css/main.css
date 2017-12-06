@@ -297,7 +297,7 @@ body {
           z-index: 10; }
         @media only screen and (max-width: 1280px) {
           .main_content .container .main .main_content_left {
-            position: absolute; }
+            position: relative; }
             .main_content .container .main .main_content_left.categories_left {
               position: relative; } }
       .main_content .container .main .main_content_center {
@@ -1371,7 +1371,8 @@ footer {
 /*BEGIN PAGE ONE*/
 /*categories list*/
 .categories_list.active .p_two_absolute {
-  display: block; }
+  display: block;
+  z-index: 100; }
 
 @media only screen and (max-width: 1280px) {
   .categories_list.active ul {
@@ -4608,7 +4609,168 @@ footer {
 
 /*end user account*/
 /*END MY ORERS*/
-/* mobile  */
+/*Sravnenie spisok*/
+.sravnenie_list .mob_category {
+  border: none;
+  cursor: pointer;
+  flex: 1 1 254px;
+  max-width: 319px;
+  position: relative; }
+  .sravnenie_list .mob_category .close {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3; }
+
+.sravnenie_spisok_wrap .title_block {
+  display: inline-block;
+  margin-right: 30px; }
+
+.sravnenie_spisok_wrap .back_btn_block {
+  text-align: left; }
+  .sravnenie_spisok_wrap .back_btn_block:hover span {
+    left: 75%; }
+  .sravnenie_spisok_wrap .back_btn_block span {
+    transform: rotate(0);
+    left: 70%; }
+
+/*END Sravnenie spisok*/
+/*Sravnenie tovara*/
+.sravnenie_tovar_wrap {
+  padding-left: 0;
+  margin-left: -1.25rem; }
+  .sravnenie_tovar_wrap .title_block {
+    padding-left: 44px;
+    display: inline-block;
+    margin-right: 30px; }
+
+.back_btn_block {
+  display: inline-block;
+  width: 120px;
+  border-radius: 10px;
+  border: 1px dashed #ee495e;
+  text-align: center;
+  line-height: 35px;
+  vertical-align: top;
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  padding-left: 10px;
+  -webkit-transition: border .3s linear;
+  transition: border .3s linear; }
+  .back_btn_block:hover {
+    border: 1px solid #ee495e;
+    -webkit-transition: border .3s linear;
+    transition: border .3s linear; }
+    .back_btn_block:hover span {
+      left: 10px;
+      -webkit-transition: left .3s linear;
+      transition: left .3s linear; }
+  .back_btn_block span {
+    color: #ee495e;
+    display: inline-block;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 20px;
+    -webkit-transition: left .3s linear;
+    transition: left .3s linear; }
+
+.Table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-top: none;
+  font-size: 1rem;
+  border-left: 1px solid #e3e3e3;
+  line-height: 1.5; }
+  .Table .card_min_content {
+    max-width: 225px;
+    border: none;
+    padding: 0;
+    margin: 0; }
+  .Table-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap; }
+    .Table-row:nth-of-type(even) {
+      background-color: #ffffff; }
+    .Table-row-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      height: 86px;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+      padding: 10px;
+      word-break: break-word;
+      max-width: 290px;
+      border: 1px solid #e3e3e3;
+      border-top: none;
+      border-left: none;
+      color: black;
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px; }
+      .Table-row-item.item_top {
+        height: auto;
+        line-height: 1; }
+      .Table-row-item a {
+        color: #5198d9;
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: underline; }
+      .Table-row-item.row-title {
+        font-weight: 700;
+        max-width: 130px;
+        color: rgba(0, 0, 0, 0.5);
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: 400; }
+
+/* Table column sizing
+================================== */
+.Rtable--2cols > .Rtable-cell {
+  width: 50%; }
+
+.Rtable--3cols > .Rtable-cell {
+  width: 33.33%; }
+
+.Rtable--4cols > .Rtable-cell {
+  width: 25%; }
+
+.Rtable--5cols > .Rtable-cell {
+  width: 20%; }
+
+.Rtable--6cols > .Rtable-cell {
+  width: 16.6%; }
+
+/*END Sravnenie spisok*/
+/*----------------------- mobile ------------------------------------------ */
 /* header  */
 /* mob menu */
 .header_mobile .container-mobile {
@@ -4953,7 +5115,7 @@ footer.footer_mobile {
   .korzina_tovar.vash_tovar .close {
     top: 0;
     bottom: 0;
-    right: 0;
+    right: 15px;
     margin: auto;
     z-index: 6; }
   .korzina_tovar.vash_tovar .card_min_img {
@@ -5032,6 +5194,63 @@ footer.footer_mobile {
     text-decoration: underline; }
 
 /* sravnenie mobile*/
+/* tovar-dlya-sravnenie mobile*/
+.sravnenie_dlya_tovar {
+  padding-left: 40px; }
+  .sravnenie_dlya_tovar.checked .checked_tovar {
+    display: block; }
+
+.vash_tovar .card_min_img {
+  flex: 1 1 100px; }
+
+.vash_tovar .vash_tovar_info_price {
+  padding-left: 1.25rem;
+  flex: 5 1 150px; }
+  .vash_tovar .vash_tovar_info_price .card_min_title {
+    margin-top: 0; }
+
+.vash_tovar.korzina_tovar {
+  padding: 20px 0;
+  padding-left: 40px; }
+  .vash_tovar.korzina_tovar.sravnenie_dlya_tovar:after {
+    width: 20%; }
+
+.checked_tovar {
+  display: none;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  margin-right: 0;
+  box-shadow: inset 0.03125rem 0 0.9375rem rgba(194, 6, 28, 0.38);
+  z-index: 6; }
+
+.checked_icon {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  margin: auto;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background-image: url("C:/Users/Yaruy_Robot/Desktop/Dima_puzlls/Puzzles/img/check_ok.png");
+  background-repeat: no-repeat;
+  background-size: 0.9375rem 0.9375rem;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  background-color: none;
+  z-index: 10; }
+
+.sravnenie_btn {
+  margin-bottom: 18px; }
+
+.tovar_dlya_sravnenia_wrap {
+  margin-bottom: 20px; }
+  .tovar_dlya_sravnenia_wrap .korzina_tovar:last-of-type {
+    margin-bottom: 0; }
+
+/* tovar-dlya-sravnenie mobile*/
 /* mob-menu-popup  */
 .mob_overlay {
   display: block;
@@ -5523,6 +5742,7 @@ footer.footer_mobile {
 .value_add_review {
   padding: 20px 0 15px;
   display: flex;
+  width: 100%;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 30px; }
   .value_add_review .val_rev_tovar {

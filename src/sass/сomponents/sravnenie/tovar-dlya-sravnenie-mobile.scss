@@ -1,0 +1,69 @@
+.sravnenie_dlya_tovar {
+    &.checked {
+        .checked_tovar {
+            display: block;
+        }
+    }
+    padding-left: 40px;
+}
+
+.vash_tovar {
+    .card_min_img {
+        flex: 1 1 100px;
+    }
+    .vash_tovar_info_price {
+        padding-left: rem(20px);
+        flex: 5 1 150px;
+        .card_min_title {
+            margin-top: 0;
+        }
+    }
+    &.korzina_tovar {
+        padding: 20px 0;
+        padding-left: 40px;
+        &.sravnenie_dlya_tovar {
+            &:after {
+                width: 20%;
+            }
+        }
+    }
+}
+
+.checked_tovar {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    margin-right: 0;
+    box-shadow: inset 0.03125rem 0 0.9375rem rgba(194, 6, 28, 0.38);
+    z-index: 6;
+}
+.checked_icon {
+    position: absolute;
+    left: 10px;
+    top: 15px;    
+    margin: auto;
+    width: rem(15px);
+    height: rem(15px);
+    background-image: url("C:/Users/Yaruy_Robot/Desktop/Dima_puzlls/Puzzles/img/check_ok.png");
+    background-repeat: no-repeat;
+    background-size: rem(15px) rem(15px);
+    box-shadow: none;
+    border-radius: none;
+    border: none;            
+    background-color: none;
+    z-index: 10;
+}
+.sravnenie_btn {
+    margin-bottom: 18px;
+}
+.tovar_dlya_sravnenia_wrap {
+    margin-bottom: 20px;
+    .korzina_tovar{
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}

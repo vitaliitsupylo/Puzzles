@@ -101,7 +101,7 @@ module.exports = __webpack_require__(2);
         }
     })
 
-    /*activecategory list */
+    /*active category list */
     btnCategoryList.addEventListener('click', () => {
         btnCategoryList.classList.toggle('active');
     });
