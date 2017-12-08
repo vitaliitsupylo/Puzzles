@@ -16,9 +16,9 @@
     box-shadow: none;
     border-radius: 0;
     border: none;
-    border-bottom:  rem(1px solid #e6e6e6;
+    border-bottom:  rem(1px) solid #e6e6e6;
     &:first-child {
-        border-right:  rem(1px solid #e6e6e6;
+        border-right:  rem(1px) solid #e6e6e6;
     }
     &::after {
         content: '';
