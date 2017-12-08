@@ -1,14 +1,14 @@
 .review_tovar_title {   
     color: #5198d9;
     font-family: Arial;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 400;
     text-decoration: underline;
-    line-height: 15px;    
+    line-height: rem(15px);    
 }
 .rev_tov_title_wrap {
     position: relative;
-    padding-left: 30px;
+    padding-left: rem(30px);
     .back_btn {
         position: absolute;
         left: 0;
@@ -21,39 +21,39 @@
             top: 0;
             bottom: 0;
             margin: auto;
-            height: 30px;
+            height: rem(30px);
         }
     }
 }
 
 .value_add_review {
-    padding: 20px 0 15px; 
+    padding: rem(20px) 0 rem(15px); 
     display: flex;
     width: 100%;
-    border-bottom: 1px solid #e5e5e5;
-    margin-bottom: 30px;
+    border-bottom:rem( 1px) solid #e5e5e5;
+    margin-bottom: rem(30px);
     .val_rev_tovar {
         max-width: 45%;
-        padding-right: 40px;
+        padding-right: rem(40px);
         color: #000;
         font-family: Arial;
-        font-size: 20px;
+        font-size: rem(20px);
         font-weight: 400;
         text-transform: uppercase;
-        line-height: 20px;
+        line-height: rem(20px);
     }
     .add_review_btn_mob_wrap {
-        flex: 1 1 150px;       
-        height: 62px;
+        flex: 1 1 1rem(50px);       
+        height: rem(62px);
         text-align: right;
         .add_review_btn_mob {
             justify-content: flex-end;
             display: flex; 
-            padding: 18px 10px;                                
+            padding: rem(18px) rem(10px);                                
         }
         .our_telephone_mob {
             width: 100%;
-            max-width: 140px;  
+            max-width: 1rem(40px);  
             margin-top: 0;
             display: inline-block;
         }
@@ -70,53 +70,53 @@
 .commnet_tovar_header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
     .comment_date_block {
         display: flex;
-        max-width: 160px;
+        max-width: 1rem(60px);
         width: 100%;
         opacity: 0.5;
         color: black;
         font-family: Arial;
-        font-size: 24px;
+        font-size: rem(24px);
         font-weight: 400;
-        line-height: 44px;;
+        line-height: rem(44px);;
     }
     .comment_likes_wrap {
         display: flex;
         justify-content: flex-end;
         font-family: Arial;
-        font-size: 24px;
+        font-size: rem(24px);
         font-weight: 400;
-        line-height: 44px;
+        line-height: rem(44px);
         color: #000;
         .like {
-            margin-right: 20px;
+            margin-right: rem(20px);
             i {
                 color: #00b230;
-                margin-right: 15px;
+                margin-right: rem(15px);
             }
         }
         .unlike {
             i{
                 color:#ff4045;
-                margin-right: 15px;
+                margin-right: rem(15px);
             }
         }
     }
 }
 .comment_tovar_mob {
-    padding-bottom: 10px;
-    margin-bottom: 25px;
+    padding-bottom: rem(10px);
+    margin-bottom: rem(25px);
 }
 .comment_text_mobile {
     color: #000;;
     font-family: Arial;
-    font-size: 23px;
+    font-size: rem(23px);
     font-weight: 400;
-    line-height: 30px;
+    line-height: rem(30px);
 }
 
 .tovar_info_mobile_wrap {
-    border-top: 1px solid #e5e5e5;
+    border-top: rem(1px) solid #e5e5e5;
 }

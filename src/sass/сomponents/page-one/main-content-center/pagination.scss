@@ -6,24 +6,24 @@
 .pagination_text {
     color: #282828;
     font-family: $Arial;
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: 400;
-    line-height: 14px;
+    line-height: rem(14px);
     position: relative;
-    top: 6px;
+    top: rem(6px);
 }
 .pagination_nav {
     white-space: nowrap;
     .pagination_buttons {
-        width: 50px;
-        height: 21px;
-        border-radius: 3px;
-        border: 1px dashed #d2d2d2;
+        width: rem(0px);
+        height: rem(21px);
+        border-radius: rem(3px);
+        border: rem(1px) dashed #d2d2d2;
         display: inline-block;
         position: relative;
         cursor: pointer;
         &:last-of-type {
-            margin-left: 9px;
+            margin-left: rem(9px);
         }
         &:first-of-type:before {
             transform: rotate(180deg);
@@ -50,16 +50,16 @@
     }
     .pagination_show_all {
         display: inline-block;
-        margin-left: 14px;
+        margin-left: rem(14px);
         vertical-align: top;
         position: relative;
-        top: 6px;
+        top: rem(6px);
         a {
             color: #010101;
             font-family: $Arial;
-            font-size: 14px;
+            font-size: rem(14px);
             font-weight: 400;
-            line-height: 14px;
+            line-height: rem(14px);
             text-decoration: underline;
         }
     }

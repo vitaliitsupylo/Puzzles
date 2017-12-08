@@ -9,7 +9,7 @@
 
 .vash_tovar {
     .card_min_img {
-        flex: 1 1 100px;
+        flex: 1 1 rem(100px);
     }
     .vash_tovar_info_price {
         padding-left: rem(20px);
@@ -19,8 +19,8 @@
         }
     }
     &.korzina_tovar {
-        padding: 20px 0;
-        padding-left: 40px;
+        padding: rem(20px) 0;
+        padding-left: rem(40px);
         &.sravnenie_dlya_tovar {
             &:after {
                 width: 20%;
@@ -42,8 +42,8 @@
 }
 .checked_icon {
     position: absolute;
-    left: 10px;
-    top: 15px;    
+    left: rem(10px);
+    top: rem(15px);    
     margin: auto;
     width: rem(15px);
     height: rem(15px);
@@ -57,10 +57,10 @@
     z-index: 10;
 }
 .sravnenie_btn {
-    margin-bottom: 18px;
+    margin-bottom: rem(18px);
 }
 .tovar_dlya_sravnenia_wrap {
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
     .korzina_tovar{
         &:last-of-type {
             margin-bottom: 0;
