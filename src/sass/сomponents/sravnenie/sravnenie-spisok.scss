@@ -2,8 +2,8 @@
     .mob_category {
         border: none;
         cursor: pointer;
-        flex: 1 1 254px;
-        max-width: 319px;
+        flex: 1 1 rem(254px);
+        max-width: rem(319px);
         position: relative;
         .close {
             position: absolute;
@@ -16,7 +16,7 @@
 .sravnenie_spisok_wrap {
     .title_block {
         display: inline-block;
-        margin-right: 30px;
+        margin-right: rem(30px);
     }
     .back_btn_block {       
         text-align: left;

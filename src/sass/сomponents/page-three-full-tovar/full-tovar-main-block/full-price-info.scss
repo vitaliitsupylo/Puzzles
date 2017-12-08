@@ -1,9 +1,9 @@
 .price_icon_fulltovar {
     text-align: left;
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
     .card_min_price {
         display: inline-block;
-        margin-right: 10px;
+        margin-right: rem(10px);
     }
     .full_tovar_icon {
         display: inline-block;
@@ -14,38 +14,38 @@
             cursor: pointer;
             &:hover {
                 span {
-                    height: 31px;
+                    height: rem(31px);
                 }
             }
             span {
                 display: block;
-                width: 50px;
-                height: 30px;
+                width: rem(50px);
+                height: rem(30px);
                 text-align: center;
-                background-image: -moz-linear-gradient( 90deg, rgb(242,13,59) 0%, rgb(255,47,52) 100%);
-                background-image: -webkit-linear-gradient( 90deg, rgb(242,13,59) 0%, rgb(255,47,52) 100%);
-                background-image: -ms-linear-gradient( 90deg, rgb(242,13,59) 0%, rgb(255,47,52) 100%);
-                margin-right: 10px;
-                border-radius: 5px;
+                background-image: -moz-linear-gradient(90deg, rgb(242, 13, 59) 0%, rgb(255, 47, 52) 100%);
+                background-image: -webkit-linear-gradient(90deg, rgb(242, 13, 59) 0%, rgb(255, 47, 52) 100%);
+                background-image: -ms-linear-gradient(90deg, rgb(242, 13, 59) 0%, rgb(255, 47, 52) 100%);
+                margin-right: rem(10px);
+                border-radius: rem(5px);
                 z-index: 2;
                 position: relative;
-                line-height: 35px;
-                left: 1px;
-                top: 1px;
+                line-height: rem(35px);
+                left: rem(1px);
+                top: rem(1px);
                 i {
                     color: #fff;
-                    font-size: 20px;
+                    font-size: rem(20px);
                 }
             }
             .bg_btn {
                 position: absolute;
                 left: 0;
                 top: 0;
-                width: 52px;
-                height: 34px;
+                width: rem(52px);
+                height: rem(34px);
                 background: #9b0c22;
                 z-index: 1;
-                border-radius: 5px;
+                border-radius: rem(5px);
             }
         }
     }
@@ -53,15 +53,15 @@
 
 .full_tovar_main_btn {
     background: #ededed;
-    padding: 10px 0 15px;
-    margin-bottom: 40px;
+    padding: rem(10px) 0 rem(15px);
+    margin-bottom: rem(40px);
 }
 
 .btn_mobile {
     display: inline-block;
     position: relative;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: rem(10px);
     &:last-child {
         margin-right: 0;
     }
@@ -78,40 +78,35 @@
             background-color: #00769d;
         }
         span {
-            background-image: linear-gradient(to top, #008ebe 0%, #14bcf4 76%, #14bcf4 100%);           
+            background-image: linear-gradient(to top, #008ebe 0%, #14bcf4 76%, #14bcf4 100%);
         }
     }
     .bg_btn {
         position: absolute;
         left: 0;
         top: 0;
-        width: 100px;
-        width: 160px;
-        height: 61px;       
-        border-radius: 5px;
-        box-shadow: 1.9px 2.3px 5px rgba(152, 12, 36, 0.47);
+        width: 1rem(00px);
+        width: 1rem(60px);
+        height: rem(61px);
+        border-radius: rem(5px);
+        box-shadow: 1rem(.9px) 2rem(.3px)rem(5px) rgba(152, 12, 36, 0.47);
         z-index: 1;
     }
     span {
         position: relative;
-        left: 1px;
-        top: 1px;
+        left: rem(1px);
+        top: rem(1px);
         display: block;
-        width: 158px;        
-        height: 54px;
-        line-height: 54px;        
-        text-shadow: 0 1px 0.7px rgba(40, 40, 40, 0.56);
+        width: 1rem(58px);
+        height: rem(54px);
+        line-height: rem(54px);
+        text-shadow: 0rem(1px) 0rem(.7px) rgba(40, 40, 40, 0.56);
         color: #fdfdfd;
         font-family: Arial;
-        font-size: 26px;
+        font-size: rem(26px);
         font-weight: 400;
         text-align: center;
-        border-radius: 5px;        
-        z-index: 2;       
+        border-radius: rem(5px);
+        z-index: 2;
     }
 }
-
-
-  
-
-  

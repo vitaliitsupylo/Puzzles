@@ -2,57 +2,57 @@
     margin-bottom: 0;
 }
 .price-value {
-    padding-left: 10px;
+    padding-left: rem(10px);
     opacity: 0.5;
     color: black;
     font-family: Arial;
-    font-size: 12px;
+    font-size: rem(12px);
     font-weight: 400;
-    line-height: 7px;
-    margin-bottom: 5px;
+    line-height:rem(7px);
+    margin-bottom:rem(5px);
 }
 
 .deliver_total_price_wrap {
-    padding: 20px 0;
-    border-bottom: 1px solid #e5e5e5;
+    padding: rem(20px) 0;
+    border-bottom:rem( 1px) solid #e5e5e5;
     .deliver_total_price {
         display: flex;
         justify-content: flex-start;
         span {
             flex: 1 1 50%;
             font-family: Arial;
-            font-size: 16px;
+            font-size: rem(16px);
             font-weight: 400;
-            line-height: 44px;
+            line-height: rem(44px);
             color: #000;
             &.deliver_total_price_inner {
-                font-size: 24px;
+                font-size: rem(24px);
             }
         }
         .deliver_total_title {
             opacity: 0.5;
             color: #000;
             font-family: Arial;
-            font-size: 16px;
+            font-size: rem(16px);
             font-weight: 400;
-            line-height: 44px;
+            line-height: rem(44px);
             &.result {
-                font-size: 20px;
+                font-size: rem(20px);
             }
         }
     }
 }
 
 .deliver_info_wrap {
-    padding: 20px 0;
-    border-bottom: 1px solid #e5e5e5;
+    padding: rem(20px) 0;
+    border-bottom:rem(1px) solid #e5e5e5;
     .deliver_info_inner {
-        margin-bottom: 20px;
+        margin-bottom: rem(20px);
         color: #000;
         font-family: Arial;
-        font-size: 16px;
+        font-size: rem(16px);
         font-weight: 400;
-        line-height: 24px;
+        line-height: rem(24px);
         &:last-of-type{
             margin-bottom: 0;
         }  
@@ -61,27 +61,27 @@
             opacity: 0.5;
             color: #000;
             font-family: Arial;
-            font-size: 14px;
+            font-size: rem(14px);
             font-weight: 400;
-            line-height: 24px;
+            line-height: rem(24px);
         }
     }
 }
 
 .payment_info_wrap {
-    padding: 20px 0 10px;
+    padding: rem(20px) 0 rem(10px);
     color: #000;
     font-family: Arial;
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: 400;
-    line-height: 24px;
+    line-height: rem(24px);
     span {
         display: block;
         opacity: 0.5;
         color: #000;
         font-family: Arial;
-        font-size: 14px;
+        font-size: rem(14px);
         font-weight: 400;
-        line-height: 24px;
+        line-height: rem(24px);
     }
 }
