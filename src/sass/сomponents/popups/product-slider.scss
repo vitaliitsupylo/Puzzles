@@ -287,6 +287,9 @@
       }
     }
   }
+  &.active {
+    display: flex;
+  }
 }
 
 .slider_smile {

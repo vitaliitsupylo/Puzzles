@@ -1363,6 +1363,8 @@ footer {
         left: 0.3125rem; }
       .product_slider .product_slider_close:hover::before {
         right: 0.3125rem; }
+  .product_slider.active {
+    display: flex; }
 
 .slider_smile {
   font-size: 1.25rem; }
