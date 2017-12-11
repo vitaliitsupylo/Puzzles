@@ -1545,7 +1545,7 @@ footer {
 .pagination_nav {
   white-space: nowrap; }
   .pagination_nav .pagination_buttons {
-    width: 0rem;
+    width: 3.125rem;
     height: 1.3125rem;
     border-radius: 0.1875rem;
     border: 0.0625rem dashed #d2d2d2;
