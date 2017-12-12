@@ -15,6 +15,9 @@
     i{
       font-size: rem(19px);
       margin-right: rem(12px);
+      position: relative;
+      top: rem(4px);
+      color: #000;
     }
     &:hover{
       color:$red-color;
