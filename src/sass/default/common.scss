@@ -39,14 +39,21 @@ body {
   padding: rem(11px) rem(23px);
   font-size: rem(18px);
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
   text-shadow: 0 rem(1px) rem(1px) rgba(40, 40, 40, 0.56);
   border: none;
   cursor: pointer;
   line-height: 1;
   border-radius: rem(4px);
-  color: #fdfdfd;
-  background: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%);
+  color: #fff;
+  box-shadow: rem(1px) rem(2px) rem(3px) rgba(40, 40, 40, 0);
+  transition: box-shadow .3s;
+  background-color: #f7f7f7;
+  background-image: linear-gradient(to top, #f20d3b 0%, #ff2f34 100%);
+  &:hover {
+    box-shadow: rem(1px) rem(2px) rem(3px) rgba(40, 40, 40, .56);
+
+  }
 }
 
 .buy_button {
@@ -611,6 +618,7 @@ footer {
   margin: 0;
   border-bottom: none;
 }
+
 .mobile_full_tovar {
   margin-bottom: rem(20px);
   border-bottom: none;

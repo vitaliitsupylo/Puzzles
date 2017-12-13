@@ -20,30 +20,30 @@
     right: rem(-45px);
     display: flex;
     justify-content: flex-end;
-    border: rem(1px) dashed #000;
+    border: rem(1px) dashed #e6e6e6;
     .card_min_content {
       display: flex;
       flex-direction: column;
       width: rem(250px);
-      padding:rem(10px);
+      padding: rem(10px);
     }
-    .card_min_multimedia{
+    .card_min_multimedia {
       display: flex;
       width: 110px;
       flex-direction: column;
       align-items: center;
-      .add_video,.add_img{
+      .add_video, .add_img {
         display: flex;
         flex-direction: column;
         font-size: rem(12px);
         text-align: center;
         padding-bottom: rem(10px);
-        i{
+        i {
           font-size: rem(50px);
           margin-bottom: rem(8px);
         }
       }
-      .add_video{
+      .add_video {
         border-bottom: dashed rem(1px) #000;
       }
     }
@@ -71,9 +71,11 @@
     margin-bottom: rem(10px);
     align-self: flex-end;
   }
+
   .rating {
     width: rem(80px);
     height: rem(14px);
+    margin-bottom: rem(10px);
   }
   .card_min_price {
     display: flex;
@@ -109,6 +111,20 @@
     align-items: center;
     justify-content: space-between;
     margin: rem(10px) 0;
+    .min_buy {
+      max-width: rem(90px);
+      font-size: rem(14px);
+      text-transform: none;
+      padding: 0;
+      width: 100%;
+      height: rem(33px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        margin-right: rem(7px);
+      }
+    }
     .сompare {
       color: #000;
       opacity: .5;
@@ -150,6 +166,6 @@
   &:hover {
     // border: rem(1px) dashed #888;
     overflow: visible;
-    z-index:10;
+    z-index: 10;
   }
 }
