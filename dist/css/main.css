@@ -1717,7 +1717,10 @@ footer {
   .slider_cards .slider_cards_wrap {
     width: 100%;
     display: flex;
-    justify-content: space-between; }
+    flex-wrap: wrap; }
+    .slider_cards .slider_cards_wrap .card_min {
+      margin-right: 0.3125rem;
+      margin-left: 0.3125rem; }
   .slider_cards .pagination_nav .pagination_buttons {
     border: solid 0.0625rem #d2d2d2; }
 
@@ -2372,7 +2375,10 @@ footer {
   .slider_cards .slider_cards_wrap {
     width: 100%;
     display: flex;
-    justify-content: space-between; }
+    flex-wrap: wrap; }
+    .slider_cards .slider_cards_wrap .card_min {
+      margin-right: 0.3125rem;
+      margin-left: 0.3125rem; }
   .slider_cards .pagination_nav .pagination_buttons {
     border: solid 0.0625rem #d2d2d2; }
 

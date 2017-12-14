@@ -4,7 +4,11 @@
   .slider_cards_wrap {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    .card_min {
+      margin-right: rem(5px);
+      margin-left: rem(5px);
+    }
   }
   .pagination_nav {
     .pagination_buttons {
@@ -12,9 +16,10 @@
     }
   }
 }
-.full_slider_cards{
-  .container{
+
+.full_slider_cards {
+  .container {
     padding-top: rem(30px);
-    border-top: solid rem(1px) rgba(142,142,142, .5);
+    border-top: solid rem(1px) rgba(142, 142, 142, .5);
   }
 }
