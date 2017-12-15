@@ -44,15 +44,31 @@
     }
 
     .checkbox:checked + .checkbox-custom::before {
-      content: "";
-      display: block;
+      // content: "";
+      // display: block;
+      // position: absolute;
+      // top: 2px;
+      // right: 2px;
+      // bottom: 2px;
+      // left: 2px;
+      // background: #f8213c;
+      // border-radius: 2px;
+      // -----------
+      content: '';
       position: absolute;
-      top: 2px;
-      right: 2px;
-      bottom: 2px;
-      left: 2px;
-      background: #f8213c;
-      border-radius: 2px;
+      left: 0px;
+      top: -4px;
+      margin: auto;
+      width:rem(15px);
+      height: rem(15px);
+      background-image: url("/img/check_ok.png");
+      background-repeat: no-repeat;
+      background-size: rem(15px) rem(15px);
+      box-shadow: none;
+      border-radius: none;
+      border: none;
+      background-color: none;
+      z-index: 10;
     }
     &.list {
       flex-direction: column;
