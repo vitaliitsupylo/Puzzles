@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('/fonts/iconmoon/icomoon.eot?te7htt');
-  src:  url('/fonts/iconmoon/icomoon.eot?te7htt#iefix') format('embedded-opentype'),
-    url('/fonts/iconmoon/icomoon.ttf?te7htt') format('truetype'),
-    url('/fonts/iconmoon/icomoon.woff?te7htt') format('woff'),
-    url('/fonts/iconmoon/icomoon.svg?te7htt#icomoon') format('svg');
+  src:  url('/fonts/iconmoon/icomoon.eot?h1c21c');
+  src:  url('/fonts/iconmoon/icomoon.eot?h1c21c#iefix') format('embedded-opentype'),
+    url('/fonts/iconmoon/icomoon.ttf?h1c21c') format('truetype'),
+    url('/fonts/iconmoon/icomoon.woff?h1c21c') format('woff'),
+    url('/fonts/iconmoon/icomoon.svg?h1c21c#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-film:before {
+  content: "\e921";
+}
 .icon-auricular-phone-symbol-in-a-circle:before {
   content: "\e910";
 }
@@ -39,7 +42,7 @@
 .icon-eye2:before {
   content: "\e914";
 }
-.icon-favorite-heart-button:before {
+.icon-favorite-heart:before {
   content: "\e915";
 }
 .icon-gift-card:before {

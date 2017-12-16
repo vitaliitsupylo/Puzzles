@@ -8,6 +8,9 @@
     .card_min {
       margin-right: rem(5px);
       margin-left: rem(5px);
+      &:last-of-type , &:nth-last-child(2){
+        max-width: 100%;      
+      }    
     }
   }
   .pagination_nav {
